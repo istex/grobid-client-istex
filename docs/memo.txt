@@ -1,0 +1,16 @@
+setting npm under a proxy:
+> npm config set proxy http://proxyout.inist.fr:8080
+> npm config set proxy-https http://proxyout.inist.fr:8080
+
+and back :
+>npm config rm proxy
+> npm config rm https-proxy
+
+For spliting file by lines, use the bash script
+> scripts/listSplit.sh list.txt
+
+Creating the selected list of Istex ID relevant for GROBID full text structuring:
+> cd scripts/
+> npm install requestretry
+> node istexid-selection.js
+
