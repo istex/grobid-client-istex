@@ -15,7 +15,6 @@
     "async": "^2.1.4",
     "mkdirp": "^0.5.1",
     "request": "^2.74.0",
-    "form-data": "^2.2.0",
-    "sleep": ""
+    "form-data": "^2.2.0"
   }
 }

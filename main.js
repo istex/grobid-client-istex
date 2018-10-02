@@ -8,7 +8,7 @@ const mkdirp = require('mkdirp'),
     path = require('path'),
     fs = require('fs'),
     https = require ('https'),
-    sleep = require('sleep'),
+//    sleep = require('sleep'),
     readline = require('readline');
 
 // the URL of the GROBID service (to be changed if necessary)
@@ -48,6 +48,8 @@ function downloadIstexPDF(options, istexId, callback) {
     });
 }
 
+const timer = ms => new Promise(res => setTimeout(res, ms));
+
 function callGROBID(options, istexId, callback) {
     console.log("---\nProcessing: " + istexId);
     var file = options.temp_path + "/" + istexId + ".pdf";
@@ -74,8 +76,10 @@ function callGROBID(options, istexId, callback) {
         if (res.statusCode == 503) {
             // service unavailable, normally it means all the threads for GROBID on the server are currently used 
             // so we sleep a bit before retrying the process
-            sleep.sleep(options.sleep_time); 
-            return callGROBID(options, file, callback);
+            //sleep.sleep(options.sleep_time); 
+            //return callGROBID(options, file, callback);
+            timer(3000).then(_=>callGROBID(options, file, callback));
+            return true; 
         } else if (res.statusCode == 204) {
             // success but no content, no need to read further the response and write an empty file
             fs.unlink(file, function(err2) { if (err2) { 
@@ -97,28 +101,28 @@ function callGROBID(options, istexId, callback) {
             body += chunk;
         });
         
+        // first write the TEI reponse 
+        var teiFilePath = options.outPath+"/"+
+                            istexId[0]+"/"+
+                            istexId[1]+"/"+
+                            istexId[2]+"/"+ 
+                            'resource/'+
+                            'istex-grobid-fulltext/';
+
         res.on("end", function () {
-            mkdirp(options.outPath, function(err, made) {
+            mkdirp(teiFilePath, function(err, made) {
                 // I/O error
                 if (err) {
                     fs.unlink(file, function() {}); 
                     return callback(err);
                 }
 
-                // first write the TEI reponse 
-                var jsonFilePath = options.outPath+"/"+
-                                    istexId[0]+"/"+
-                                    istexId[1]+"/"+
-                                    istexId[2]+"/"+ 
-                                    'resource/'+
-                                    'istex-grobid-fulltext/'+
-                                    istexId + ".tei.xml";
-                fs.writeFile(jsonFilePath, body, 'utf8', 
+                fs.writeFile(teiFilePath + istexId + ".tei.xml", body, 'utf8', 
                     function(err) { 
                         if (err) { 
                             console.log(err);
                         } 
-                        console.log(white, "TEI response written under: " + jsonFilePath, reset); 
+                        console.log(white, "TEI response written under: " + teiFilePath, reset); 
                         fs.unlink(file, function(err2) { if (err2) { 
                                 return console.log('error removing downloaded PDF file'); 
                             } 
