@@ -39,7 +39,7 @@ Results will be written in the output directory (`-out`), using the ISTEX ID for
 If we use the full text service, the resulting full text TEI (including the bibiographical references) and the bibliographical references will be written as enrichments, in addition the TEI fulltext dedicated to ES indexing will be updated with the new bibliographical references produced by GROBID. 
 
 ```
-.                       // path indicated by the parameter -out
+. // path indicated by the parameter -out
 ├── F                        
 │   └── 6
 │       └── 9

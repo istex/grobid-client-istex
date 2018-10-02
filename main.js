@@ -106,7 +106,13 @@ function callGROBID(options, istexId, callback) {
                 }
 
                 // first write the TEI reponse 
-                var jsonFilePath = options.outPath+"/"+istexId+".tei.xml";
+                var jsonFilePath = options.outPath+"/"+
+                                    istexId[0]+"/"+
+                                    istexId[1]+"/"+
+                                    istexId[2]+"/"+ 
+                                    'resource/'+
+                                    'istex-grobid-fulltext/'+
+                                    istexId + ".tei.xml";
                 fs.writeFile(jsonFilePath, body, 'utf8', 
                     function(err) { 
                         if (err) { 
@@ -122,6 +128,9 @@ function callGROBID(options, istexId, callback) {
                     }
                 );
             });
+
+            // TODO: write ref bibs enrichment
+            // TODO: download and update the fulltext TEI with the extracted ref bibs 
         });
     });
 }
