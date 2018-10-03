@@ -8,6 +8,7 @@ const mkdirp = require('mkdirp'),
     path = require('path'),
     fs = require('fs'),
     https = require ('https'),
+    zlib = require('zlib'),
 //    sleep = require('sleep'),
     readline = require('readline');
 
@@ -117,7 +118,28 @@ function callGROBID(options, istexId, callback) {
                     return callback(err);
                 }
 
-                fs.writeFile(teiFilePath + istexId + ".tei.xml", body, 'utf8', 
+                var writeOptions = { encoding: 'utf8' };
+                var wstream = fs.createWriteStream(teiFilePath + istexId + ".tei.xml.gz", writeOptions);
+                wstream.on('finish', function (err) {
+                    if (err) { 
+                            console.log(err);
+                        } 
+                        console.log(white, "TEI response written under: " + teiFilePath, reset); 
+                        fs.unlink(file, function(err2) { if (err2) { 
+                                return console.log('error removing downloaded PDF file'); 
+                            } 
+                        }); 
+                        // delete the file async
+                        callback();
+                });
+
+                var compressStream = zlib.createGzip();
+                compressStream.pipe(wstream);
+
+                compressStream.write(body)
+                compressStream.end();
+
+                /*fs.writeFile(teiFilePath + istexId + ".tei.xml", body, 'utf8', 
                     function(err) { 
                         if (err) { 
                             console.log(err);
@@ -130,7 +152,7 @@ function callGROBID(options, istexId, callback) {
                         // delete the file async
                         callback();
                     }
-                );
+                );*/
             });
 
             // TODO: write ref bibs enrichment
