@@ -89,7 +89,7 @@ function callGROBID(options, istexId, callback) {
             }); 
             return true;
         } else if (res.statusCode != 200) {
-            console.log("Call to GROBID service failed with error " + res.statusCode);
+            console.log(red, "Call to GROBID service for " + istexId + " failed with error " + res.statusCode, reset);
             fs.unlink(file, function(err2) { if (err2) { 
                     return console.log('error removing downloaded PDF file'); 
                 } 
