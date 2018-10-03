@@ -132,7 +132,7 @@ function callGROBID(options, istexId, callback) {
                             } 
                         }); 
                         // delete the file async
-                        //callback();
+                        callback();
                 });
 
                 var compressStream = zlib.createGzip();
@@ -143,6 +143,7 @@ function callGROBID(options, istexId, callback) {
             });
 
             // finding the <listBibl> is much faster with string matching than using xslt
+            /*
             var ind1 = body.indexOf("<listBibl>");
             var ind2 = body.indexOf("</listBibl>");
             if ( (ind1 != -1) && (ind2 != -1)) {
@@ -177,7 +178,7 @@ function callGROBID(options, istexId, callback) {
                 // TODO: download and update the fulltext TEI with the extracted ref bibs 
 
 
-            }
+            }*/
         });
     });
 }
