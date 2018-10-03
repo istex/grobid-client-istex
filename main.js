@@ -108,8 +108,8 @@ function callGROBID(options, istexId, callback) {
                             istexId[1]+"/"+
                             istexId[2]+"/";
 
-        var teiFullTextFilePath = resourcePath + 'resource/istex-grobid-fulltext/';
-        var teiRefBibsFilePath = resourcePath + 'resource/refbibs/';
+        var teiFullTextFilePath = resourcePath + 'enrichment/istex-grobid-fulltext/';
+        var teiRefBibsFilePath = resourcePath + 'enrichment/refBibs/';
         var fullTextPath = resourcePath + 'fulltext/';
 
         res.on("end", function () {
@@ -158,7 +158,7 @@ function callGROBID(options, istexId, callback) {
                     }
 
                     var writeOptions = { encoding: 'utf8' };
-                    var wstream = fs.createWriteStream(teiRefBibsFilePath + istexId + ".tei.xml.gz", writeOptions);
+                    var wstream = fs.createWriteStream(teiRefBibsFilePath + istexId + ".refBibs.tei.xml.gz", writeOptions);
                     wstream.on('finish', function (err) {
                         if (err) { 
                                 console.log(err);
