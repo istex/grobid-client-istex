@@ -78,7 +78,7 @@ function callGROBID(options, istexId, callback) {
             // so we sleep a bit before retrying the process
             //sleep.sleep(options.sleep_time); 
             //return callGROBID(options, file, callback);
-            timer(3000).then(_=>callGROBID(options, file, callback));
+            timer(3000).then(_=>callGROBID(options, istexId, callback));
             return true; 
         } else if (res.statusCode == 204) {
             // success but no content, no need to read further the response and write an empty file
