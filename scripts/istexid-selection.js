@@ -59,7 +59,9 @@ var possibleGenres = ['research-article', 'article', 'other', 'book-reviews', 'a
 // the ISTEX name for the document type)
 function isValid(json) {
     corpusName = json.corpusName;
-    genre = json.genre[0];
+
+    for (ind in json.genre) {
+    genre = json.genre[ind];
     valid = false;
 
     // sanity check
@@ -152,6 +154,9 @@ function isValid(json) {
         }
     } 
 
+    if (valid)
+        return valid;
+    }
     return valid;
 }
 

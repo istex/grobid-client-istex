@@ -1,6 +1,6 @@
 { 
   "grobid_host" : "localhost",
   "grobid_port" : "8070",
-  "sleep_time" : 5000,
+  "sleep_time" : 2000,
   "temp_path": "/tmp/"
 }
