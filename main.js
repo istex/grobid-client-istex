@@ -103,15 +103,17 @@ function callGROBID(options, istexId, callback) {
         });
         
         // first write the TEI reponse 
-        var teiFilePath = options.outPath+"/"+
+        var resourcePath = options.outPath+"/"+
                             istexId[0]+"/"+
                             istexId[1]+"/"+
-                            istexId[2]+"/"+ 
-                            'resource/'+
-                            'istex-grobid-fulltext/';
+                            istexId[2]+"/";
+
+        var teiFullTextFilePath = resourcePath + 'resource/istex-grobid-fulltext/';
+        var teiRefBibsFilePath = resourcePath + 'resource/refbibs/';
+        var fullTextPath = resourcePath + 'fulltext/';
 
         res.on("end", function () {
-            mkdirp(teiFilePath, function(err, made) {
+            mkdirp(teiFullTextFilePath, function(err, made) {
                 // I/O error
                 if (err) {
                     fs.unlink(file, function() {}); 
@@ -119,18 +121,18 @@ function callGROBID(options, istexId, callback) {
                 }
 
                 var writeOptions = { encoding: 'utf8' };
-                var wstream = fs.createWriteStream(teiFilePath + istexId + ".tei.xml.gz", writeOptions);
+                var wstream = fs.createWriteStream(teiFullTextFilePath + istexId + ".tei.xml.gz", writeOptions);
                 wstream.on('finish', function (err) {
                     if (err) { 
                             console.log(err);
                         } 
-                        console.log(white, "TEI response written under: " + teiFilePath, reset); 
+                        console.log(white, "TEI response written under: " + teiFullTextFilePath, reset); 
                         fs.unlink(file, function(err2) { if (err2) { 
                                 return console.log('error removing downloaded PDF file'); 
                             } 
                         }); 
                         // delete the file async
-                        callback();
+                        //callback();
                 });
 
                 var compressStream = zlib.createGzip();
@@ -138,25 +140,44 @@ function callGROBID(options, istexId, callback) {
 
                 compressStream.write(body)
                 compressStream.end();
-
-                /*fs.writeFile(teiFilePath + istexId + ".tei.xml", body, 'utf8', 
-                    function(err) { 
-                        if (err) { 
-                            console.log(err);
-                        } 
-                        console.log(white, "TEI response written under: " + teiFilePath, reset); 
-                        fs.unlink(file, function(err2) { if (err2) { 
-                                return console.log('error removing downloaded PDF file'); 
-                            } 
-                        }); 
-                        // delete the file async
-                        callback();
-                    }
-                );*/
             });
 
-            // TODO: write ref bibs enrichment
-            // TODO: download and update the fulltext TEI with the extracted ref bibs 
+            // finding the <listBibl> is much faster with string matching than using xslt
+            var ind1 = body.indexOf("<listBibl>");
+            var ind2 = body.indexOf("</listBibl>");
+            if ( (ind1 != -1) && (ind2 != -1)) {
+                var refbibsSegment = body.substring(ind1, ind2+11);
+
+                // write ref bibs enrichment
+                mkdirp(teiRefBibsFilePath, function(err, made) {
+                    // I/O error
+                    if (err) {
+                        fs.unlink(file, function() {}); 
+                        return callback(err);
+                    }
+
+                    var writeOptions = { encoding: 'utf8' };
+                    var wstream = fs.createWriteStream(teiRefBibsFilePath + istexId + ".tei.xml.gz", writeOptions);
+                    wstream.on('finish', function (err) {
+                        if (err) { 
+                                console.log(err);
+                            } 
+                            console.log(white, "TEI response written under: " + teiRefBibsFilePath, reset); 
+                            callback();
+                    });
+
+                    var compressStream = zlib.createGzip();
+                    compressStream.pipe(wstream);
+                    compressStream.write("<standoff>");
+                    compressStream.write(refbibsSegment)
+                    compressStream.write("</standoff>");
+                    compressStream.end();
+                });
+
+                // TODO: download and update the fulltext TEI with the extracted ref bibs 
+
+
+            }
         });
     });
 }
