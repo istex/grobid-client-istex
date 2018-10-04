@@ -65,7 +65,9 @@ function callGROBID(options, istexId, callback) {
     form.submit(grobid_url+options.action, function(err, res, body) {
         if (err) {
             console.log(err);
-            return false;
+            if (callback) 
+                callback(err.message);
+            //return false;
         }
 
         if (!res) {
@@ -80,7 +82,7 @@ function callGROBID(options, istexId, callback) {
             //sleep.sleep(options.sleep_time); 
             //return callGROBID(options, file, callback);
             timer(3000).then(_=>callGROBID(options, istexId, callback));
-            return true; 
+            //return true; 
         } else if (res.statusCode == 204) {
             // success but no content, no need to read further the response and write an empty file
             fs.unlink(file, function(err2) { if (err2) { 
@@ -88,12 +90,15 @@ function callGROBID(options, istexId, callback) {
                 } 
             }); 
         } else if (res.statusCode != 200) {
-            console.log(red, "Call to GROBID service for " + istexId + " failed with error " + res.statusCode, reset);
+            console.log(red, "Call to GROBID service for " + istexId + " failed with error " + 
+                res.statusCode + ", " + res.statusMessage, reset);
             fs.unlink(file, function(err2) { if (err2) { 
                     return console.log('error removing downloaded PDF file'); 
                 } 
-            }); 
-            return false;
+            });
+            if (callback) 
+                callback(res.statusMessage); 
+            //return false;
         }
 
         if (res.statusCode != 204) {
@@ -116,30 +121,33 @@ function callGROBID(options, istexId, callback) {
                 mkdirp(teiFullTextFilePath, function(err, made) {
                     // I/O error
                     if (err) {
-                        fs.unlink(file, function() {}); 
-                        return callback(err);
-                    }
-
-                    var writeOptions = { encoding: 'utf8' };
-                    var wstream = fs.createWriteStream(teiFullTextFilePath + istexId + ".tei.xml.gz", writeOptions);
-                    wstream.on('finish', function (err) {
-                        if (err) { 
-                                console.log(err);
+                        fs.unlink(file, function(err2) { if (err2) { 
+                                return console.log('error removing downloaded PDF file'); 
                             } 
-                            console.log(white, "TEI response written under: " + teiFullTextFilePath, reset); 
-                            fs.unlink(file, function(err2) { if (err2) { 
-                                    return console.log('error removing downloaded PDF file'); 
+                        }); 
+                        return callback(err);
+                    } else {
+                        var writeOptions = { encoding: 'utf8' };
+                        var wstream = fs.createWriteStream(teiFullTextFilePath + istexId + ".tei.xml.gz", writeOptions);
+                        wstream.on('finish', function (err) {
+                            if (err) { 
+                                    console.log(err);
                                 } 
-                            }); 
-                            // delete the file async
-                            callback();
-                    });
+                                console.log(white, "TEI response written under: " + teiFullTextFilePath, reset); 
+                                fs.unlink(file, function(err2) { if (err2) { 
+                                        return console.log('error removing downloaded PDF file'); 
+                                    } 
+                                }); 
+                                // delete the file async
+                                callback();
+                        });
 
-                    var compressStream = zlib.createGzip();
-                    compressStream.pipe(wstream);
+                        var compressStream = zlib.createGzip();
+                        compressStream.pipe(wstream);
 
-                    compressStream.write(body)
-                    compressStream.end();
+                        compressStream.write(body)
+                        compressStream.end();
+                    }
                 });
 
                 // finding the <listBibl> is much faster with string matching than using xslt
