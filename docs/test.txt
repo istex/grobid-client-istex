@@ -1,0 +1,2 @@
+10 000 documents -> 9 903 TEI (97 fail, 0.97%) -> 1091s -> 9.17 doc. per s -> 193M TEI written (gzipped)
+100 000 documents -> 99 230 TEI (770 fail, 0.76%) -> 9434s -> 10.60 doc. per s -> 1.4 GB TEI written (gzipped)

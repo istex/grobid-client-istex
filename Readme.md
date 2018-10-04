@@ -36,11 +36,11 @@ This command will extract the header of the PDF files corresponding to the ISTEX
 
 Results will be written in the output directory (`-out`), using the ISTEX ID for creating a sub-hierarchy following the ISTEX resource policy. This is done in two times. The main method (`main.js`) called with the full text service will write first the fulltext produced by GROBID in the expected hierarchy. The complementary script `complete-output.js` will additionally write the bibliographical reference file, and download/update the fulltext TEI for the object. The second step is executed by the command:
 
-> node complete-output *WHERE_TO_PUT_THE_RESULTS*
+> node complete-output -in *PATH_TO_THE_LIST_OF_ISTEX_ID_TO_PROCESS* -out *WHERE_TO_PUT_THE_RESULTS*
 
-For instance, if the results have been initally produced under `~/tmp/out` as above, the complementary result files are written by calling:
+For instance, if the results have been initally produced based on the selected list of ISTEX ID `~/tmp/selectedIstexIds.txt` and outputed under `~/tmp/out` as above, the complementary result files are written by calling:
 
-> node complete-output ~/tmp/out
+> node complete-output -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out
 
 If we use the full text service, the resulting full text TEI (including the bibiographical references) and the bibliographical references will be written as enrichments, in addition the TEI fulltext dedicated to ES indexing will be updated with the new bibliographical references produced by GROBID. 
 
