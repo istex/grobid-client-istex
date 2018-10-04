@@ -101,7 +101,7 @@ function callGROBID(options, istexId, callback) {
             //return false;
         }
 
-        if (res.statusCode != 204) {
+        if (res.statusCode == 200) {
             var body = "";
             res.on("data", function (chunk) {
                 body += chunk;
@@ -125,7 +125,7 @@ function callGROBID(options, istexId, callback) {
                                 return console.log('error removing downloaded PDF file'); 
                             } 
                         }); 
-                        return callback(err);
+                        callback(err);
                     } else {
                         var writeOptions = { encoding: 'utf8' };
                         var wstream = fs.createWriteStream(teiFullTextFilePath + istexId + ".tei.xml.gz", writeOptions);
@@ -189,7 +189,7 @@ function callGROBID(options, istexId, callback) {
                 }*/
 
             });
-        } else {
+        } else if (res.statusCode == 204) {
             // empty content, nothing to write
             callback();
         }
