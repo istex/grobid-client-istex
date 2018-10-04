@@ -34,7 +34,13 @@ This command will extract the header of the PDF files corresponding to the ISTEX
 
 ## Output
 
-Results will be written in the output directory (`-out`), using the ISTEX ID for creating a sub-hierarchy following the ISTEX resource policy. 
+Results will be written in the output directory (`-out`), using the ISTEX ID for creating a sub-hierarchy following the ISTEX resource policy. This is done in two times. The main method (`main.js`) called with the full text service will write first the fulltext produced by GROBID in the expected hierarchy. The complementary script `complete-output.js` will additionally write the bibliographical reference file, and download/update the fulltext TEI for the object. The second step is executed by the command:
+
+> node complete-output *WHERE_TO_PUT_THE_RESULTS*
+
+For instance, if the results have been initally produced under `~/tmp/out` as above, the complementary result files are written by calling:
+
+> node complete-output ~/tmp/out
 
 If we use the full text service, the resulting full text TEI (including the bibiographical references) and the bibliographical references will be written as enrichments, in addition the TEI fulltext dedicated to ES indexing will be updated with the new bibliographical references produced by GROBID. 
 
@@ -46,11 +52,11 @@ If we use the full text service, the resulting full text TEI (including the bibi
 │           └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E
 │               └── enrichment
 │                   └── istex-grobid-fulltext
-│                       └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.tei.xml // fulltext produced by GROBID
+│                       └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.tei.xml // fulltext produced by GROBID (main.js)
 │                   └── refbibs
-│                       └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.references.tei.xml // ref bib produced by GROBID
+│                       └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.refbibs.tei.xml // ref bib produced by GROBID (complete-output.js)
 │               └── fulltext
-│                   └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.tei.xml // update of fulltext TEI with new ref. bib. produced by GROBID
+│                   └── F69BC0D8FA56B7610E60D1BA94AF9266BD9E7B5E.tei.xml // update of fulltext TEI with new ref. bib. produced by GROBID (complete-output.js)
 │
 ```
 
