@@ -82,6 +82,14 @@ function generateRefBibsFile(options, istexId, callback) {
 	            
 	            compressStream.end();
 	        });
+
+	        downloadIstexFullText(options, istexId, refbibsSegment, function(err) {
+		  		if (err) {
+	                console.log(err);
+	                callback();
+		  		}
+	            console.log(blue, "updated full text for " + line, reset);
+		  	});
 	    }
 	});
 }
@@ -95,7 +103,7 @@ function downloadIstexFullText(options, istexId, callback) {
     var dest = options.temp_path + "/" + istexId + '.tei.xml';
     var file = fs.createWriteStream(dest);
     var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
-    print('downloading', tei_url, '...')
+    console.log('downloading', tei_url, '...')
     var request = https.get(tei_url, function(response) {
         response.pipe(file);
         file.on('finish', function() {
@@ -126,14 +134,14 @@ function updateFullTextFile(options, istexId, callback) {
     	callback("file does not exist: " + teiFullTextFilePath);
         return false;
 	}
-	print('this file has been entirely downloaded:', tempTeiFullTextFilePath)
+	console.log('this file has been entirely downloaded:', tempTeiFullTextFilePath)
     var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
     rstream.on('data', function(chunk) {
     	tei += chunk;
     });
 
-    var ind1 = tei.indexOf("<listBibl>");
+    var ind1 = tei.indexOf("<listBibl");
 	var ind2 = tei.indexOf("</listBibl>");
 	if ( (ind1 == -1) || (ind2 == -1)) {
 		callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
@@ -198,22 +206,40 @@ function updateFullTextFile(options, istexId, callback) {
 }
 
 function processCompletion(options, output) {
+	var q = async.queue(function (istexId, callback) {
+        //callGROBID(options, file, callback);
+        //downloadIstexPDF(options, istexId, callback);
+        generateRefBibsFile(options, line, function(err) {
+	  		if (err)
+                console.log(err);
+            console.log(blue, "processed bib refs for " + line, reset);
+	  	});
+	  	/*downloadIstexFullText(options, line, function(err) {
+	  		if (err)
+                console.log(err);
+            console.log(blue, "updated full text for " + line, reset);
+	  	});*/
+
+    }, options.concurrency);
+
+    q.drain = function() {
+        console.log(red, "\nall tasks completed!", reset);
+        end();
+    }
+
 	const rl = readline.createInterface({
 	  	input: fs.createReadStream(options.inPath)
 	});
 
 	rl.on('line', (line) => {
-	  	generateRefBibsFile(options, line, function(err) {
-	  		if (err)
-                console.log(err);
-            console.log(blue, "processed bib refs for " + line, reset);
-	  	});
-	  	downloadIstexFullText(options, line, function(err) {
-	  		if (err)
-                console.log(err);
-            console.log(blue, "updated full text for " + line, reset);
-	  	});
-	});
+        //console.log(`ISTEX ID from file: ${line}`);
+        q.push(line, function (err) {  
+            if (err) { 
+                return console.log('error in adding tasks to queue'); 
+            }  
+            console.log(orange, 'task is completed', reset);  
+        });
+    });
 }
 
 
@@ -228,8 +254,8 @@ function init() {
     options.temp_path = config.temp_path;
 
     // default service is full text processing
-    options.action = "processFulltextDocument";
-    options.concurrency = 10; // number of concurrent call to GROBID, default is 10
+    //options.action = "processFulltextDocument";
+    options.concurrency = 50; // number of concurrent call to the ISTEX API
     var attribute; // name of the passed parameter
     // get the path to the PDF to be processed
     for (var i = 2, len = process.argv.length; i < len; i++) {
@@ -237,9 +263,11 @@ function init() {
             options.inPath = process.argv[i];
         } else if (process.argv[i-1] == "-out") {
             options.outPath = process.argv[i];
-        } else if (!process.argv[i].startsWith("-")) {
+        } else if (process.argv[i-1] == "-n") {
+            options.concurrency = parseInt(process.argv[i], 10);
+        } /*else if (!process.argv[i].startsWith("-")) {
             options.action = process.argv[i];
-        }
+        }*/
     }
 
     if (!options.inPath) {
