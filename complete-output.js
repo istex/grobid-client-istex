@@ -95,6 +95,7 @@ function downloadIstexFullText(options, istexId, callback) {
     var dest = options.temp_path + "/" + istexId + '.tei.xml';
     var file = fs.createWriteStream(dest);
     var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
+    print('downloading', tei_url, '...')
     var request = https.get(tei_url, function(response) {
         response.pipe(file);
         file.on('finish', function() {
@@ -125,8 +126,8 @@ function updateFullTextFile(options, istexId, callback) {
     	callback("file does not exist: " + teiFullTextFilePath);
         return false;
 	}
-
-    var rstream = fs.createReadStream(tempTeiFullTextFilePath).pipe(zlib.createGunzip());
+	print('this file has been entirely downloaded:', tempTeiFullTextFilePath)
+    var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
     rstream.on('data', function(chunk) {
     	tei += chunk;
