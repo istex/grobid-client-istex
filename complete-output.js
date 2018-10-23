@@ -97,7 +97,7 @@ function generateRefBibsFile(options, istexId, callback) {
 /**
  * Download the PDF associated to an Istex 
  */
-function downloadIstexFullText(options, istexId, callback) {
+function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
 	// download the current full text file via the API:
 	// url is https://api.istex.fr/document/*ISTEX_ID*/fulltext/tei
     var dest = options.temp_path + "/" + istexId + '.tei.xml';
@@ -107,7 +107,7 @@ function downloadIstexFullText(options, istexId, callback) {
     var request = https.get(tei_url, function(response) {
         response.pipe(file);
         file.on('finish', function() {
-            file.close(updateFullTextFile(options, istexId, callback));  
+            file.close(updateFullTextFile(options, istexId, refbibsSegment, callback));  
             // close() is async, call method after close completes
         });
     }).on('error', function(err) { // Handle errors
@@ -121,7 +121,7 @@ function downloadIstexFullText(options, istexId, callback) {
     });
 }
 
-function updateFullTextFile(options, istexId, callback) {
+function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	
 	// update is possible 
 	// * if the following is present under respStmt:
@@ -209,7 +209,7 @@ function processCompletion(options, output) {
 	var q = async.queue(function (istexId, callback) {
         //callGROBID(options, file, callback);
         //downloadIstexPDF(options, istexId, callback);
-        generateRefBibsFile(options, line, function(err) {
+        generateRefBibsFile(options, istexId, function(err) {
 	  		if (err)
                 console.log(err);
             console.log(blue, "processed bib refs for " + line, reset);
