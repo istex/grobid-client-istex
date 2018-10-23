@@ -76,9 +76,9 @@ function generateRefBibsFile(options, istexId, callback) {
 	            var compressStream = zlib.createGzip();
 	            compressStream.pipe(wstream);
 
-	            compressStream.write("<TEI>\n\t<teiHeader/>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
+	            compressStream.write("<TEI>\n\t<standOff>\n\t\t<teiHeader/>\n\t\t<text>\n\t\t\t<front/>\n\t\t\t<body/>\n\t\t\t<back>\n");
 	            compressStream.write(refbibsSegment)
-	            compressStream.write("\n\t\t</back>\n\t</text>\n</TEI>");
+	            compressStream.write("\n\t\t\t</back>\n\t\t</text>\n\t</standOff>\n</TEI>");
 	            
 	            compressStream.end();
 	        });
@@ -180,14 +180,14 @@ function updateFullTextFile(options, istexId, callback) {
 	                if (err) { 
 	                        console.log(err);
 	                    } 
-	                    console.log(white, "Refbibs written under: " + fullTextPath, reset); 
+	                    console.log(white, "fulltext written under: " + fullTextPath, reset); 
 	                    callback();
 	            });
 
 	            var compressStream = zlib.createGzip();
 	            compressStream.pipe(wstream);
 
-	            compressStream.write();
+	            compressStream.write(tei);
 	            
 	            compressStream.end();
 	        });
@@ -205,7 +205,12 @@ function processCompletion(options, output) {
 	  	generateRefBibsFile(options, line, function(err) {
 	  		if (err)
                 console.log(err);
-            console.log(blue, "processed " + line, reset);
+            console.log(blue, "processed bib refs for " + line, reset);
+	  	});
+	  	downloadIstexFullText(options, line, function(err) {
+	  		if (err)
+                console.log(err);
+            console.log(blue, "updated full text for " + line, reset);
 	  	});
 	});
 }
