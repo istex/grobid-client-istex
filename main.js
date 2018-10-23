@@ -58,6 +58,9 @@ function callGROBID(options, istexId, callback) {
     form.append("input", fs.createReadStream(file));
     form.append("consolidateHeader", "0");
     form.append("consolidateCitations", "0");
+    form.append("teiCoordinates", "persName");
+    // persName figure ref biblStruct formula
+
     var grobid_url = "http://" + options.grobid_host;
     if (options.grobid_port) 
         grobid_url += ':' + options.grobid_port

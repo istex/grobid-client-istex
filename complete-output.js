@@ -131,6 +131,15 @@ function updateFullTextFile(options, istexId, callback) {
     rstream.on('data', function(chunk) {
     	tei += chunk;
     });
+
+    var ind1 = tei.indexOf("<listBibl>");
+	var ind2 = tei.indexOf("</listBibl>");
+	if ( (ind1 == -1) || (ind2 == -1)) {
+		callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
+        return false;
+    }
+
+    var refbibsSegment = body.substring(ind1, ind2+11);
     rstream.on('finish', function (err) {
 	    if (err) { 
 	        console.log(err);
@@ -146,6 +155,7 @@ function updateFullTextFile(options, istexId, callback) {
 	    } else {
 	    	// case we don't have ref. bib. at all
 
+	    	// we will need to update the tei header/respStmt 
 	    }
 
 	    if (toUpdate) {
