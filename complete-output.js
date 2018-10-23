@@ -88,7 +88,7 @@ function generateRefBibsFile(options, istexId, callback) {
 	                console.log(err);
 	                callback();
 		  		}
-	            console.log(blue, "updated full text for " + line, reset);
+	            console.log(blue, "updated full text for " + istexId, reset);
 		  	});
 	    }
 	});
@@ -141,14 +141,14 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     	tei += chunk;
     });
 
-    var ind1 = tei.indexOf("<listBibl");
+    /*var ind1 = tei.indexOf("<listBibl");
 	var ind2 = tei.indexOf("</listBibl>");
 	if ( (ind1 == -1) || (ind2 == -1)) {
 		callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
         return false;
     }
 
-    var refbibsSegment = body.substring(ind1, ind2+11);
+    var refbibsSegment = body.substring(ind1, ind2+11);*/
     rstream.on('finish', function (err) {
 	    if (err) { 
 	        console.log(err);
@@ -212,7 +212,7 @@ function processCompletion(options, output) {
         generateRefBibsFile(options, istexId, function(err) {
 	  		if (err)
                 console.log(err);
-            console.log(blue, "processed bib refs for " + line, reset);
+            console.log(blue, "processed bib refs for " + istexId, reset);
 	  	});
 	  	/*downloadIstexFullText(options, line, function(err) {
 	  		if (err)
