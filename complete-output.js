@@ -95,7 +95,7 @@ function generateRefBibsFile(options, istexId, callback) {
 }
 
 /**
- * Download the PDF associated to an Istex 
+ * Download the full text associated to an Istex 
  */
 function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
 	// download the current full text file via the API:
@@ -202,6 +202,12 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	        });
 
 	    }
+
+	    // clean the tmp tei fulltext
+	    fs.unlink(tempTeiFullTextFilePath, function(err2) { if (err2) { 
+                return console.log('error removing downloaded temporary tei file'); 
+            } 
+        }); 
 	});
 }
 
