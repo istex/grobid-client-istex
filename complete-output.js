@@ -158,8 +158,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     	tei += chunk;
     });
 
-    rstream.on('end', function (err) {
-    //rstream.on('close', () => {
+    rstream.on('close', function (err) {
     	console.log("tmp tei file read");
 	    if (err) { 
 	        console.log(err);
