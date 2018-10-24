@@ -131,7 +131,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	// get the dowloaded full text
 	var tempTeiFullTextFilePath = options.temp_path + "/" + istexId + '.tei.xml';
 	if (!fs.existsSync(tempTeiFullTextFilePath)) {
-    	callback("file does not exist: " + tempTeiFullTextFilePath);
+		if (callback) 
+	    	callback("file does not exist: " + tempTeiFullTextFilePath);
         return false;
 	}
 	console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
@@ -139,7 +140,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     var tei = ""
 
     rstream.on('error', function(error) {
-        callback("cannot read file: " + tempTeiFullTextFilePath);
+    	if (callback) 
+	        callback("cannot read file: " + tempTeiFullTextFilePath);
         return false;
     })
 
@@ -147,14 +149,6 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     	tei += chunk;
     });
 
-    /*var ind1 = tei.indexOf("<listBibl");
-	var ind2 = tei.indexOf("</listBibl>");
-	if ( (ind1 == -1) || (ind2 == -1)) {
-		callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
-        return false;
-    }
-
-    var refbibsSegment = body.substring(ind1, ind2+11);*/
     rstream.on('end', function (err) {
     //rstream.on('close', () => {
     	console.log("tmp tei file read");
@@ -199,7 +193,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	                    console.log(err);
 	                } 
 	                console.log(white, "fulltext written under: " + fullTextPath, reset); 
-	                callback();
+	                if (callback)
+		                callback(err);
 	            });
 
 	            var compressStream = zlib.createGzip();
@@ -212,7 +207,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);
 
 				} else {
-					callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
+					if (callback)
+						callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
         			return false;
     			}
 
@@ -227,26 +223,20 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    fs.unlink(tempTeiFullTextFilePath, function(err2) { if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
             } 
-       		callback();
+            if (callback)
+	       		callback();
         }); 
 	});
 }
 
 function processCompletion(options, output) {
 	var q = async.queue(function (istexId, callback) {
-        //callGROBID(options, file, callback);
-        //downloadIstexPDF(options, istexId, callback);
-        generateRefBibsFile(options, istexId, function(err) {
+        /*generateRefBibsFile(options, istexId, function(err) {
 	  		if (err)
                 console.log(err);
             console.log(blue, "processed bib refs for " + istexId, reset);
-	  	});
-	  	/*downloadIstexFullText(options, line, function(err) {
-	  		if (err)
-                console.log(err);
-            console.log(blue, "updated full text for " + line, reset);
 	  	});*/
-
+	  	generateRefBibsFile(options, istexId, callback);
     }, options.concurrency);
 
     q.drain = function() {
