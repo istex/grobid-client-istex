@@ -202,8 +202,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	                    console.log(err);
 	                } 
 	                console.log(white, "fulltext written under: " + fullTextPath, reset); 
-	                if (callback)
-		                callback(err);
+	                /*if (callback)
+		                callback(err);*/
 	            });
 
 	            var compressStream = zlib.createGzip();
@@ -214,10 +214,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 				var ind2 = tei.indexOf("</listBibl>");
 				if ( (ind1 != -1) && (ind2 != -1)) {
 					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);
-				} else {
-					//if (callback)
-					//	callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
-    			}
+				} 
 
 	            compressStream.write(tei);
 	            compressStream.end();
