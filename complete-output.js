@@ -214,11 +214,9 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 				var ind2 = tei.indexOf("</listBibl>");
 				if ( (ind1 != -1) && (ind2 != -1)) {
 					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);
-
 				} else {
-					if (callback)
-						callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
-        			return false;
+					//if (callback)
+					//	callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
     			}
 
 	            compressStream.write(tei);
@@ -230,7 +228,10 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    // clean the tmp tei fulltext
 	    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
 	    	if (err2) { 
-                return console.log('error removing downloaded temporary tei file'); 
+                console.log('error removing downloaded temporary tei file'); 
+                if (callback)
+	       			callback();
+                return false;
             } 
             if (callback)
 	       		callback();
