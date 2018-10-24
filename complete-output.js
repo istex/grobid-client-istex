@@ -169,10 +169,10 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    if (ind != -1) {
 	    	// we can update the ref bib with the new ones
 	    	toUpdate = true;
-	    	print('grobid refbibs to update')
+	    	console.log('grobid refbibs to update')
 	    } else {
 	    	// case we don't have ref. bib. at all
-	    	print('no grobid refbibs to update')
+	    	console.log('no grobid refbibs to update')
 	    	// we will need to update the tei header/respStmt 
 	    }
 
