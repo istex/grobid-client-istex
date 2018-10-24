@@ -86,14 +86,15 @@ function generateRefBibsFile(options, istexId, callback) {
 	            compressStream.write("\n\t\t\t</back>\n\t\t</text>\n\t</standOff>\n</TEI>");
 	            
 	            compressStream.end();
-	        });
+	        
+		        downloadIstexFullText(options, istexId, refbibsSegment, function(err) {
+			  		if (err) {
+		                console.log(err);
+		                //callback();
+			  		}
+		            console.log(blue, "updated full text for " + istexId, reset);
+			  	});
 
-	        downloadIstexFullText(options, istexId, refbibsSegment, function(err) {
-		  		if (err) {
-	                console.log(err);
-	                //callback();
-		  		}
-	            console.log(blue, "updated full text for " + istexId, reset);
 		  	});
 	    }
 	});
