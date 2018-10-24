@@ -134,7 +134,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     	callback("file does not exist: " + teiFullTextFilePath);
         return false;
 	}
-	console.log('this file has been entirely downloaded:', tempTeiFullTextFilePath)
+	console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
     var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
     rstream.on('data', function(chunk) {
@@ -163,7 +163,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    	toUpdate = true;
 	    } else {
 	    	// case we don't have ref. bib. at all
-
+	    	print('not grobid refbibs to update')
 	    	// we will need to update the tei header/respStmt 
 	    }
 
@@ -203,6 +203,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 
 	    }
 
+	    console.log('deleting tmp tei...')
 	    // clean the tmp tei fulltext
 	    fs.unlink(tempTeiFullTextFilePath, function(err2) { if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
