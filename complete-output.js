@@ -131,12 +131,18 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	// get the dowloaded full text
 	var tempTeiFullTextFilePath = options.temp_path + "/" + istexId + '.tei.xml';
 	if (!fs.existsSync(tempTeiFullTextFilePath)) {
-    	callback("file does not exist: " + teiFullTextFilePath);
+    	callback("file does not exist: " + tempTeiFullTextFilePath);
         return false;
 	}
 	console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
     var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
+
+    rstream.on('error', function(error) {
+        callback("cannot read file: " + tempTeiFullTextFilePath);
+        return false;
+    })
+
     rstream.on('data', function(chunk) {
     	tei += chunk;
     });
@@ -149,7 +155,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     }
 
     var refbibsSegment = body.substring(ind1, ind2+11);*/
-    rstream.on('finish', function (err) {
+    rstream.on('end', function (err) {
+    //rstream.on('close', () => {
     	console.log("tmp tei file read");
 	    if (err) { 
 	        console.log(err);
