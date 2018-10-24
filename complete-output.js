@@ -200,10 +200,23 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	            wstream.on('finish', function (err) {
 	                if (err) { 
 	                    console.log(err);
-	                } 
-	                console.log(white, "fulltext written under: " + fullTextPath, reset); 
+	                } else
+	                	console.log(white, "fulltext written under: " + fullTextPath, reset); 
 	                /*if (callback)
 		                callback(err);*/
+
+		            console.log('deleting tmp tei...')
+				    // clean the tmp tei fulltext
+				    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
+				    	if (err2) { 
+			                console.log('error removing downloaded temporary tei file'); 
+			                if (callback)
+				       			callback();
+			                return false;
+			            } 
+			            if (callback)
+				       		callback();
+			        }); 
 	            });
 
 	            var compressStream = zlib.createGzip();
@@ -221,18 +234,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	        });
 	    }
 
-	    console.log('deleting tmp tei...')
-	    // clean the tmp tei fulltext
-	    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
-	    	if (err2) { 
-                console.log('error removing downloaded temporary tei file'); 
-                if (callback)
-	       			callback();
-                return false;
-            } 
-            if (callback)
-	       		callback();
-        }); 
+	    
         /*if (callback)
 	       	callback();*/
 	});
