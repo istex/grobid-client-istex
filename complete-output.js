@@ -34,7 +34,8 @@ function generateRefBibsFile(options, istexId, callback) {
     var teiRefBibsFilePath = resourcePath + 'enrichment/refbibs/';
 
     if (!fs.existsSync(teiFullTextFilePath)) {
-    	callback("file does not exist: " + teiFullTextFilePath);
+    	if (callback)
+ 		   	callback("file does not exist: " + teiFullTextFilePath);
         return false;
 	}
 
@@ -46,7 +47,9 @@ function generateRefBibsFile(options, istexId, callback) {
     rstream.on('finish', function (err) {
 	    if (err) { 
 	        console.log(err);
-	        return callback(err);
+	        if (callback)
+	        	callback(err);
+	        return false;
 	    } 
 		//fs.readFile(, 'utf8', function(err, body) {
 
@@ -60,7 +63,9 @@ function generateRefBibsFile(options, istexId, callback) {
 	        mkdirp(teiRefBibsFilePath, function(err, made) {
 	            // I/O error
 	            if (err) {
-	                return callback(err);
+	            	if (callback)
+	                	callback(err);
+	                return false;
 	            }
 
 	            var writeOptions = { encoding: 'utf8' };
@@ -215,7 +220,6 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	            compressStream.write(tei);
 	            compressStream.end();
 	        });
-
 	    }
 
 	    console.log('deleting tmp tei...')
@@ -224,10 +228,11 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    	if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
             } 
-            
-        }); 
-        if (callback)
+            if (callback)
 	       	callback();
+        }); 
+        /*if (callback)
+	       	callback();*/
 	});
 }
 
@@ -274,7 +279,7 @@ function init() {
 
     // default service is full text processing
     //options.action = "processFulltextDocument";
-    options.concurrency = 50; // number of concurrent call to the ISTEX API
+    options.concurrency = 10; // number of concurrent call to the ISTEX API
     var attribute; // name of the passed parameter
     // get the path to the PDF to be processed
     for (var i = 2, len = process.argv.length; i < len; i++) {

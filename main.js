@@ -136,15 +136,15 @@ function callGROBID(options, istexId, callback) {
                         var wstream = fs.createWriteStream(teiFullTextFilePath + istexId + ".tei.xml.gz", writeOptions);
                         wstream.on('finish', function (err) {
                             if (err) { 
-                                    console.log(err);
+                                console.log(err);
+                            } 
+                            console.log(white, "TEI response written under: " + teiFullTextFilePath, reset); 
+                            fs.unlink(file, function(err2) { if (err2) { 
+                                    return console.log('error removing downloaded PDF file'); 
                                 } 
-                                console.log(white, "TEI response written under: " + teiFullTextFilePath, reset); 
-                                fs.unlink(file, function(err2) { if (err2) { 
-                                        return console.log('error removing downloaded PDF file'); 
-                                    } 
-                                }); 
-                                // delete the file async
-                                callback();
+                            }); 
+                            // above, delete the file async
+                            callback();
                         });
 
                         var compressStream = zlib.createGzip();
