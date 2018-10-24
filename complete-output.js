@@ -192,7 +192,18 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	        mkdirp(fullTextPath, function(err, made) {
 	            // I/O error
 	            if (err) {
-	                return callback(err);
+	          		// clean the tmp tei fulltext
+				    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
+				    	if (err2) { 
+			                console.log('error removing downloaded temporary tei file'); 
+			                if (callback)
+				       			callback();
+			                return false;
+			            } 
+			            if (callback)
+				       		callback();
+			        }); 
+	                return false;
 	            }
 
 	            var writeOptions = { encoding: 'utf8' };
