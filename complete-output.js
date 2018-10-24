@@ -162,7 +162,8 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     	console.log("tmp tei file read");
 	    if (err) { 
 	        console.log(err);
-	        return callback(err);
+	        callback(err);
+	        return false;
 	    } 
 
 	    // check if the bib refs hae been produced by grobid
