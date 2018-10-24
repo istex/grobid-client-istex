@@ -110,18 +110,21 @@ function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
     var file = fs.createWriteStream(dest);
     var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
     console.log('downloading', tei_url, '...')
+    
     var request = https.get(tei_url, function(response) {
         response.pipe(file);
         file.on('finish', function() {
             file.close(updateFullTextFile(options, istexId, refbibsSegment, callback));  
             // close() is async, call method after close completes
         });
-    }).on('error', function(err) { // Handle errors
-        fs.unlink(dest, function(err2) { if (err2) { 
+    })
+
+    request.on('error', function(err) { 
+    	// delete the file async
+        /*fs.unlink(dest, function(err2) { if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
             } 
-        }); 
-        // delete the file async
+        });*/ 
         if (callback) 
             callback(err.message);
     });
@@ -230,7 +233,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
                 return console.log('error removing downloaded temporary tei file'); 
             } 
             if (callback)
-	       	callback();
+	       		callback();
         }); 
         /*if (callback)
 	       	callback();*/
