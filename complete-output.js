@@ -86,7 +86,7 @@ function generateRefBibsFile(options, istexId, callback) {
 	        downloadIstexFullText(options, istexId, refbibsSegment, function(err) {
 		  		if (err) {
 	                console.log(err);
-	                callback();
+	                //callback();
 		  		}
 	            console.log(blue, "updated full text for " + istexId, reset);
 		  	});
@@ -220,12 +220,14 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 
 	    console.log('deleting tmp tei...')
 	    // clean the tmp tei fulltext
-	    fs.unlink(tempTeiFullTextFilePath, function(err2) { if (err2) { 
+	    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
+	    	if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
             } 
-            if (callback)
-	       		callback();
+            
         }); 
+        if (callback)
+	       	callback();
 	});
 }
 
