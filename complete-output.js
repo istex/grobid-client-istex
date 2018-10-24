@@ -164,7 +164,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    } 
 
 	    // check if the bib refs hae been produced by grobid
-	    var ind = tei.indexOf("Références bibliographiques récupérées via GROBID");
+	    var ind = tei.indexOf("via GROBID");
 	    var toUpdate = false;
 	    if (ind != -1) {
 	    	// we can update the ref bib with the new ones
@@ -196,17 +196,27 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	            var wstream = fs.createWriteStream(fullTextPath + istexId + ".tei.xml.gz", writeOptions);
 	            wstream.on('finish', function (err) {
 	                if (err) { 
-	                        console.log(err);
-	                    } 
-	                    console.log(white, "fulltext written under: " + fullTextPath, reset); 
-	                    callback();
+	                    console.log(err);
+	                } 
+	                console.log(white, "fulltext written under: " + fullTextPath, reset); 
+	                callback();
 	            });
 
 	            var compressStream = zlib.createGzip();
 	            compressStream.pipe(wstream);
 
+	            // catching area to be replaced
+	            var ind1 = tei.indexOf("<listBibl");
+				var ind2 = tei.indexOf("</listBibl>");
+				if ( (ind1 != -1) && (ind2 != -1)) {
+					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);
+
+				} else {
+					callback("no bibrefs in TEI: " + tempTeiFullTextFilePath);
+        			return false;
+    			}
+
 	            compressStream.write(tei);
-	            
 	            compressStream.end();
 	        });
 
@@ -217,6 +227,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    fs.unlink(tempTeiFullTextFilePath, function(err2) { if (err2) { 
                 return console.log('error removing downloaded temporary tei file'); 
             } 
+       		callback();
         }); 
 	});
 }
