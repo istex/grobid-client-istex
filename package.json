@@ -14,7 +14,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "mkdirp": "^0.5.1",
-    "request": "^2.87.0",
+    "request": "2.87.0",
     "form-data": "^2.2.0",
     "requestretry": "3.0.1"
   }
