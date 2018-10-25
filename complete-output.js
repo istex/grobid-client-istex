@@ -34,70 +34,68 @@ function generateRefBibsFile(options, istexId, callback) {
     var teiRefBibsFilePath = resourcePath + 'enrichment/refbibs/';
 
     if (!fs.existsSync(teiFullTextFilePath)) {
+    	console.log("file does not exist: " + teiFullTextFilePath)
     	if (callback)
- 		   	callback("file does not exist: " + teiFullTextFilePath);
-        return false;
-	}
+ 		   	callback();
+	} else {
+	    var rstream = fs.createReadStream(teiFullTextFilePath).pipe(zlib.createGunzip());
+	    var body = ""
+	    rstream.on('data', function(chunk) {
+	    	body += chunk;
+	    });
+	    rstream.on('finish', function (err) {
+		    if (err) { 
+		    	console.log('error reading grobid tei file', err)
+		        if (callback)
+		        	callback();
+		        return false;
+		    } 
 
-    var rstream = fs.createReadStream(teiFullTextFilePath).pipe(zlib.createGunzip());
-    var body = ""
-    rstream.on('data', function(chunk) {
-    	body += chunk;
-    });
-    rstream.on('finish', function (err) {
-	    if (err) { 
-	        console.log(err);
-	        if (callback)
-	        	callback(err);
-	        return false;
-	    } 
-		//fs.readFile(, 'utf8', function(err, body) {
+			// finding the <listBibl> is much faster with string matching than using xslt
+		    var ind1 = body.indexOf("<listBibl>");
+		    var ind2 = body.indexOf("</listBibl>");
+		    if ( (ind1 != -1) && (ind2 != -1)) {
+		        var refbibsSegment = body.substring(ind1, ind2+11);
 
-		// finding the <listBibl> is much faster with string matching than using xslt
-	    var ind1 = body.indexOf("<listBibl>");
-	    var ind2 = body.indexOf("</listBibl>");
-	    if ( (ind1 != -1) && (ind2 != -1)) {
-	        var refbibsSegment = body.substring(ind1, ind2+11);
+		        // write ref bibs enrichment
+		        mkdirp(teiRefBibsFilePath, function(err, made) {            
+		            if (err) {
+		            	// I/O error
+			            console.log('io error for creating refbibs directory', err)
+		            	if (callback)
+		                	callback();
+		                return false;
+		            }
 
-	        // write ref bibs enrichment
-	        mkdirp(teiRefBibsFilePath, function(err, made) {
-	            // I/O error
-	            if (err) {
-	            	if (callback)
-	                	callback(err);
-	                return false;
-	            }
-
-	            var writeOptions = { encoding: 'utf8' };
-	            var wstream = fs.createWriteStream(teiRefBibsFilePath + istexId + ".refBibs.tei.xml.gz", writeOptions);
-	            wstream.on('finish', function (err) {
-	                if (err) { 
-	                        console.log(err);
+		            var writeOptions = { encoding: 'utf8' };
+		            var wstream = fs.createWriteStream(teiRefBibsFilePath + istexId + ".refBibs.tei.xml.gz", writeOptions);
+		            wstream.on('finish', function (err) {
+		                if (err) { 
+	                        console.log('error refbibs file completion', err);
+	                        if (callback)
+		                		callback();
+		                	return false;
 	                    } 
 	                    console.log(white, "Refbibs written under: " + teiRefBibsFilePath, reset); 
-	                    callback();
-	            });
+		               	downloadIstexFullText(options, istexId, refbibsSegment, callback);
+		            });
 
-	            var compressStream = zlib.createGzip();
-	            compressStream.pipe(wstream);
+		            var compressStream = zlib.createGzip();
+		            compressStream.pipe(wstream);
 
-	            compressStream.write("<TEI>\n\t<standOff>\n\t\t<teiHeader/>\n\t\t<text>\n\t\t\t<front/>\n\t\t\t<body/>\n\t\t\t<back>\n");
-	            compressStream.write(refbibsSegment)
-	            compressStream.write("\n\t\t\t</back>\n\t\t</text>\n\t</standOff>\n</TEI>");
-	            
-	            compressStream.end();
-	        
-		        downloadIstexFullText(options, istexId, refbibsSegment, function(err) {
-			  		if (err) {
-		                console.log(err);
-		                //callback();
-			  		}
-		            console.log(blue, "updated full text for " + istexId, reset);
+		            compressStream.write("<TEI>\n\t<standOff>\n\t\t<teiHeader/>\n\t\t<text>\n\t\t\t<front/>\n\t\t\t<body/>\n\t\t\t<back>\n");
+		            compressStream.write(refbibsSegment)
+		            compressStream.write("\n\t\t\t</back>\n\t\t</text>\n\t</standOff>\n</TEI>");
+		            
+		            compressStream.end();		  
 			  	});
-
-		  	});
-	    }
-	});
+		    } else {
+		    	console.log("grobid refBibs not found for" + teiFullTextFilePath);
+		    	if (callback)
+		        	callback();
+		    }
+		});
+	}
 }
 
 /**
@@ -117,16 +115,19 @@ function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
             file.close(updateFullTextFile(options, istexId, refbibsSegment, callback));  
             // close() is async, call method after close completes
         });
+        file.on('error', function(err) { 
+	        console.log('io error for writing downloaded fulltext file', err);
+    	    if (callback) 
+        	    callback();
+        	return false;
+        });
     })
 
-    request.on('error', function(err) { 
-    	// delete the file async
-        /*fs.unlink(dest, function(err2) { if (err2) { 
-                return console.log('error removing downloaded temporary tei file'); 
-            } 
-        });*/ 
+    request.on('error', function(err) {  
+        console.log('request to fulltext file failed', err);
         if (callback) 
-            callback(err.message);
+            callback();
+        return false;
     });
 }
 
@@ -140,17 +141,19 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	// get the dowloaded full text
 	var tempTeiFullTextFilePath = options.temp_path + "/" + istexId + '.tei.xml';
 	if (!fs.existsSync(tempTeiFullTextFilePath)) {
+		console.log("file does not exist: " + tempTeiFullTextFilePath);
 		if (callback) 
-	    	callback("file does not exist: " + tempTeiFullTextFilePath);
+	    	callback();
         return false;
 	}
-	console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
+	//console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
     var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
 
     rstream.on('error', function(error) {
+    	console.log("cannot read file: " + tempTeiFullTextFilePath);
     	if (callback) 
-	        callback("cannot read file: " + tempTeiFullTextFilePath);
+	        callback();
         return false;
     })
 
@@ -159,10 +162,11 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
     });
 
     rstream.on('close', function (err) {
-    	console.log("tmp tei file read");
+    	//console.log("tmp tei file read");
 	    if (err) { 
-	        console.log(err);
-	        callback(err);
+	        console.log('failed to complete tmp tei file reading', err);
+	        if (callback)
+		        callback();
 	        return false;
 	    } 
 
@@ -196,13 +200,10 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 				    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
 				    	if (err2) { 
 			                console.log('error removing downloaded temporary tei file'); 
-			                if (callback)
-				       			callback();
-			                return false;
 			            } 
-			            if (callback)
-				       		callback();
 			        }); 
+			        if (callback)
+				       	callback();
 	                return false;
 	            }
 
@@ -213,17 +214,12 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	                    console.log(err);
 	                } else
 	                	console.log(white, "fulltext written under: " + fullTextPath, reset); 
-	                /*if (callback)
-		                callback(err);*/
 
 		            console.log('deleting tmp tei...')
 				    // clean the tmp tei fulltext
 				    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
 				    	if (err2) { 
 			                console.log('error removing downloaded temporary tei file'); 
-			                if (callback)
-				       			callback();
-			                return false;
 			            } 
 			            if (callback)
 				       		callback();
@@ -243,21 +239,22 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	            compressStream.write(tei);
 	            compressStream.end();
 	        });
+	    } else {
+	    	// we go on
+	    	// clean the tmp tei fulltext
+		    fs.unlink(tempTeiFullTextFilePath, function(err2) { 
+		    	if (err2) { 
+	                console.log('error removing downloaded temporary tei file'); 
+	            } 
+	            if (callback)
+		       		callback();
+	        }); 
 	    }
-
-	    
-        /*if (callback)
-	       	callback();*/
 	});
 }
 
 function processCompletion(options, output) {
 	var q = async.queue(function (istexId, callback) {
-        /*generateRefBibsFile(options, istexId, function(err) {
-	  		if (err)
-                console.log(err);
-            console.log(blue, "processed bib refs for " + istexId, reset);
-	  	});*/
 	  	generateRefBibsFile(options, istexId, callback);
     }, options.concurrency);
 
@@ -267,11 +264,11 @@ function processCompletion(options, output) {
     }
 
 	const rl = readline.createInterface({
-	  	input: fs.createReadStream(options.inPath)
-	});
+        input: fs.createReadStream(options.inPath),
+        crlfDelay: Infinity
+    });
 
 	rl.on('line', (line) => {
-        //console.log(`ISTEX ID from file: ${line}`);
         q.push(line, function (err) {  
             if (err) { 
                 return console.log('error in adding tasks to queue'); 
@@ -304,9 +301,7 @@ function init() {
             options.outPath = process.argv[i];
         } else if (process.argv[i-1] == "-n") {
             options.concurrency = parseInt(process.argv[i], 10);
-        } /*else if (!process.argv[i].startsWith("-")) {
-            options.action = process.argv[i];
-        }*/
+        }
     }
 
     if (!options.inPath) {
