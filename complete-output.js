@@ -90,7 +90,7 @@ function generateRefBibsFile(options, istexId, callback) {
 		            compressStream.end();		  
 			  	});
 		    } else {
-		    	console.log("grobid refBibs not found for" + teiFullTextFilePath);
+		    	console.log("grobid refBibs not found for " + teiFullTextFilePath);
 		    	if (callback)
 		        	callback();
 		    }
@@ -179,6 +179,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	    	console.log('grobid refbibs to update')
 	    } else {
 	    	// case we don't have ref. bib. at all
+
 	    	console.log('no grobid refbibs to update')
 	    	// we will need to update the tei header/respStmt 
 	    }
