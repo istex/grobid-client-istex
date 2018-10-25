@@ -14,3 +14,7 @@ Creating the selected list of Istex ID relevant for GROBID full text structuring
 For spliting file by lines, use the bash script
 > scripts/listSplit.sh list.txt
 
+
+> launch with more memory size
+
+node --max-old-space-size=8192 --optimize-for-size --max-executable-size=8192  --max_old_space_size=8192 --optimize_for_size --max_executable_size=8192 main.js -in resources/sublist.txt -out ~/tmp/out/ -n 30 

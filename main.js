@@ -192,7 +192,7 @@ function processGROBID(options) {
     });
          
     rl.on('line', (line) => {
-        console.log(`ISTEX ID from file: ${line}`);
+        //console.log(`ISTEX ID from file: ${line}`);
 
         q.push(line, function (err) {  
             if (err) { 

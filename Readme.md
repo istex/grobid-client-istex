@@ -51,6 +51,10 @@ To produce the ISTEX full text TEI resources for the existing ISTEX objects alre
 
 This will produce the full text TEI in the directory structure appropriate to ISTEX, calling GROBID with the parameters corresponding to what is expected by ISTEX formats.
 
+If the collection of documents is very large (several millions), better to increase usable memory for node.js:
+
+> node --max-old-space-size=8192 --optimize-for-size --max-executable-size=8192  --max_old_space_size=8192 --optimize_for_size --max_executable_size=8192 main.js -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out/ -n 30 processFulltextDocument 
+
 - complete the output for ISTEX:
 
 > > node complete-output -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out
