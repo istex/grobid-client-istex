@@ -150,7 +150,11 @@ function callGROBID(options, istexId, callback) {
                         var compressStream = zlib.createGzip();
                         compressStream.pipe(wstream);
 
-                        compressStream.write(body)
+                        // we need to complete the header by adding some ISTEX header policy
+                        body = body.replace("</titleStmt>", 
+                            "\t<respStmt>\n\t\t\t\t\t<resp>Produced by GROBID</resp>\n\t\t\t\t\t<name resp=\"ISTEX-API\">ISTEX-API (INIST-CNRS)</name>\n\t\t\t\t</respStmt>\n\t\t\t</titleStmt>");
+
+                        compressStream.write(body);
                         compressStream.end();
                     }
                 });
