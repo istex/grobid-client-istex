@@ -170,18 +170,26 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	        return false;
 	    } 
 
-	    // check if the bib refs hae been produced by grobid
+	    // check in the TEI full text if the bib refs hae been produced by grobid
 	    var ind = tei.indexOf("via GROBID");
 	    var toUpdate = false;
+	    var respStmtToUpdate = false;
 	    if (ind != -1) {
-	    	// we can update the ref bib with the new ones
+	    	// we can update the old GROBID ref bib with the new GROBID ones
 	    	toUpdate = true;
-	    	console.log('grobid refbibs to update')
+	    	console.log('grobid refbibs TO update: ', istexId);
 	    } else {
-	    	// case we don't have ref. bib. at all
-
-	    	console.log('no grobid refbibs to update')
-	    	// we will need to update the tei header/respStmt 
+	    	// case we don't have ref. bib. at all, then we can update the file too
+	    	var ind2 = tei.indexOf('<listBibl/>');
+	    	if (ind2 != -1) {
+		    	// we can update the no-ref-bib with the new GROBID ones
+		    	toUpdate = true;
+		    	console.log('no existing ref,, so adding grobid refbibs')
+		    	// we will need to update the tei header/respStmt 
+		    	respStmtToUpdate = true;
+		    } else {
+		    	console.log('no grobid refbibs to update', istexId);
+	    	}
 	    }
 
 	    if (toUpdate) {
@@ -234,9 +242,22 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	            var ind1 = tei.indexOf("<listBibl");
 				var ind2 = tei.indexOf("</listBibl>");
 				if ( (ind1 != -1) && (ind2 != -1)) {
-					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);
-				} 
 
+					// at this stage, we might want to remove the coordinates in the fulltext document
+					// and just leave them in the enrichment file
+					var regex = /coords="[0-9,;.]*" /gi;
+					refbibsSegment = refbibsSegment.replace(regex, "");
+
+					// update bib ref
+					tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);				
+
+					if (respStmtToUpdate) {
+						// we need to add in the header a statement about the ref bib produced via GROBID
+						// which goes under <titleStmt>
+						var viaGROBID = '<respStmt><resp>Références bibliographiques récupérées via GROBID</resp><name resp="ISTEX-API">ISTEX-API (INIST-CNRS)</name></respStmt>';
+						tei = tei.replace('</titleStmt>', viaGROBID+'</titleStmt>');
+					}
+				}
 	            compressStream.write(tei);
 	            compressStream.end();
 	        });
