@@ -37,6 +37,8 @@ Example:
 
 This command will extract the header of the PDF files corresponding to the ISTEX ID given in `~/tmp/selectedIstexIds.txt` with 20 concurrent calls to the GROBID server and write the results under `~/tmp/out`.
 
+By default, if the resulting file is already present for an ISTEX ID, the file will **not** be re-processed. For forcing te processing of all the ISTEX PDF, even if a result is already present in the result directory, use the option `-force`. 
+
 ## Generating full resources for ISTEX 
 
 To produce the ISTEX full text TEI resources for the existing ISTEX objects already loaded on the ISTEX plaform, the process is as follow:

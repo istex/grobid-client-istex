@@ -194,12 +194,22 @@ function processGROBID(options) {
     rl.on('line', (line) => {
         //console.log(`ISTEX ID from file: ${line}`);
 
-        q.push(line, function (err) {  
-            if (err) { 
-                return console.log('error in adding tasks to queue'); 
-            }  
-            console.log(orange, 'task is completed', reset);  
-        });
+        // check if the file has already been processed 
+        var istexId = line;
+        var resourcePath = options.outPath+"/"+
+                                istexId[0]+"/"+
+                                istexId[1]+"/"+
+                                istexId[2]+"/"+
+                                istexId+"/";
+        var teiFullTextFilePath = resourcePath + 'enrichment/istex-grobid-fulltext/' + istexId + ".tei.xml.gz"
+        if (!fs.existsSync(teiFullTextFilePath) || options.force) {
+            q.push(line, function (err) {  
+                if (err) { 
+                    return console.log('error in adding tasks to queue'); 
+                }  
+                console.log(orange, 'task is completed', reset);  
+            });
+        }
     });
 }
 
@@ -215,6 +225,7 @@ function init() {
     options.grobid_port = config.grobid_port;
     options.sleep_time = config.sleep_time;
     options.temp_path = config.temp_path;
+    options.force = false;
 
     // default service is full text processing
     options.action = "processFulltextDocument";
@@ -228,9 +239,11 @@ function init() {
             options.outPath = process.argv[i];
         } else if (process.argv[i-1] == "-n") {
             options.concurrency = parseInt(process.argv[i], 10);
+        } else if (process.argv[i] == "-force") {
+            options.force = true;
         } else if (!process.argv[i].startsWith("-")) {
             options.action = process.argv[i];
-        }
+        } 
     }
 
     console.log("\nGROBID service: ", red, options.action+"\n", reset);
