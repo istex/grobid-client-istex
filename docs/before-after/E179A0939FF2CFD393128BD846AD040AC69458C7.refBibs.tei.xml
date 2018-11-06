@@ -1,0 +1,125 @@
+<TEI>
+	<standOff>
+		<teiHeader/>
+		<text>
+			<front/>
+			<body/>
+			<back>
+<listBibl>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="21,67.41,342.28,320.66,7.20;21,42.70,352.63,345.88,7.20;21,42.50,363.43,345.95,7.20;21,42.50,373.73,345.22,7.20;21,42.25,384.03,345.98,7.20;21,42.70,394.63,196.85,7.20" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Quod concedimus et credimus esse verum, idem de qualitate dicentes: modi enim qualitatis corporis sunt quinque, crassities nimia, camositas, extenuata macies, synthesis, et aequalitas. Pinguedo causatur ex frigiditate et humiditate, camositas ex caliditate et humiditate, extenuata macies ex caliditate et siccitate, synthesis ex frigiditate et siccitate, aequalitas ex om­ nium humorum aequali complexione, cujus aequalitas credimus corpus beatissimae Virginis exstitsse</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="21,67.95,404.93,319.66,7.20;21,42.50,415.48,270.80,7.20;21,56.90,425.83,331.71,7.20;21,42.70,436.38,345.24,7.20;21,42.69,446.68,69.11,7.20" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Signa competentis craseos secundum totam habitudinem animalis [virtutis]: color quidem ex rubeo et albo commixtus, capilli vero et rubei et medicriter crispi</title>
+	</analytic>
+	<monogr>
+		<title level="m">Grant, 707. Michael Scot agrees. See h is L ib e r p h isio n o m ia e 24</title>
+		<meeting><address><addrLine>Galen, M</addrLine></address></meeting>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+		</imprint>
+	</monogr>
+	<note>S ou rce B o o k in M e d ie v a l S ci­ ence. ic rotegni, II, fol. 13ra)</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="21,67.90,457.23,320.82,7.20;21,42.49,467.33,345.90,7.20;21,42.49,477.88,331.26,7.20;21,57.10,488.43,331.46,7.20;21,42.70,499.03,345.92,7.20;21,42.95,509.33,345.74,7.20;21,42.70,519.63,346.23,7.20;21,42.70,529.98,158.94,7.20" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Et solus file qui est ex rubore et albedine compositus, ut dicit Johannicius, est ab aequalitate procedens; alii vero omnes ab inaequalitate. Primus est nobilissimus et corpori eucratico determinatus, et sic a Galeno in temperata complexione positus est, et simfii modo a Constantino in Pantechne</title>
+	</analytic>
+	<monogr>
+		<title level="m">Si totum corpus fuerit temperatum inter album et rufum, inter humidum et calidum, tempera[men]tum significat. Si ruffum et croceum. calorem nimium. Si tantum album frigiditatem&quot; (L &apos;Arte u niversale d e lla m edicina (Pantegni), chap. 13</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page">60</biblScope>
+		</imprint>
+	</monogr>
+	<note>Constantine remarks. Hunc igitur concedimus in corpore beatissimae Virginis existisse&quot; (Ps.-Albert, M a ria le 20.2, ed. Borgnet, 45</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="21,67.70,540.28,320.55,7.20;21,42.70,550.62,345.46,7.20;21,42.49,560.92,158.97,7.20" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">P ili cito nascentes. et se in altum surgentes. ostendunt cerebri siccitatem. Si nimis crispi. nigri et multi, et cito decalvandi. calorem significant</title>
+		<idno>chap. 10</idno>
+		<imprint>
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+	<note>et siccitatem&quot; (L &apos;Arte universale d e lla m edicin a (Pantegni</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="21,67.44,571.22,137.52,7.20;21,56.89,581.57,331.55,7.20;21,42.69,591.62,345.76,7.20;21,42.69,602.22,345.97,7.20;23,41.03,384.03,346.66,7.20;23,41.03,394.63,57.90,7.20;23,55.68,405.18,331.09,7.20;23,40.77,415.73,345.90,7.20;23,41.27,426.03,261.36,7.20;23,55.67,436.38,331.18,7.20;23,41.27,446.93,345.90,7.20;23,41.47,457.48,235.25,7.20" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Borgnet, 47). Cf. Michael abundance o f the watery or aqueous humor in the eye, and as a result they suffer from a sort o f night blindness. 92 &quot;Et sic beata Virgo in colore cutis fu.it alba et rubea mixtim; in capillis autem et in oculis nigra temperate fuit, sicut et ejus Filium dilectum speciosissimum forma prae filiis hominum credimus fuisse coloratum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Scot</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Et hoc est quod dicit Constantinus in P antech n e in superioribus&quot; (Ps.-Albert, M a ria le 20.3</title>
+		<editor>Ps.-Albert, M a ria le 20.3</editor>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+		</imprint>
+	</monogr>
+	<note>Borgnet, 47). 93 &quot;Secundum complexionem innatam soboles solent assimilari parentibus, et e contra; sed videmus, quod genus Judaeorum ut in pluribus habet nigros capillos. ergo et Domina nostra cum fuit de progenie Judaeorum&quot; (ibid. 19.2.5, ed. Borgnet, 44</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="23,65.96,467.58,42.16,7.20;23,55.67,477.88,330.13,7.20;23,41.02,488.43,345.34,7.20;23,41.28,498.78,342.83,7.20;23,55.42,509.08,331.46,7.20;23,41.02,519.43,345.54,7.20;23,41.72,529.98,345.04,7.20;23,41.01,540.53,345.22,7.20;23,40.76,550.83,346.23,7.20;23,41.01,561.18,345.46,7.20;23,41.01,571.48,345.38,7.20" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">could no longer see the Jews as &apos;older brothers&apos; and even sup­ pressed the Jewishness o f Jesus o f Nazareth and his mother&quot; (14). The dark-complexioned antiJewish stereotype w as certainly known to Jews themselves in the thirteenth century</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ibid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Los</forename><surname>Berkeley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Angeles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">95 This is something which Sara Lipton claims is still absent from the B ib le m oralisee, made for the king o f France between 1220 and 1229. See</title>
+		<editor>Franco-German Jews</editor>
+		<imprint>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="20" to="21" />
+		</imprint>
+	</monogr>
+	<note>96 In addition to Ruth MellinkofF, O u tcasts: S ig n s o f O th ern ess in N orthern E u ropean A r t o f the L a te M id d le A ges, see also Heinz Schreckenberg&apos;s The Jew in C hristian A r t</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="23,41.26,581.82,346.45,7.20;23,41.01,591.87,199.57,7.20" xml:id="b6">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">David</forename><surname>Berger</surname></persName>
+		</author>
+		<title level="m">The Jew ish -C h ristian D e b a te in the H igh M id d le A ges. A C ritic a l E dition o f the N izzah on Vetus</title>
+		<meeting><address><addrLine>Philadelphia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1979" />
+			<biblScope unit="page">340</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="23,65.96,601.97,320.70,7.20" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Ramon Llull stated</title>
+		<imprint/>
+	</monogr>
+	<note>our Lady [Mary] was o f the house o f David, who w as the</note>
+</biblStruct>
+
+				</listBibl>
+			</back>
+		</text>
+	</standOff>
+</TEI>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Version 0.1 générée le 31-01-2018-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://istex.github.io/odd-istex/out/istex.xsd"
+     xml:lang="fr">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title level="a" type="main">Sémantique et hémisphère droit</title>
+         </titleStmt>
+         <publicationStmt>
+            <authority>ISTEX</authority>
+            <publisher>EDK</publisher>
+            <date when="2008">2008</date>
+            <availability>
+               <licence>© 2008 médecine/sciences - Inserm / SRMS</licence>
+               <p>médecine/sciences - Inserm / SRMS</p>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="content-type"
+                  source="research-article"
+                  scheme="https://content-type.data.istex.fr/ark:/67375/XTP-7474895G-0">research-article</note>
+            <note type="publication-type"
+                  scheme="https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B">journal</note>
+         </notesStmt>
+         <sourceDesc>
+            <biblStruct type="article">
+               <analytic>
+                  <title level="a" type="main" xml:lang="fr">Sémantique et hémisphère droit</title>
+                  <title level="a" type="alt" xml:lang="en">Semantic processing and right hemisphere</title>
+                  <author xml:id="author-0000" role="corresp">
+                     <persName>
+                        <surname>Kahlaoui</surname>
+                        <forename type="first">Karima</forename>
+                     </persName>
+                     <affiliation>
+                        <address>
+                           <addrLine>Centre de recherche, Institut universitaire de gériatrie de Montréal, 4565, chemin Queen-Mary, Montréal, Québec H3W 1W5, Canada</addrLine>
+                        </address>
+                     </affiliation>
+                     <email>karima.kahlaoui@umontreal.ca</email>
+                  </author>
+                  <author xml:id="author-0001">
+                     <persName>
+                        <surname>Joanette</surname>
+                        <forename type="first">Yves</forename>
+                     </persName>
+                     <affiliation>
+                        <address>
+                           <addrLine>Centre de recherche, Institut universitaire de gériatrie de Montréal, 4565, chemin Queen-Mary, Montréal, Québec H3W 1W5, Canada</addrLine>
+                        </address>
+                     </affiliation>
+                     <affiliation>
+                        <address>
+                           <addrLine>Faculté de médecine, Université de Montréal, Montréal, Canada</addrLine>
+                        </address>
+                     </affiliation>
+                  </author>
+                  <idno type="istex">A869706C64774A5DBF0B9DDDA4F1F9478CE3F565</idno>
+                  <idno type="ark">ark:/67375/80W-3X8HGNPC-G</idno>
+                  <idno type="DOI">10.1051/medsci/200824172</idno>
+                  <idno type="publisher-id">medsci2008241p72</idno>
+                  <idno type="dkey">10.1051/medsci/200824172</idno>
+               </analytic>
+               <monogr>
+                  <title level="j" type="main">médecine/sciences</title>
+                  <title level="j" type="abbrev">Med Sci (Paris)</title>
+                  <title level="j" type="publisher-id">medsci</title>
+                  <title level="j" type="url">http://www.medecinesciences.org</title>
+                  <idno type="pISSN">0767-0974</idno>
+                  <idno type="eISSN">1958-5381</idno>
+                  <imprint>
+                     <publisher>EDK</publisher>
+                     <date type="Final-Published" when="2010-12-10"/>
+                     <date type="Published" when="2008-01"/>
+                     <date type="ePublished" when="2008-01-15"/>
+                     <date type="Published" when="2008-01-15"/>
+                     <biblScope unit="vol">24</biblScope>
+                     <biblScope unit="issue">1</biblScope>
+                     <biblScope unit="page" from="72">72</biblScope>
+                     <biblScope unit="page" to="76">76</biblScope>
+                     <biblScope unit="page-count">5</biblScope>
+                     <biblScope unit="ref-count">33</biblScope>
+                     <biblScope unit="fig-count">2</biblScope>
+                     <biblScope unit="table-count">0</biblScope>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <abstract xml:lang="fr">
+            <p>Ainsi, après avoir longtemps considéré que le langage était exclusivement dévolu au cerveau gauche, il est de plus en plus démontré que l’hémisphère droit joue également un rôle dans ce domaine. L’objectif de cet article est de résumer ce que l’on sait aujourd’hui de la contribution de l’hémisphère droit au traitement sémantique des mots isolés à travers trois approches différentes : comportementale, clinique et de neuro-imagerie.</p>
+         </abstract>
+         <abstract xml:lang="en">
+            <p>Although language is a function traditionally attributed to the left hemisphere, experimental and clinical reports indicate that the right hemisphere may also have a capacity to process verbal information. Indeed, some attributes of words, including their concreteness, imageability and emotional component, have been shown to be associated with right-hemispheric processing capacities. In addition, studies on brain-damaged, splitbrain patients and studies realized with neuroimaging techniques have also suggested that the right hemisphere has some linguistic capacities. The main objective of this article is to review specific contribution of right cerebral hemisphere to semantic processing from three complementary approaches: (1) divided visualfield experiments with healthy participants, (2) studies of patients with acquired lesions of both left and right hemispheres, and (3) neuroimaging studies.</p>
+         </abstract>
+         <textClass ana="subject">
+            <keywords scheme="section">
+               <term>M/S revues</term>
+            </keywords>
+         </textClass>
+         <langUsage>
+            <language ident="fr"/>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div xml:id="S1">
+            <head>Sémantique et hémisphère droit</head>
+            <p>Le cerveau est incontestablement l’organe le plus sophistiqué au monde. Il est constitué de deux masses distinctes sensiblement symétriques, les hémisphères cérébraux. Leur symétrie globale avait conduit à penser dans un premier temps qu’ils étaient équivalents sur le plan fonctionnel jusqu’aux premières études de neuropsychologie, réalisées dans la seconde moitié du XIX<hi rend="superscript">e</hi> siècle, qui ont permis de proposer une anatomie fonctionnelle du langage située principalement dans l’hémisphère gauche (HG). Bien qu’aujourd’hui encore on estime que le langage est l’une des fonctions supérieures les plus latéralisées, de nombreux auteurs s’accordent à dire que l’hémisphère droit (HD) est loin d’être muet en ce qui concerne le langage, en particulier le traitement sémantique des mots. Aborder la question de la sémantique des mots, c’est aborder la question de la mémoire sémantique. Celle-ci est communément définie comme la connaissance des choses du monde et de leurs interrelations. Indissociable de la mémoire à long terme, elle fait référence à la mémoire des mots, des idées, des concepts et s’avère indispensable pour toute activité cognitive s’exerçant sur du matériel ayant du sens. Pour appréhender l’organisation des connaissances stockées en mémoire sémantique, le paradigme d’amorçage sémantique est souvent utilisé <hi rend="italic">(Figure 1)</hi>. Classiquement, un mot cible, par exemple <hi rend="italic">infirmière</hi>, est traité plus rapidement lorsqu’il est précédé par un mot amorce qui lui est sémantiquement lié, comme <hi rend="italic">docteur</hi>, que lorsque le mot amorce est sémantiquement non lié, comme <hi rend="italic">beurre</hi>, ceci grâce à un accès facilité à sa représentation en mémoire. Cette facilitation ou « effet d’amorçage » peut affecter différemment chacun des hémisphères cérébraux en fonction de la nature du lien pouvant exister entre l’amorce et la cible [<ref type="bib" target="#"/>
+               <ref type="bibr" target="#R1">1</ref>] et/ou du décours temporel du traitement de l’information [<ref type="bib" target="#"/>
+               <ref type="bibr" target="#R2">2</ref>, <ref type="bib" target="#"/>
+               <ref type="bibr" target="#R3">3</ref>]. Depuis ces dernières années, le nombre d’études réalisées au moyen du paradigme d’amorçage sémantique et dévolues aux habiletés sémantiques de l’HD ne cesse de croître. Cet article a pour objectif de résumer les connaissances actuelles relatives à la contribution spécifique de l’HD à la sémantique des mots. L’emphase sera mise sur les données issues des approches comportementales, cliniques, et ainsi que des lectures tirées de la neuroimagerie cérébrale.<figure xml:id="F1">
+                  <head type="label">Figure 1.</head>
+                  <figDesc>
+                     <hi rend="bold">
+                        <hi rend="italic">Exemple d’un essai expérimental utilisant un paradigme d’amorçage sémantique.</hi>
+                     </hi>
+                  </figDesc>
+                  <graphic url="medsci2008241p72-fig1.jpg"/>
+               </figure>
+            </p>
+            <div xml:id="S2">
+               <head>Approche comportementale</head>
+               <p>À l’heure actuelle, la technique la plus couramment utilisée pour appréhender la latéralisation cérébrale est la technique tachistoscopique en champ visuel divisé [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R4">4</ref>] <hi rend="italic">(Figure 2)</hi>. Cette technique consiste à présenter brièvement des stimulus dans le champ visuel droit (CVD) ou le champ visuel gauche (CVG). En raison de la décussation des voies visuelles, les stimulus présentés d’un côté du point central sont projetés directement dans l’hémisphère controlatéral. Ainsi, les stimulus présentés dans le CVD sont adressés prioritairement à l’HG tandis que les stimulus présentés dans le CVG sont adressés prioritairement à l’HD. Le postulat de base est que la performance du sujet (mesurée en fonction de ses bonnes réponses, et du temps de réponse) sera meilleure si le stimulus a été présenté initialement à l’hémisphère spécialisé pour son traitement. Chez les individus droitiers, la supériorité du CVD pour le traitement des mots est un résultat robuste qui reflète une dominance fonctionnelle de l’HG. Cependant, l’HD assurerait une contribution propre au traitement sémantique, comme en témoignent les asymétries des effets d’amorçage sémantique en fonction de la nature du lien existant entre un stimulus amorce et un stimulus cible. Ainsi, un phénomène d’asymétrie favorisant l’HD est mis en évidence lorsque l’amorce et la cible sont établies sur la base de leur appartenance à une même catégorie sémantique sans que celle-ci entretienne une forte association (comme dans le cas des relations catégorielles ; par exemple : <hi rend="italic">ours-vache</hi> [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R5">5</ref>]). Or, ce phénomène n’apparaît pas lorsque les stimulus sont uniquement des associés (c’est-à-dire des mots à co-occurrence contextuelle ne partageant pas de caractéristiques sémantiques ; par exemple, <hi rend="italic">policier-prison</hi> [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R6">6</ref>]).<figure xml:id="F2">
+                     <head type="label">Figure 2.</head>
+                     <figDesc>
+                        <hi rend="bold">
+                           <hi rend="italic">Projection hémisphérique en fonction des champs visuels droit et gauche</hi>
+                        </hi> (tiré de [<ref type="bibr" target="#R4">4</ref>]).</figDesc>
+                     <graphic url="medsci2008241p72-fig2.jpg"/>
+                  </figure>
+               </p>
+               <p>Pour mieux comprendre cette différence, Chiarello et ses collaborateurs [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R7">7</ref>] ont entrepris une étude comparant différents types de relations entre l’amorce et la cible. Ces auteurs rapportent des effets d’amorçage qui ne témoignent d’aucune asymétrie fonctionnelle lorsque le lien présent dans un couple amorce-cible contient un double rapport : associatif et catégoriel (mots à co-occurrence contextuelle et appartenant à la même catégorie sémantique ; par exemple, <hi rend="italic">infirmière-docteur</hi>). En revanche, un effet d’amorçage sémantique plus important est associé à l’HD lorsque la relation sémantique est uniquement de type catégorielle. Devant ces résultats, les auteurs attribuent à chaque hémisphère des modes de fonctionnement et d’activation sémantique qui diffèrent selon le type de lien existant entre les mots. Cette conception est reprise et développée par Beeman [<ref type="bibr" target="#R1">1</ref>] : l’HG serait caractérisé par une activation de forte amplitude et sémantiquement focalisée autour du mot cible ; pour sa part, l’HD procéderait selon un mode d’activation de faible amplitude et sémantiquement étendu autour du mot cible. Ces traitements, de nature complémentaire, seraient tous deux requis pour une compréhension normale. Néanmoins, certains auteurs vont plus loin que la simple notion d’activation concernant la nature et l’organisation des informations au niveau hémisphérique et estiment que ces différences de traitement seraient dépendantes du décours temporel du traitement de l’information, l’information étant initialement activée dans l’HG. D’une très grande utilité, les travaux de Koivisto [<ref type="bibr" target="#R2">2</ref>, <ref type="bibr" target="#R3">3</ref>] font ressortir un effet d’amorçage sémantique aussi bien dans l’HG que dans l’HD suggérant le rôle de chaque hémisphère dans le traitement sémantique. Dans son étude princeps, Koivisto [<ref type="bibr" target="#R2">2</ref>] présente des couples de mots non associés mais de même catégorie sémantique en utilisant différents types de SOA<ref type="fn" target="#FN2">1</ref> (165 ms, 250 ms, 500 ms, 750 ms). Un effet d’amorçage est obtenu dans l’HG à 165 ms et dans l’HD à 750 ms. Les SOA intermédiaires font apparaître une diminution progressive de l’amorçage dans l’HG et une augmentation progressive de l’amorçage dans l’HD. Ces résultats suggèrent que l’HG est capable d’activer initialement un grand nombre d’informations catégoriquement liées mais cette activation diminue rapidement dans le temps. Par contre, dans l’HD, le début de l’activation sémantique s’effectue de façon plus lente et perdure dans le temps. D’autres travaux sont en faveur d’une contribution plus tardive de l’HD au traitement catégoriel des mots [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R8">8</ref>]. Dans l’ensemble, les études susmentionnées convergent et indiquent que l’HD du droitier dispose d’un certain potentiel linguistique. Toutefois, ces données ne nous renseignent que sur le potentiel linguistique de chaque hémisphère et non sur la contribution effective de l’HD au traitement sémantique. Par conséquent, les données les plus pertinentes concernant la contribution de l’HD à la sémantique des mots isolés proviennent des études cliniques mesurant l’effet de lésions cérébrales.</p>
+            </div>
+            <div xml:id="S3">
+               <head>Approche clinique</head>
+               <p>L’évolution des connaissances en neuropsychologie a toujours été tributaire des progrès réalisés par les techniques d’observation. Ainsi, avant la fin des années 1960, l’étude de la spécialisation hémisphérique se limitait à la méthode anatomo-clinique, méthode reposant sur la correspondance entre l’atteinte d’une structure cérébrale et le dysfonctionnement psychologique qui y est associé. Un cas particulier de lésion cérébrale dont l’étude s’est révélée très fructueuse est celui de sujets présentant une déconnexion inter-hémisphérique par destruction du corps calleux, rupture effectuée bien souvent dans le but de réduire une épilepsie extrêmement sévère. Très vite, ces individus commissurotomisés, ou <hi rend="italic">split-brain</hi>, dont les deux hémisphères cérébraux fonctionnent indépendamment l’un de l’autre, sont devenus des sujets de choix en vue de l’étude des compétences respectives des hémisphères cérébraux. Les travaux réalisés auprès de ce type de personnes ont d’ailleurs été les premiers à montrer que l’HD du droitier dispose de pré-requis nécessaires à l’établissement d’une forme rudimentaire de langage [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R9">9</ref>]. Dans l’ensemble, les études qui ont été entreprises suggèrent que même si le cerveau droit est séparé du gauche, il n’est ni sourd, ni aveugle à l’égard du message verbal, en particulier en ce qui concerne le traitement du sens des mots. Ainsi, l’HD permet à un individu d’associer des images en fonction de leur signification et un mot entendu à une image, de lire, de comprendre des mots, des verbes et d’établir des liens sémantiques [<ref type="bibr" target="#R9">9</ref>, <ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R10">10</ref>]. Toutefois, malgré la pertinence de cette approche, les données qui en émanent doivent être reçues prudemment car, en raison d’un important biais de sélection, seul un petit nombre de sujets commissurotomisés a été soumis à des expérimentations. Par ailleurs, l’organisation fonctionnelle du cerveau de ces personnes était probablement singulière en soi au moment de la déconnexion calleuse puisque celle-ci avait été rendue indispensable par plusieurs années de crises épileptiques apparaissant de façon régulière. Quoi qu’il en soit, l’étude des sujets commissurotomisés a permis des progrès considérables quant à notre compréhension des capacités langagières de l’HD. La participation de l’HD au traitement de la sémantique des mots a également été observée dans les nombreuses études cliniques mesurant l’effet de lésions cérébrales droites.</p>
+               <p>Depuis les descriptions cliniques de Eisenson [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R11">11</ref>] et Critchley [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R12">12</ref>], de nombreux travaux, menés auprès de patients présentant une lésion cérébrale droite (cérébrolésés droits, CLD) suggèrent qu’environ 50 % des CLD présentent des déficits communicationnels pouvant non seulement affecter les aspects prosodiques, pragmatiques et discursifs du langage mais également les aspects sémantiques [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R13">13</ref>]. On sait aujourd’hui que les CLD traitent plus difficilement les mots peu fréquents, abstraits et non imageables [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R14">14</ref>]. Ils présentent également des difficultés à accéder et/ou à traiter les membres de catégories plus distantes sémantiquement [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R15">15</ref>], le sens métaphorique des mots [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R16">16</ref>], les mots à caractère connotatif [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R17">17</ref>] et les relations inter-conceptuelles [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R18">18</ref>]. En dehors de la question des troubles sémantiques consécutifs à une lésion cérébrale droite, certains auteurs ont cherché à spécifier si les déficits sémantiques observés s’associent à une difficulté d’utilisation du savoir sémantique ou à une perturbation de ce même savoir. Pour ce faire, Gagnon, Goulet et Joanette [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R19">19</ref>, <ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R20">20</ref>] ont soumis des participants CLD et témoins à des tâches de décision lexicale en amorçage sémantique (décider si la cible représente un mot de la langue ou non) et de jugement sémantique (décider si l’amorce et la cible sont sémantiquement liées ou non). Les résultats montrent que les CLD sont moins performants que les participants témoins à la tâche de jugement sémantique malgré des effets d’amorçage sémantique normaux. Cette série d’études suggère que l’origine des troubles sémantiques des CLD est plus à rechercher du côté de l’activation du savoir sémantique qu’au sein d’une désorganisation lexico-sémantique, suggérant ainsi une difficulté d’utilisation plutôt qu’une perturbation de l’organisation du savoir sémantique. Par conséquent, une lésion cérébrale droite, en tant que destruction d’une structure anatomique, peut avoir pour conséquence une perturbation plus ou moins sévère du traitement sémantique démontrant ainsi l’importance de l’intégrité de l’HD pour le traitement complet des mots.</p>
+            </div>
+            <div xml:id="S4">
+               <head>Approche de la neuro-imagerie</head>
+               <p>La capacité de visualiser <hi rend="italic">in vivo</hi> les régions cérébrales mobilisées par des tâches cognitives chez l’homme est en train de modifier en profondeur le domaine de la neuropsychologie. Pendant des décennies, l’étude de la cognition humaine s’est fondée sur les approches comportementale et clinique. L’avènement des techniques d’imagerie fonctionnelle, marqué par des progrès croissants en résolution spatio-temporelle, jette un nouveau regard sur les relations entre cerveau et esprit. Ces techniques ont déjà fourni de nombreux résultats concernant les bases neurobiologiques du langage et notamment sur la sémantique des mots. Il est classique de distinguer deux types de méthodes en neuro-imagerie : les méthodes bénéficiant d’une haute résolution temporelle (exemple : potentiels évoqués [PE]) et les méthodes bénéficiant d’une haute résolution spatiale (exemple : imagerie par résonance magnétique fonctionnelle [IRMf]). La technique des PE a été largement utilisée pour étudier les processus linguistiques. L’activité évoquée recueillie à la surface du scalp est constituée de plusieurs composantes, positives ou négatives, qui se succèdent dans le temps après la présentation du stimulus cible. Parmi les composantes identifiées, la composante N400 (composante négative survenant 400 ms après la présentation du stimulus cible et prédominante sur les régions centro-pariétales de l’HD) a été spécifiquement attribuée au traitement sémantique [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R21">21</ref>]. Il a par ailleurs été démontré que la composante N400 reproduit en PE l’effet d’amorçage sémantique observé dans les études comportementales. De plus, l’amplitude de la N400, qui semble témoigner de l’effort d’intégration sémantique du mot dans un contexte donné, et les temps de réponse évoluent en sens inverse : plus le mot est attendu, plus les temps de réponse sont courts et plus l’amplitude de la N400 est réduite. Malgré l’abondance des données concernant le langage et son traitement, peu d’études ont spécifiquement examiné les différences hémisphériques du traitement sémantique à l’aide des PE. Une recension des écrits permet néanmoins d’établir le rôle de l’HD dans le traitement sémantique des mots. En accord avec l’hypothèse de Beeman [<ref type="bibr" target="#R6">6</ref>], les couples de mots ayant un lien associatif sont activés dans l’HG tandis que les couples de mots appartenant à la même catégorie sémantique sont activés dans l’HD [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R22">22</ref>, <ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R23">23</ref>]. Concernant le décours temporel du traitement de l’information, il a récemment été démontré que la composante N400 survient plus tardivement dans l’HD que dans l’HG, suggérant une coopération hémisphérique tardive pour le traitement catégoriel des mots [<ref type="bibr" target="#R23">23</ref>]. D’autres travaux électrophysiologiques ont également montré la contribution de l’HD à d’autres types de processus tels que le traitement de relations sémantiques indirectes (tel est le cas lorsque la cible est liée à l’amorce par l’intermédiaire d’un troisième mot que les sujets ne voient pas ; par exemple, <hi rend="italic">lion</hi> et <hi rend="italic">rayure</hi> sont fortement associés à tigre, [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R24">24</ref>]) ; d’interprétations non usuelles (c’est-à-dire lorsque le sujet voit un mot apparaître et doit dire le premier mot qui lui vient à l’esprit mais qui ne possède aucun rapport avec ce dernier ; par exemple, <hi rend="italic">balai</hi> - <hi rend="italic">télévision</hi> ; [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R25">25</ref>]) et de l’humour verbal [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R26">26</ref>]. Néanmoins, en dépit de leur excellente résolution temporelle, les PE, même s’ils rapportent une participation de l’HD dans le traitement de la sémantique des mots, ne permettent pas de préciser quelles sont précisément les régions cérébrales activées lors de ce type de traitement. Seules les méthodes spatiales peuvent répondre à cette question. Ainsi, les études réalisées au moyen de l’IRMf rapportent des activations significatives bilatérales lors du traitement sémantique. Les principales régions activées se situent dans les gyrus frontaux inférieurs gauche et droit, de la région de Wernicke droite et dans les régions temporales gauches supérieures et moyennes [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R27">27</ref>–<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R29">29</ref>]. Certaines études ont même rapporté des activations dans le cervelet droit [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R30">30</ref>]. Par ailleurs, un engagement accru de l’HD est observé au fur et à mesure que la complexité sémantique augmente [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R31">31</ref>]. L’ensemble de ces données a été récemment confirmé par des études réalisées en connectivité fonctionnelle et en imagerie optique. Ces techniques de neuroimagerie en émergence confirment la participation d’un réseau cérébral mobilisant à la fois des régions de l’HG et de l’HD [<ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R32">32</ref>, <ref type="bib" target="#"/>
+                  <ref type="bibr" target="#R33">33</ref>]. Dans l’ensemble, les données issues de la neuroimagerie fonctionnelle ont mis en évidence des activations bilatérales du traitement des mots et de leur signification suggérant la participation d’un vaste réseau sémantique largement distribué à travers les hémisphères cérébraux.</p>
+            </div>
+         </div>
+         <div type="conclusion" xml:id="S5">
+            <head>Conclusion</head>
+            <p>Il ne fait plus aucun doute que l’hémisphère droit du droitier, même si ce n’est pas l’hémisphère dominant pour le langage, contribue au traitement de la sémantique des mots. La majorité des résultats issus des approches comportementales, cliniques et de la neuroimagerie converge et indique que les deux hémisphères cérébraux contribuent, chacun à leur façon, au traitement sémantique des mots. Par conséquent, l’intégrité des hémisphères cérébraux semble être cruciale pour un traitement optimal des mots ; le traitement de l’HD servant à compléter et à enrichir celui de l’HG.</p>
+         </div>
+      </body>
+      <back>
+         <div type="fn-group">
+            <note place="inline" xml:id="FN2">
+               <ref>1</ref>
+               <p>
+                  <hi rend="italic">Stimulus Onset Asynchrony</hi> : le temps mesuré entre le 
+début de l’amorce et le début de la cible.</p>
+            </note>
+         </div>
+         <div type="references">
+            <listBibl>
+               <bibl type="other" xml:id="R1">Beeman MJ. Coarse semantic coding and discourse comprehension. In: Beeman MJ, Chiarello C, eds. <hi rend="italic">Right hemisphere language comprehension: perspectives from cognitive neuroscience</hi>. Mahwah, NJ : Erlbaum, 1998 : 255–84.</bibl>
+               <bibl type="other" xml:id="R2">Koivisto M. Time course of semantic activation in the cerebral hemispheres. <hi rend="italic">Neuropsychologia</hi> 1997; 35 : 497–504.</bibl>
+               <bibl type="other" xml:id="R3">Koivisto M, Laine M. Hemispheric asymmetries in activation and integration of categorical information. <hi rend="italic">Laterality</hi> 2000; 5 : 29–33.</bibl>
+               <bibl type="other" xml:id="R4">Faure S. Analyse en champ visuel divisé. In : Cardebat D, Eustache F, Faure S, eds. <hi rend="italic">Méthodes en neuropsychologie : applications à l’étude de la mémoire et du langage</hi>. Montpellier : Atelier de formation Inserm, 2003.</bibl>
+               <bibl type="other" xml:id="R5">Chiarello C. Hemisphere dynamics in lexical access: automatic and controlled priming. <hi rend="italic">Brain Lang</hi> 1985; 26 : 146–72.</bibl>
+               <bibl type="other" xml:id="R6">Chiarello C, Senehi J, Nuding S. Semantic priming with abstract and concrete words: differential asymmetry may be postlexical. <hi rend="italic">Brain Lang</hi> 1987; 31 : 43–60.</bibl>
+               <bibl type="other" xml:id="R7">Chiarello C, Burgess C, Richards L, Pollock A. Semantic and associative priming in the cerebral hemispheres: Some words do, some words don’t… sometimes, some places. <hi rend="italic">Brain Lang</hi> 1990; 38 : 75–104.</bibl>
+               <bibl type="other" xml:id="R8">Collins M. Differences in semantic category priming in the left and right cerebral hemispheres under automatic and controlled processing conditions. <hi rend="italic">Neuropsychologia</hi> 1999; 37 : 1071–85.</bibl>
+               <bibl type="other" xml:id="R9">Code C, Joanette Y. The control of speech in the adult brain: the disconnected right hemispheres of PS, VP, and JW. In : Code C, Wallesch C, Joanette Y, Lecours AR, eds. <hi rend="italic">Classic cases in neuropsychology,</hi> vol. II. Hove, UK : Psychology Press, 2003 : 109–29.</bibl>
+               <bibl type="other" xml:id="R10">Gazzaniga MS. Cerebral specialization and interhemispheric communication: does the corpus callosum enable the human condition ? <hi rend="italic">Brain</hi> 2000; 123 : 1293–326.</bibl>
+               <bibl type="other" xml:id="R11">Eisenson, J. Language dysfunction associated with right-brain damage. <hi rend="italic">Lang Speech</hi> 1962; 5 : 49–53.</bibl>
+               <bibl type="other" xml:id="R12">Critchley M. Speech and speech-loss in relation to duality of the brain. In: Mountcastle VB, ed. <hi rend="italic">Interhemispheric relations and cerebral dominance</hi>. Baltimore, MD : Johns Hopkins Press, 1962 : 208–13.</bibl>
+               <bibl type="other" xml:id="R13">Joanette Y. Impacts d’une lésion cérébrale droite sur la communication verbale. In : Joanette Y, Monetta L, eds. <hi rend="italic">Hémisphère droit et communication verbale</hi>. Paris : Fédération Nationale des Orthophonistes, 2004 : 9–26.</bibl>
+               <bibl type="other" xml:id="R14">Joanette Y, Goulet P, Hannequin D. <hi rend="italic">Right hemisphere and verbal communication</hi>. New York : Springer-Verlag, 1990.</bibl>
+               <bibl type="other" xml:id="R15">Klepousniotou E, Baum SR. Unilateral brain damage effects on processing homonymous and polysemous words. <hi rend="italic">Brain Lang</hi> 2005; 93 : 308–26.</bibl>
+               <bibl type="other" xml:id="R16">Grindrod CM, Baum SR. Hemispheric contributions to lexical ambiguity resolution in a discourse context: evidence from individuals with unilateral left and right hemisphere lesions. <hi rend="italic">Brain Cogn</hi> 2005; 57 : 70–83.</bibl>
+               <bibl type="other" xml:id="R17">Brownell HH, Simpson TL, Bihrle AM, <hi rend="italic">et al.</hi> Appreciation of metaphoric alternative word meanings by left and right brain-damaged patients. <hi rend="italic">Neuropsychologia</hi> 1990; 28 : 375–83.</bibl>
+               <bibl type="other" xml:id="R18">Drews E. Qualitatively different organizational structures of lexical knowledge in the left and right hemisphere. <hi rend="italic">Neuropsychologia</hi> 1987; 25 : 419–27.</bibl>
+               <bibl type="other" xml:id="R19">Gagnon J, Goulet P, Joanette Y. Utilisation active et passive du savoir lexico-sémantique chez les cérébrolésés. <hi rend="italic">Langages</hi> 1990; 96 : 95–111.</bibl>
+               <bibl type="other" xml:id="R20">Gagnon J, Goulet P, Joanette Y. Automatic and controlled activation of lexical-semantic knowledge in right-brain-damaged right-handers. <hi rend="italic">Linguistische Berichte</hi> 
+                  <hi rend="italic">(Special issue: neurolinguistics)</hi> 1994; 6 (n° spécial) : 33–48.</bibl>
+               <bibl type="other" xml:id="R21">Kutas M, Hillyard SA. Reading senseless sentences: Brain potentials reflect semantic incongruity. <hi rend="italic">Science</hi> 1980; 207 : 203–5.</bibl>
+               <bibl type="other" xml:id="R22">Grose-Fifer J, Deacon D. Priming by natural category membership in the left and right cerebral hemispheres. <hi rend="italic">Neuropsychologia</hi> 2004; 42 : 1948–960.</bibl>
+               <bibl type="other" xml:id="R23">Bouaffre S, Faita-Ainseba F. Hemispheric differences in the time-course of semantic priming processes: evidence from event-related potentials (ERPs). <hi rend="italic">Brain Cogn</hi> 2007; 63 : 123–35.</bibl>
+               <bibl type="other" xml:id="R24">Kiefer M, Weisbrod M, Kern I, <hi rend="italic">et al.</hi> Right hemisphere activation during indirect semantic priming: evidence from event-related potentials. <hi rend="italic">Brain Lang</hi> 1998; 64 : 377–408.</bibl>
+               <bibl type="other" xml:id="R25">Abdullaev YG, Posner MI. Time course of activating brain areas in generating verbal associations. <hi rend="italic">Psychol Sci</hi> 1997; 8 : 56–9.</bibl>
+               <bibl type="other" xml:id="R26">Coulson S, Williams RF. Hemispheric differences and joke comprehension. <hi rend="italic">Neuropsychologia</hi> 2005; 43 : 128–41.</bibl>
+               <bibl type="other" xml:id="R27">Demonet JF, Thierry U, Cardebat D. Renewal of the neurophysiology of language: functional neuroimaging. <hi rend="italic">Physiol Rev</hi> 2005; 85 : 49–95.</bibl>
+               <bibl type="other" xml:id="R28">Copland DA, de Zubicaray GI, McMahon K, Eastburn M. Neural correlates of semantic priming for ambiguous words: an event-related fMRI study. <hi rend="italic">Brain Res</hi> 2007; 1131 : 163–72.</bibl>
+               <bibl type="other" xml:id="R29">Mashal N, Faust M, Hendler T. The role of the right hemisphere in processing nonsalient metaphorical meanings: application of principal components analysis to fMRI data. <hi rend="italic">Neuropsychologia</hi> 2005; 43 : 2084–100.</bibl>
+               <bibl type="other" xml:id="R30">Fiez JA. Phonology, semantics, and the role of the left inferior prefrontal cortex. <hi rend="italic">Hum Brain Map</hi> 1997; 5 : 79–83.</bibl>
+               <bibl type="other" xml:id="R31">Jung-Beeman M. Bilateral brain processes for comprehending natural language. <hi rend="italic">Trends Cogn Sci</hi> 2005; 9 : 512–8.</bibl>
+               <bibl type="other" xml:id="R32">Walter N, Jbabdi S, Marrelec I, <hi rend="italic">et al.</hi> FMRI functional connectivity of the phonological and semantic processing of words. <hi rend="italic">The Organization for Human Brain Mapping</hi>. 11<hi rend="superscript">th</hi> Annual Meeting, June 12-16, Toronto, 2005.</bibl>
+               <bibl type="other" xml:id="R33">Kahlaoui K, Lesage F, Senhadji N, <hi rend="italic">et al.</hi> Hemispheric specialization for the semantic processing of words: a near-infrared spectroscopy (NIRS) study. <hi rend="italic">Brain Lang</hi> 2006; 99 : 193–4.</bibl>
+            </listBibl>
+         </div>
+      </back>
+   </text>
+</TEI>

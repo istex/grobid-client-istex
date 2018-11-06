@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /home/lopez/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.3-SNAPSHOT" ident="GROBID" when="2018-11-06T16:46+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Sémantique et hémisphère droit Sémantique et hémisphère droit</title>
+				<respStmt>
+					<resp>Produced by GROBID</resp>
+					<name resp="ISTEX-API">ISTEX-API (INIST-CNRS)</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2008">2008. 2008</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Karima</forename><surname>Kahlaoui</surname></persName>
+							<email>karima.kahlaoui@umontreal.ca</email>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">K. Kahlaoui : Centre de recherche</orgName>
+								<orgName type="department" key="dep2">Faculté de médecine</orgName>
+								<orgName type="laboratory">Joanette : Centre de recherche, Institut universitaire de gériatrie de Montréal</orgName>
+								<orgName type="institution" key="instit1">Institut universitaire de gériatrie de Montréal</orgName>
+								<orgName type="institution" key="instit2">chemin Queen-Mary</orgName>
+								<address>
+									<postCode>4565, H3W 1W5</postCode>
+									<settlement>Montréal, Montréal</settlement>
+									<region>Québec</region>
+									<country>Canada., Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yves</forename><surname>Joanette</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">K. Kahlaoui : Centre de recherche</orgName>
+								<orgName type="department" key="dep2">Faculté de médecine</orgName>
+								<orgName type="laboratory">Joanette : Centre de recherche, Institut universitaire de gériatrie de Montréal</orgName>
+								<orgName type="institution" key="instit1">Institut universitaire de gériatrie de Montréal</orgName>
+								<orgName type="institution" key="instit2">chemin Queen-Mary</orgName>
+								<address>
+									<postCode>4565, H3W 1W5</postCode>
+									<settlement>Montréal, Montréal</settlement>
+									<region>Québec</region>
+									<country>Canada., Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Université de Montréal</orgName>
+								<address>
+									<settlement>Montréal</settlement>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Sémantique et hémisphère droit Sémantique et hémisphère droit</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">MEDECINE/SCIENCES</title>
+						<imprint>
+							<biblScope unit="volume">24</biblScope>
+							<biblScope unit="page" from="72" to="78"/>
+							<date type="published" when="2008">2008. 2008</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1051/medsci/200824172</idno>
+					<note>72</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>Le cerveau est incontestablement l&apos;organe le plus sophistiqué au monde. Il est constitué de deux masses distinctes sensiblement symétriques, les hémisphères cérébraux. Leur symétrie globale avait conduit à pen-ser dans un premier temps qu&apos;ils étaient équivalents sur le plan fonctionnel jusqu&apos;aux premières études de neuropsychologie, réalisées dans la seconde moitié du XIX e siècle, qui ont permis de proposer une anato-mie fonctionnelle du langage située principalement dans l&apos;hémisphère gauche (HG). Bien qu&apos;aujourd&apos;hui encore on estime que le langage est l&apos;une des fonctions supérieures les plus latéralisées, de nombreux auteurs s&apos;accordent à dire que l&apos;hémisphère droit (HD) est loin d&apos;être muet en ce qui concerne le langage, en particulier le traitement sémantique des mots. Aborder la question de la sémantique des mots, c&apos;est aborder la question de la mémoire sémantique. Celle-ci est communément définie comme la connaissance des choses du monde et de leurs interrelations. Indissociable de la mémoire à long terme, elle fait référence à la mémoire des mots, des idées, des concepts et s&apos;avère indispensable pour toute activité cognitive s&apos;exerçant sur du matériel ayant du sens. Pour appréhender l&apos;organisation des connais-sances stockées en mémoire sémantique, le paradigme d&apos;amorçage sémantique est souvent utilisé (Figure 1). Classiquement, un mot cible, par exemple infirmière, est traité plus rapidement lorsqu&apos;il est précédé par un mot amorce qui lui est sémantiquement lié, comme docteur, que lorsque le mot amorce est sémantiquement non lié, comme beurre, ceci grâce à un accès facilité à sa représentation en mémoire. Cette facilitation ou « effet d&apos;amorçage » peut affecter différemment chacun des hémisphères cérébraux en fonction de la nature du lien pouvant exister entre l&apos;amorce et la cible [1] et/ou du décours temporel du traitement de l&apos;information [2, 3]. Depuis ces dernières années, le nombre d&apos;études réalisées au moyen du paradigme d&apos;amorçage séman-tique et dévolues aux habiletés sémantiques de l&apos;HD ne cesse de croître. Cet article a pour objectif de résumer les connaissances actuelles relatives à la contribution spécifique de l&apos;HD à la sémantique des mots. L&apos;emphase sera mise sur les données issues des approches compor-tementales, cliniques, et ainsi que des lectures tirées de la neuroimagerie cérébrale. Approche comportementale À l&apos;heure actuelle, la technique la plus couramment utilisée pour appréhender la latéralisation cérébrale est la technique tachistoscopique en champ visuel divisé [4] (Figure 2). Cette technique consiste à présenter brièvement des stimulus dans le champ visuel droit (CVD) ou le champ visuel gauche (CVG). En raison de la décussation des voies visuelles, les stimulus présentés d&apos;un côté du point central sont projetés directement dans l&apos;hémisphère controlatéral. Ainsi, les stimulus présentés dans le CVD sont adressés prioritairement à l&apos;HG tandis que les stimulus présentés dans le CVG sont adressés prioritairement à l&apos;HD. Le postulat de base est que la performance du sujet (mesurée en fonction de ses bonnes réponses, et du temps de réponse) sera meilleure si le stimulus a été présenté initialement à l&apos;hémisphère spécialisé pour son traitement. Chez les &gt; Ainsi, après avoir longtemps considéré que le langage était exclusivement dévolu au cerveau gauche, il est de plus en plus démontré que l&apos;hé-misphère droit joue également un rôle dans ce domaine. L&apos;objectif de cet article est de résumer ce que l&apos;on sait aujourd&apos;hui de la contribution de l&apos;hémisphère droit au traitement sémanti-que des mots isolés à travers trois approches différentes : comportementale, clinique et de neuro-imagerie. &lt;</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sémantique et hémisphère droit</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Karima Kahlaoui, Yves Joanette</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sémantique et hémisphère droit</head><p>Le cerveau est incontestablement l'organe le plus sophistiqué au monde. Il est constitué de deux masses distinctes sensiblement symétriques, les hémisphères cérébraux. Leur symétrie globale avait conduit à penser dans un premier temps qu'ils étaient équivalents sur le plan fonctionnel jusqu'aux premières études de neuropsychologie, réalisées dans la seconde moitié du XIX e siècle, qui ont permis de proposer une anatomie fonctionnelle du langage située principalement dans l'hémisphère gauche (HG). Bien qu'aujourd'hui encore on estime que le langage est l'une des fonctions supérieures les plus latéralisées, de nombreux auteurs s'accordent à dire que l'hémisphère droit (HD) est loin d'être muet en ce qui concerne le langage, en particulier le traitement sémantique des mots. Aborder la question de la sémantique des mots, c'est aborder la question de la mémoire sémantique. Celle-ci est communément définie comme la connaissance des choses du monde et de leurs interrelations. Indissociable de la mémoire à long terme, elle fait référence à la mémoire des mots, des idées, des concepts et s'avère indispensable pour toute activité cognitive s'exerçant sur du matériel ayant du sens. Pour appréhender l'organisation des connaissances stockées en mémoire sémantique, le paradigme d'amorçage sémantique est souvent utilisé <ref type="figure" coords="1,280.62,638.43,31.67,8.78" target="#fig_0">(Figure 1</ref>). Classiquement, un mot cible, par exemple infirmière, est traité plus rapidement lorsqu'il est précédé par un mot amorce qui lui est sémantiquement lié, comme docteur, que lorsque le mot amorce est sémantiquement non lié, comme beurre, ceci grâce à un accès facilité à sa représentation en mémoire. Cette facilitation ou « effet d'amorçage » peut affecter différemment chacun des hémisphères cérébraux en fonction de la nature du lien pouvant exister entre l'amorce et la cible <ref type="bibr" coords="1,489.77,348.63,13.02,8.78" target="#b0">[1]</ref> et/ou du décours temporel du traitement de l'information <ref type="bibr" coords="1,527.25,361.23,11.37,8.78" target="#b1">[2,</ref><ref type="bibr" coords="1,330.76,373.83,7.56,8.78" target="#b2">3]</ref>. Depuis ces dernières années, le nombre d'études réalisées au moyen du paradigme d'amorçage séman-tique et dévolues aux habiletés sémantiques de l'HD ne cesse de croître. Cet article a pour objectif de résumer les connaissances actuelles relatives à la contribution spécifique de l'HD à la sémantique des mots. L'emphase sera mise sur les données issues des approches comportementales, cliniques, et ainsi que des lectures tirées de la neuroimagerie cérébrale.</p><p>Approche comportementale À l'heure actuelle, la technique la plus couramment utilisée pour appréhender la latéralisation cérébrale est la technique tachistoscopique en champ visuel divisé <ref type="bibr" coords="1,330.76,550.23,13.24,8.78" target="#b3">[4]</ref>  <ref type="figure" coords="1,348.02,550.23,32.53,8.78" target="#fig_1">(Figure 2</ref>). Cette technique consiste à présenter brièvement des stimulus dans le champ visuel droit (CVD) ou le champ visuel gauche (CVG). En raison de la décussation des voies visuelles, les stimulus présentés d'un côté du point central sont projetés directement dans l'hémisphère controlatéral. Ainsi, les stimulus présentés dans le CVD sont adressés prioritairement à l'HG tandis que les stimulus présentés dans le CVG sont adressés prioritairement à l'HD. Le postulat de base est que la performance du sujet (mesurée en fonction de ses bonnes réponses, et du temps de réponse) sera meilleure si le stimulus a été présenté initialement à l'hémisphère spécialisé pour son traitement. Chez les &gt; Ainsi, après avoir longtemps considéré que le langage était exclusivement dévolu au cerveau gauche, il est de plus en plus démontré que l'hé-misphère droit joue également un rôle dans ce domaine. L'objectif de cet article est de résumer ce que l'on sait aujourd'hui de la contribution de l'hémisphère droit au traitement sémanti-que des mots isolés à travers trois approches différentes : comportementale, clinique et de neuro-imagerie. &lt; individus droitiers, la supériorité du CVD pour le traitement des mots est un résultat robuste qui reflète une dominance fonctionnelle de l'HG. Cependant, l'HD assurerait une contribution propre au traitement sémantique, comme en témoignent les asymétries des effets d'amorçage sémantique en fonction de la nature du lien existant entre un stimulus amorce et un stimulus cible. Ainsi, un phénomène d'asymétrie favorisant l'HD est mis en évidence lorsque l'amorce et la cible sont établies sur la base de leur appartenance à une même catégorie sémantique sans que celle-ci entretienne une forte association (comme dans le cas des relations catégorielles ; par exemple : ours-vache <ref type="bibr" coords="2,100.87,336.03,11.59,8.78" target="#b4">[5]</ref>). Or, ce phénomène n'apparaît pas lorsque les stimulus sont uniquement des associés (c'est-à-dire des mots à co-occurrence contextuelle ne partageant pas de caractéristiques sémantiques ; par exemple, policier-prison <ref type="bibr" coords="2,149.47,373.83,11.59,8.78" target="#b5">[6]</ref>). Pour mieux comprendre cette différence, Chiarello et ses collaborateurs <ref type="bibr" coords="2,85.78,399.03,13.12,8.78" target="#b6">[7]</ref> ont entrepris une étude comparant différents types de relations entre l'amorce et la cible. Ces auteurs rapportent des effets d'amorçage qui ne témoignent d'aucune asymétrie fonctionnelle lorsque le lien présent dans un couple amorce-cible contient un double rapport : associatif et catégoriel (mots à co-occurrence contextuelle et appartenant à la même catégorie sémantique ; par exemple, infirmière-docteur). En revanche, un effet d'amorçage sémantique plus important est associé à l'HD lorsque la relation sémantique est uniquement de type catégorielle. Devant ces résultats, les auteurs attribuent à chaque hémisphère des modes de fonctionnement et d'activation sémantique qui diffèrent selon le type de lien existant entre les mots. Cette conception est reprise et développée par Beeman <ref type="bibr" coords="2,284.95,537.63,13.02,8.78" target="#b0">[1]</ref> : l'HG serait caractérisé par une activation de forte amplitude et sémanti-quement focalisée autour du mot cible ; pour sa part, l'HD procéderait selon un mode d'activation de faible amplitude et sémantiquement étendu autour du mot cible. Ces traitements, de nature complémen-taire, seraient tous deux requis pour une compréhension normale. Néanmoins, certains auteurs vont plus loin que la simple notion d'activation concernant la nature et l'organisation des informations au niveau hémisphérique et estiment que ces différences de traitement seraient dépendantes du décours temporel du traitement de l'information, l'information étant initialement activée dans l'HG. D'une très grande utilité, les travaux de Koivisto <ref type="bibr" coords="2,207.24,676.23,11.24,8.78" target="#b1">[2,</ref><ref type="bibr" coords="2,222.04,676.23,8.71,8.78" target="#b2">3]</ref>   <ref type="bibr" coords="2,523.10,273.03,11.65,8.78" target="#b7">[8]</ref>. Dans l'ensemble, les études susmentionnées convergent et indiquent que l'HD du droitier dispose d'un certain potentiel linguistique. Toutefois, ces données ne nous renseignent que sur le potentiel linguistique de chaque hémisphère et non sur la contribution effective de l'HD au traitement sémantique. Par conséquent, les données les plus pertinentes concernant la contribution de l'HD à la sémantique des mots isolés proviennent des études cliniques mesurant l'effet de lésions cérébrales.</p><p>Approche clinique L'évolution des connaissances en neuropsychologie a toujours été tributaire des progrès réalisés par les techniques d'observation. Ainsi, avant la fin des années 1960, l'étude de la spécialisation hémisphérique se limitait à la méthode anatomo-clinique, méthode reposant sur la correspondance entre l'atteinte d'une structure cérébrale et le dysfonctionnement psychologique qui y est associé. Un cas particulier de lésion cérébrale dont l'étude s'est révélée très fructueuse est celui de sujets présentant une déconnexion interhémisphérique par destruction du corps calleux, rupture effectuée bien souvent dans le but de réduire une épilepsie extrêmement sévère. Très vite, ces individus commissurotomisés, ou split-brain, dont les deux hémisphères cérébraux fonctionnent indépendamment l'un de l'autre, sont devenus des sujets de choix en vue de l'étude des compétences respectives des hémisphè-res cérébraux. Les travaux réalisés auprès de ce type de personnes ont d'ailleurs été les premiers à montrer que l'HD du droitier dispose de pré-requis nécessai-res à l'établissement d'une forme rudimentaire de </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Amorce Cible</head><p>SOA (Stimulus Onset Asynchrony) docteur + infirmière langage <ref type="bibr" coords="3,90.19,58.83,11.77,8.78" target="#b8">[9]</ref>. Dans l'ensemble, les études qui ont été entreprises suggèrent que même si le cerveau droit est séparé du gauche, il n'est ni sourd, ni aveugle à l'égard du message verbal, en particulier en ce qui concerne le traitement du sens des mots. Ainsi, l'HD permet à un individu d'associer des images en fonction de leur signification et un mot entendu à une image, de lire, de comprendre des mots, des verbes et d'établir des liens sémantiques <ref type="bibr" coords="3,108.26,159.63,11.34,8.78" target="#b8">[9,</ref><ref type="bibr" coords="3,123.34,159.63,11.85,8.78" target="#b9">10]</ref>. Toutefois, malgré la pertinence de cette approche, les données qui en émanent doivent être reçues prudemment car, en raison d'un important biais de sélection, seul un petit nombre de sujets commissurotomisés a été soumis à des expérimentations. Par ailleurs, l'organisation fonctionnelle du cerveau de ces personnes était probablement singulière en soi au moment de la déconnexion calleuse puisque celle-ci avait été rendue indispensable par plusieurs années de crises épileptiques apparaissant de façon régulière. Quoi qu'il en soit, l'étude des sujets commissurotomisés a permis des progrès considérables quant à notre compréhension des capacités langagières de l'HD. La participation de l'HD au traitement de la sémantique des mots a également été observée dans les nombreuses études cliniques mesurant l'effet de lésions cérébrales droites.</p><p>Depuis les descriptions cliniques de Eisenson <ref type="bibr" coords="3,451.73,58.83,17.74,8.78" target="#b10">[11]</ref> et Critchley <ref type="bibr" coords="3,518.27,58.83,16.30,8.78" target="#b11">[12]</ref>, de nombreux travaux, menés auprès de patients présentant une lésion cérébrale droite (cérébrolésés droits, CLD) suggèrent qu'environ 50 % des CLD présentent des déficits communicationnels pouvant non seulement affecter les aspects prosodiques, pragmatiques et discursifs du langage mais également les aspects sémantiques <ref type="bibr" coords="3,275.96,134.43,16.30,8.78" target="#b12">[13]</ref>. On sait aujourd'hui que les CLD traitent plus difficilement les mots peu fréquents, abstraits et non imageables <ref type="bibr" coords="3,463.56,147.03,16.30,8.78" target="#b13">[14]</ref>. Ils présentent également des difficultés à accéder et/ou à traiter les membres de catégories plus distantes sémantiquement <ref type="bibr" coords="3,442.62,172.23,16.30,8.78" target="#b14">[15]</ref>, le sens métaphori-que des mots <ref type="bibr" coords="3,329.04,184.83,16.30,8.78" target="#b15">[16]</ref>, les mots à caractère connotatif <ref type="bibr" coords="3,475.65,184.83,17.74,8.78" target="#b16">[17]</ref> et les relations inter-conceptuelles <ref type="bibr" coords="3,374.93,197.43,16.30,8.78" target="#b17">[18]</ref>. En dehors de la question des troubles sémantiques consécutifs à une lésion cérébrale droite, certains auteurs ont cherché à spécifier si les déficits sémantiques observés s'associent à une difficulté d'utilisation du savoir sémantique ou à une perturbation de ce même savoir. Pour ce faire, Gagnon, Goulet et Joanette <ref type="bibr" coords="3,311.73,260.43,15.96,8.78" target="#b18">[19,</ref><ref type="bibr" coords="3,330.56,260.43,13.33,8.78" target="#b19">20]</ref>   haute résolution spatiale (exemple : imagerie par résonance magné-tique fonctionnelle <ref type="bibr" coords="4,135.22,71.43,24.27,8.78">[IRMf]</ref>). La technique des PE a été largement utilisée pour étudier les processus linguistiques. L'activité évoquée recueillie à la surface du scalp est constituée de plusieurs composantes, positives ou négatives, qui se succèdent dans le temps après la présentation du stimulus cible. Parmi les composantes identifiées, la composante N400 (composante négative survenant 400 ms après la présentation du stimulus cible et prédominante sur les régions centro-pariétales de l'HD) a été spécifiquement attribuée au traitement sémantique <ref type="bibr" coords="4,161.99,172.23,16.30,8.78" target="#b20">[21]</ref>. Il a par ailleurs été démontré que la composante N400 reproduit en PE l'effet d'amorçage sémantique observé dans les études comportementales. De plus, l'amplitude de la N400, qui semble témoigner de l'effort d'intégration sémantique du mot dans un contexte donné, et les temps de réponse évoluent en sens inverse : plus le mot est attendu, plus les temps de réponse sont courts et plus l'amplitude de la N400 est réduite. Malgré l'abondance des données concernant le langage et son traitement, peu d'études ont spécifiquement examiné les différences hémisphériques du traitement sémantique à l'aide des PE. Une recension des écrits permet néanmoins d'établir le rôle de l'HD dans le traitement sémantique des mots. En accord avec l'hypothèse de Beeman <ref type="bibr" coords="4,256.35,310.83,11.89,8.78" target="#b5">[6]</ref>, les couples de mots ayant un lien associatif sont activés dans l'HG tandis que les couples de mots appartenant à la même catégorie sémantique sont activés dans l'HD <ref type="bibr" coords="4,146.39,348.63,15.96,8.78" target="#b21">[22,</ref><ref type="bibr" coords="4,165.27,348.63,11.97,8.78" target="#b22">23]</ref>. Concernant le décours temporel du traitement de l'information, il a récemment été démontré que la composante N400 survient plus tardivement dans l'HD que dans l'HG, suggérant une coopération hémisphérique tardive pour le traitement catégoriel des mots <ref type="bibr" coords="4,140.27,399.03,16.45,8.78" target="#b22">[23]</ref>. D'autres travaux électrophysiologiques ont également montré la contribution de l'HD à d'autres types de processus tels que le traitement de relations sémantiques indirectes (tel est le cas lorsque la cible est liée à l'amorce par l'intermédiaire d'un troisième mot que les sujets ne voient pas ; par exemple, lion et rayure sont fortement associés à tigre, <ref type="bibr" coords="4,208.78,462.03,17.30,8.78" target="#b23">[24]</ref>) ; d'interprétations non usuelles (c'est-à-dire lorsque le sujet voit un mot apparaître et doit dire le premier mot qui lui vient à l'esprit mais qui ne possède aucun rapport avec ce dernier ; par exemple, balai -télévision ; <ref type="bibr" coords="4,276.08,499.83,17.30,8.78" target="#b24">[25]</ref>) et de l'humour verbal <ref type="bibr" coords="4,120.36,512.43,16.30,8.78" target="#b25">[26]</ref>. Néanmoins, en dépit de leur excellente réso-lution temporelle, les PE, même s'ils rapportent une participation de l'HD dans le traitement de la sémantique des mots, ne permettent pas de préciser quelles sont précisément les régions cérébrales activées lors de ce type de traitement. Seules les méthodes spatiales peuvent répondre à cette question. Ainsi, les études réalisées au moyen de l'IRMf rapportent des activations significatives bilatéra-les lors du traitement sémantique. Les principales régions activées se situent dans les gyrus frontaux inférieurs gauche et droit, de la région de Wernicke droite et dans les régions temporales gauches supérieures et moyennes <ref type="bibr" coords="4,155.51,638.43,12.72,8.78" target="#b26">[27]</ref><ref type="bibr" coords="4,168.23,638.43,4.24,8.78" target="#b27">[28]</ref><ref type="bibr" coords="4,172.47,638.43,12.72,8.78" target="#b28">[29]</ref>. Certaines études ont même rapporté des activations dans le cervelet droit <ref type="bibr" coords="4,234.83,651.03,16.30,8.78" target="#b29">[30]</ref>. Par ailleurs, un engagement accru de l'HD est observé au fur et à mesure que la complexité sémantique augmente <ref type="bibr" coords="4,190.84,676.23,16.30,8.78" target="#b30">[31]</ref>. L'ensemble de ces données a été récemment confirmé par des études réalisées en connectivité fonctionnelle et en imagerie optique. Ces techniques de neuroimagerie en émergence confirment la participation d'un réseau cérébral mobilisant à la fois des régions de l'HG et de l'HD <ref type="bibr" coords="4,389.42,84.03,15.96,8.78" target="#b31">[32,</ref><ref type="bibr" coords="4,407.94,84.03,11.97,8.78" target="#b32">33]</ref>. Dans l'ensemble, les données issues de la neuroimagerie fonctionnelle ont mis en évidence des activations bilatérales du traitement des mots et de leur signification suggérant la participation d'un vaste réseau sémantique largement distribué à travers les hémisphères cérébraux.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusion</head><p>Il ne fait plus aucun doute que l'hémisphère droit du droitier, même si ce n'est pas l'hémisphère dominant pour le langage, contribue au traitement de la séman-tique des mots. La majorité des résultats issus des approches comportementales, cliniques et de la neuroimagerie converge et indique que les deux hémisphères cérébraux contribuent, chacun à leur façon, au traitement sémantique des mots. Par conséquent, l'intégrité des hémisphères cérébraux semble être cruciale pour un traitement optimal des mots ; le traitement de l'HD servant à compléter et à enrichir celui de l'HG. ‡</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUMMARY Semantic processing and right hemisphere</head><p>Although language is a function traditionally attributed to the left hemisphere, experimental and clinical reports indicate that the right hemisphere may also have a capacity to process verbal information. Indeed, some attributes of words, including their concreteness, imageability and emotional component, have been shown to be associated with right-hemispheric processing capacities. In addition, studies on brain-damaged, splitbrain patients and studies realized with neuroimaging techniques have also suggested that the right hemisphere has some linguistic capacities. The main objective of this article is to review specific contribution of right cerebral hemisphere to semantic processing from three complementary approaches: (1) divided visualfield experiments with healthy participants, (2) studies of patients with acquired lesions of both left and right hemispheres, and (3) neuroimaging studies. ‡</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RÉFÉRENCES</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0" coords="2,56.75,185.93,298.08,7.77"><head>Figure 1 . Exemple d'un essai expérimental utilisant un paradigme d'amorçage sémantique.</head><label>1</label><figDesc>Figure 1. Exemple d'un essai expérimental utilisant un paradigme d'amorçage sémantique.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1" coords="3,56.75,688.98,262.68,7.77;3,56.75,701.58,57.52,7.77"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Projection hémisphérique en fonction des champs visuels droit et gauche (tiré de [4]).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false" coords="3,275.96,260.43,262.71,449.78"><head></head><label></label><figDesc coords="3,346.76,260.43,191.87,8.78;3,275.96,273.03,262.66,8.78;3,275.96,285.63,262.69,8.78;3,275.96,298.23,262.67,8.78;3,275.96,310.83,262.67,8.78;3,275.96,323.43,262.68,8.78;3,275.96,336.03,178.17,8.78">ont soumis des participants CLD et témoins à des tâches de décision lexicale en amorçage sémantique (décider si la cible représente un mot de la langue ou non) et de jugement séman- tique (décider si l'amorce et la cible sont sémantiquement liées ou non). Les résultats montrent que les CLD sont moins performants que les participants témoins à la tâche de jugement sémantique malgré des effets d'amorçage sémantique normaux.</figDesc><table coords="3,275.96,336.03,262.71,374.18">Cette série d'études 
+suggère que l'origine des troubles sémantiques des CLD est plus à 
+rechercher du côté de l'activation du savoir sémantique qu'au sein 
+d'une désorganisation lexico-sémantique, suggérant 
+ainsi une difficulté d'utilisation plutôt qu'une per-
+turbation de l'organisation du savoir sémantique. Par 
+conséquent, une lésion cérébrale droite, en tant que 
+destruction d'une structure anatomique, peut avoir 
+pour conséquence une perturbation plus ou moins 
+sévère du traitement sémantique démontrant ainsi 
+l'importance de l'intégrité de l'HD pour le traitement 
+complet des mots. 
+
+Approche de la neuro-imagerie 
+La capacité de visualiser in vivo les régions cérébrales 
+mobilisées par des tâches cognitives chez l'homme 
+est en train de modifier en profondeur le domaine de 
+la neuropsychologie. Pendant des décennies, l'étude 
+de la cognition humaine s'est fondée sur les appro-
+ches comportementale et clinique. L'avènement des 
+techniques d'imagerie fonctionnelle, marqué par des 
+progrès croissants en résolution spatio-temporelle, 
+jette un nouveau regard sur les relations entre cerveau 
+et esprit. Ces techniques ont déjà fourni de nombreux 
+résultats concernant les bases neurobiologiques du 
+langage et notamment sur la sémantique des mots. 
+Il est classique de distinguer deux types de méthodes 
+en neuro-imagerie : les méthodes bénéficiant d'une 
+haute résolution temporelle (exemple : potentiels 
+évoqués [PE]) et les méthodes bénéficiant d'une 
+
+</table></figure>
+
+			<note place="foot">M/S n° 1, vol. 24, janvier 2008 MEDECINE/SCIENCES 2008 ; 24 : 72-6</note>
+
+			<note place="foot" n="1"> Stimulus Onset Asynchrony : le temps mesuré entre le début de l&apos;amorce et le début de la cible.</note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct coords="4,342.95,639.34,186.11,6.27;4,342.95,648.34,192.31,6.27;4,342.95,657.34,171.77,6.27;4,342.95,666.34,38.07,6.27" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Right hemisphere language comprehension: perspectives from cognitive neuroscience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Beeman</surname></persName>
+		</author>
+		<editor>Beeman MJ, Chiarello C</editor>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Erlbaum</publisher>
+			<biblScope unit="page" from="255" to="84" />
+			<pubPlace>Mahwah, NJ</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Coarse semantic coding and discourse comprehension</note>
+</biblStruct>
+
+<biblStruct coords="4,342.95,675.34,164.66,6.27;4,342.95,684.34,137.45,6.27" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Time course of semantic activation in the cerebral hemispheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Koivisto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="497" to="504" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="4,342.95,693.34,169.25,6.27;4,342.95,702.34,175.72,6.27" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Hemispheric asymmetries in activation and integration of categorical information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Koivisto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Laine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Laterality</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="29" to="33" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,56.71,180.63,6.27;5,68.94,65.71,194.68,6.27;5,68.94,74.71,190.50,6.27" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Analyse en champ visuel divisé</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Faure</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Méthodes en neuropsychologie : applications à l&apos;étude de la mémoire et du langage. Montpellier : Atelier de formation Inserm</title>
+		<editor>Cardebat D, Eustache F, Faure S</editor>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,83.71,177.16,6.27;5,68.94,92.71,131.26,6.27" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Hemisphere dynamics in lexical access: automatic and controlled priming</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="146" to="72" />
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,101.71,177.89,6.27;5,68.94,110.71,187.69,6.27;5,68.94,119.71,45.99,6.27" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Semantic priming with abstract and concrete words: differential asymmetry may be postlexical</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Senehi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Nuding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="43" to="60" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,128.71,186.76,6.27;5,68.94,137.71,193.49,6.27;5,68.94,146.71,147.04,6.27" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Semantic and associative priming in the cerebral hemispheres: Some words do, some words don&apos;t… sometimes, some places</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Burgess</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Richards</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Pollock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="75" to="104" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,155.71,176.00,6.27;5,68.94,164.71,187.43,6.27;5,68.94,173.71,132.31,6.27" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Differences in semantic category priming in the left and right cerebral hemispheres under automatic and controlled processing conditions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Collins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1071" to="85" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,182.71,169.14,6.27;5,68.94,191.71,187.53,6.27;5,68.94,200.71,189.50,6.27;5,68.94,209.71,114.32,6.27" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The control of speech in the adult brain: the disconnected right hemispheres of PS, VP, and JW</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Code</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Classic cases in neuropsychology</title>
+		<editor>Code C, Wallesch C, Joanette Y, Lecours AR</editor>
+		<meeting><address><addrLine>Hove, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Psychology Press</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">II</biblScope>
+			<biblScope unit="page" from="109" to="138" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,218.71,157.83,6.27;5,68.94,227.71,191.84,6.27;5,68.94,236.71,74.13,6.27" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Cerebral specialization and interhemispheric communication: does the corpus callosum enable the human condition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Gazzaniga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="1293" to="326" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,245.71,189.67,6.27;5,68.94,254.71,77.57,6.27" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Language dysfunction associated with right-brain damage</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Eisenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang Speech</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="49" to="53" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,263.71,171.09,6.27;5,68.94,272.71,185.21,6.27;5,68.94,281.71,169.56,6.27" xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Speech and speech-loss in relation to duality of the brain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Critchley</surname></persName>
+		</author>
+		<editor>Mountcastle VB</editor>
+		<imprint>
+			<date type="published" when="1962" />
+			<publisher>Johns Hopkins Press</publisher>
+			<biblScope unit="page" from="208" to="221" />
+			<pubPlace>Baltimore, MD</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Interhemispheric relations and cerebral dominance</note>
+</biblStruct>
+
+<biblStruct coords="5,68.94,290.71,189.47,6.27;5,68.94,299.71,158.34,6.27;5,68.94,308.71,194.56,6.27;5,68.94,317.71,32.04,6.27" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Impacts d&apos;une lésion cérébrale droite sur la communication verbale</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Hémisphère droit et communication verbale. Paris : Fédération Nationale des Orthophonistes</title>
+		<editor>Joanette Y, Monetta L</editor>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="9" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,326.71,168.34,6.27;5,68.94,335.71,132.86,6.27" xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Right hemisphere and verbal communication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Hannequin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Springer-Verlag</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,344.71,195.69,6.27;5,68.94,353.71,178.55,6.27" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Unilateral brain damage effects on processing homonymous and polysemous words</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Klepousniotou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">R</forename><surname>Baum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="308" to="334" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,362.71,186.25,6.27;5,68.94,371.71,171.91,6.27;5,68.94,380.71,194.72,6.27" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Hemispheric contributions to lexical ambiguity resolution in a discourse context: evidence from individuals with unilateral left and right hemisphere lesions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Grindrod</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">R</forename><surname>Baum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Cogn</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="70" to="83" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,389.71,184.58,6.27;5,68.94,398.71,184.45,6.27;5,68.94,407.71,97.77,6.27" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Appreciation of metaphoric alternative word meanings by left and right brain-damaged patients</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Brownell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">L</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Bihrle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="375" to="83" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,68.94,416.71,178.18,6.27;5,68.94,425.71,181.82,6.27;5,68.94,434.71,31.77,6.27" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Qualitatively different organizational structures of lexical knowledge in the left and right hemisphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Drews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="419" to="446" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,56.71,247.66,6.27;5,288.15,65.71,121.43,6.27" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Utilisation active et passive du savoir lexico-sémantique chez les cérébrolésés</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gagnon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Langages</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page" from="95" to="111" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,74.71,233.42,6.27;5,288.14,83.71,234.10,6.27;5,288.14,92.71,123.51,6.27" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Automatic and controlled activation of lexical-semantic knowledge in right-brain-damaged right-handers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gagnon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Linguistische Berichte (Special issue: neurolinguistics)</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="33" to="48" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+	<note>n° spécial</note>
+</biblStruct>
+
+<biblStruct coords="5,288.14,101.71,224.34,6.27;5,288.14,110.71,104.03,6.27" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Reading senseless sentences: Brain potentials reflect semantic incongruity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kutas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Hillyard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">207</biblScope>
+			<biblScope unit="page" from="203" to="208" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,119.71,250.38,6.27;5,288.14,128.71,140.60,6.27" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Priming by natural category membership in the left and right cerebral hemispheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Grose-Fifer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Deacon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1948" to="960" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,137.71,246.47,6.27;5,288.14,146.71,236.66,6.27" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Hemispheric differences in the time-course of semantic priming processes: evidence from event-related potentials (ERPs)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bouaffre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Faita-Ainseba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Cogn</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="123" to="158" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,155.71,234.46,6.27;5,288.14,164.71,214.25,6.27" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Right hemisphere activation during indirect semantic priming: evidence from event-related potentials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kiefer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Weisbrod</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Kern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="377" to="408" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,173.71,220.80,6.27;5,288.14,182.71,107.68,6.27" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Time course of activating brain areas in generating verbal associations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">G</forename><surname>Abdullaev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">I</forename><surname>Posner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol Sci</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="56" to="65" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,191.71,242.47,6.27;5,288.14,200.71,49.14,6.27" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Hemispheric differences and joke comprehension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Coulson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="128" to="169" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.13,209.71,241.26,6.27;5,288.14,218.71,117.13,6.27" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Renewal of the neurophysiology of language: functional neuroimaging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">F</forename><surname>Demonet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Thierry</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cardebat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physiol Rev</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="49" to="95" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,227.71,244.97,6.27;5,288.14,236.71,219.31,6.27" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Neural correlates of semantic priming for ambiguous words: an event-related fMRI study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Copland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">I</forename><surname>De Zubicaray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mcmahon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eastburn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">1131</biblScope>
+			<biblScope unit="page" from="163" to="72" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,245.71,230.07,6.27;5,288.14,254.71,222.88,6.27;5,288.14,263.71,104.07,6.27" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The role of the right hemisphere in processing nonsalient metaphorical meanings: application of principal components analysis to fMRI data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Mashal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Faust</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Hendler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="2084" to="100" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,272.71,241.69,6.27;5,288.14,281.71,55.44,6.27" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Phonology, semantics, and the role of the left inferior prefrontal cortex</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Fiez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Hum Brain Map</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="79" to="83" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,290.71,245.05,6.27;5,288.14,299.71,52.20,6.27" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Bilateral brain processes for comprehending natural language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Jung-Beeman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends Cogn Sci</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="512" to="520" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.14,308.71,237.50,6.27;5,288.14,316.88,228.73,7.10;5,288.15,326.71,94.74,6.27" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">FMRI functional connectivity of the phonological and semantic processing of words. The Organization for Human Brain Mapping</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Walter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Jbabdi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Marrelec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">11 th Annual Meeting</title>
+		<meeting><address><addrLine>Toronto</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,288.15,335.71,221.59,6.27;5,288.15,344.71,248.27,6.27" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Hemispheric specialization for the semantic processing of words: a near-infrared spectroscopy (NIRS) study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kahlaoui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lesage</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Senhadji</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="page" from="193" to="197" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,440.37,420.32,47.64,8.78;5,440.37,432.92,42.20,8.78;5,196.14,538.29,196.62,8.86;5,196.14,547.17,222.38,8.86;5,196.14,558.18,321.73,8.84" xml:id="b33">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Tirés À Part K. Kahlaoui À Retourner À Edk</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">fr NOM : .......................................................................................................................... Prénom : ...................................................................................................................</orgName>
+			</affiliation>
+		</author>
+		<idno>rue Troyon -92316 Sèvres Cedex Tél. : 01 55 64 13 93 -Fax : 01 55 64 13 94 -E-mail : edk@edk</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,196.14,569.18,321.71,8.84" xml:id="b34">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">:</forename><forename type="middle">. .</forename><surname>Adresse</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">................................................................................................................. ................................................................................................................................................</orgName>
+			</affiliation>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct coords="5,196.14,611.51,276.00,11.55;5,196.14,626.36,176.49,9.45" xml:id="b35">
+	<monogr>
+				<title level="m">Je souhaite recevoir l&apos;ouvrage Alcool et familles : 15 € + 3 € de port = 18 € TTC</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,715 @@
+<TEI>
+	<standOff>
+		<teiHeader/>
+		<text>
+			<front/>
+			<body/>
+			<back>
+<listBibl>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="4,342.95,639.34,186.11,6.27;4,342.95,648.34,192.31,6.27;4,342.95,657.34,171.77,6.27;4,342.95,666.34,38.07,6.27" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Right hemisphere language comprehension: perspectives from cognitive neuroscience</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Beeman</surname></persName>
+		</author>
+		<editor>Beeman MJ, Chiarello C</editor>
+		<imprint>
+			<date type="published" when="1998" />
+			<publisher>Erlbaum</publisher>
+			<biblScope unit="page" from="255" to="84" />
+			<pubPlace>Mahwah, NJ</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Coarse semantic coding and discourse comprehension</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="4,342.95,675.34,164.66,6.27;4,342.95,684.34,137.45,6.27" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Time course of semantic activation in the cerebral hemispheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Koivisto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="497" to="504" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="4,342.95,693.34,169.25,6.27;4,342.95,702.34,175.72,6.27" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Hemispheric asymmetries in activation and integration of categorical information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Koivisto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Laine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Laterality</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="29" to="33" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,56.71,180.63,6.27;5,68.94,65.71,194.68,6.27;5,68.94,74.71,190.50,6.27" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Analyse en champ visuel divisé</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Faure</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Méthodes en neuropsychologie : applications à l&apos;étude de la mémoire et du langage. Montpellier : Atelier de formation Inserm</title>
+		<editor>Cardebat D, Eustache F, Faure S</editor>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,83.71,177.16,6.27;5,68.94,92.71,131.26,6.27" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Hemisphere dynamics in lexical access: automatic and controlled priming</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="146" to="72" />
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,101.71,177.89,6.27;5,68.94,110.71,187.69,6.27;5,68.94,119.71,45.99,6.27" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Semantic priming with abstract and concrete words: differential asymmetry may be postlexical</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Senehi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Nuding</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="43" to="60" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,128.71,186.76,6.27;5,68.94,137.71,193.49,6.27;5,68.94,146.71,147.04,6.27" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Semantic and associative priming in the cerebral hemispheres: Some words do, some words don&apos;t… sometimes, some places</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Chiarello</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Burgess</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Richards</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Pollock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page" from="75" to="104" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,155.71,176.00,6.27;5,68.94,164.71,187.43,6.27;5,68.94,173.71,132.31,6.27" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Differences in semantic category priming in the left and right cerebral hemispheres under automatic and controlled processing conditions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Collins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="1071" to="85" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,182.71,169.14,6.27;5,68.94,191.71,187.53,6.27;5,68.94,200.71,189.50,6.27;5,68.94,209.71,114.32,6.27" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">The control of speech in the adult brain: the disconnected right hemispheres of PS, VP, and JW</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Code</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Classic cases in neuropsychology</title>
+		<editor>Code C, Wallesch C, Joanette Y, Lecours AR</editor>
+		<meeting><address><addrLine>Hove, UK</addrLine></address></meeting>
+		<imprint>
+			<publisher>Psychology Press</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">II</biblScope>
+			<biblScope unit="page" from="109" to="138" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,218.71,157.83,6.27;5,68.94,227.71,191.84,6.27;5,68.94,236.71,74.13,6.27" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Cerebral specialization and interhemispheric communication: does the corpus callosum enable the human condition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Gazzaniga</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain</title>
+		<imprint>
+			<biblScope unit="volume">123</biblScope>
+			<biblScope unit="page" from="1293" to="326" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,245.71,189.67,6.27;5,68.94,254.71,77.57,6.27" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Language dysfunction associated with right-brain damage</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Eisenson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lang Speech</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="49" to="53" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,263.71,171.09,6.27;5,68.94,272.71,185.21,6.27;5,68.94,281.71,169.56,6.27" xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Speech and speech-loss in relation to duality of the brain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Critchley</surname></persName>
+		</author>
+		<editor>Mountcastle VB</editor>
+		<imprint>
+			<date type="published" when="1962" />
+			<publisher>Johns Hopkins Press</publisher>
+			<biblScope unit="page" from="208" to="221" />
+			<pubPlace>Baltimore, MD</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Interhemispheric relations and cerebral dominance</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,290.71,189.47,6.27;5,68.94,299.71,158.34,6.27;5,68.94,308.71,194.56,6.27;5,68.94,317.71,32.04,6.27" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Impacts d&apos;une lésion cérébrale droite sur la communication verbale</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Hémisphère droit et communication verbale. Paris : Fédération Nationale des Orthophonistes</title>
+		<editor>Joanette Y, Monetta L</editor>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="9" to="26" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,326.71,168.34,6.27;5,68.94,335.71,132.86,6.27" xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Right hemisphere and verbal communication</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Hannequin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Springer-Verlag</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,344.71,195.69,6.27;5,68.94,353.71,178.55,6.27" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Unilateral brain damage effects on processing homonymous and polysemous words</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Klepousniotou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">R</forename><surname>Baum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="308" to="334" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,362.71,186.25,6.27;5,68.94,371.71,171.91,6.27;5,68.94,380.71,194.72,6.27" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Hemispheric contributions to lexical ambiguity resolution in a discourse context: evidence from individuals with unilateral left and right hemisphere lesions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Grindrod</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">R</forename><surname>Baum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Cogn</title>
+		<imprint>
+			<biblScope unit="volume">57</biblScope>
+			<biblScope unit="page" from="70" to="83" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,389.71,184.58,6.27;5,68.94,398.71,184.45,6.27;5,68.94,407.71,97.77,6.27" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Appreciation of metaphoric alternative word meanings by left and right brain-damaged patients</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Brownell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">L</forename><surname>Simpson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Bihrle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="page" from="375" to="83" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,68.94,416.71,178.18,6.27;5,68.94,425.71,181.82,6.27;5,68.94,434.71,31.77,6.27" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Qualitatively different organizational structures of lexical knowledge in the left and right hemisphere</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Drews</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="419" to="446" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,56.71,247.66,6.27;5,288.15,65.71,121.43,6.27" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Utilisation active et passive du savoir lexico-sémantique chez les cérébrolésés</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gagnon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Langages</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page" from="95" to="111" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,74.71,233.42,6.27;5,288.14,83.71,234.10,6.27;5,288.14,92.71,123.51,6.27" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Automatic and controlled activation of lexical-semantic knowledge in right-brain-damaged right-handers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Gagnon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Goulet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Joanette</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Linguistische Berichte (Special issue: neurolinguistics)</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page" from="33" to="48" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+	<note>n° spécial</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,101.71,224.34,6.27;5,288.14,110.71,104.03,6.27" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Reading senseless sentences: Brain potentials reflect semantic incongruity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kutas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Hillyard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">207</biblScope>
+			<biblScope unit="page" from="203" to="208" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,119.71,250.38,6.27;5,288.14,128.71,140.60,6.27" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Priming by natural category membership in the left and right cerebral hemispheres</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Grose-Fifer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Deacon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="page" from="1948" to="960" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,137.71,246.47,6.27;5,288.14,146.71,236.66,6.27" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Hemispheric differences in the time-course of semantic priming processes: evidence from event-related potentials (ERPs)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bouaffre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Faita-Ainseba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Cogn</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="123" to="158" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,155.71,234.46,6.27;5,288.14,164.71,214.25,6.27" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Right hemisphere activation during indirect semantic priming: evidence from event-related potentials</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kiefer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Weisbrod</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Kern</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page" from="377" to="408" />
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,173.71,220.80,6.27;5,288.14,182.71,107.68,6.27" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Time course of activating brain areas in generating verbal associations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">G</forename><surname>Abdullaev</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">I</forename><surname>Posner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychol Sci</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page" from="56" to="65" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,191.71,242.47,6.27;5,288.14,200.71,49.14,6.27" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Hemispheric differences and joke comprehension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Coulson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">F</forename><surname>Williams</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="128" to="169" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.13,209.71,241.26,6.27;5,288.14,218.71,117.13,6.27" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Renewal of the neurophysiology of language: functional neuroimaging</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">F</forename><surname>Demonet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Thierry</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cardebat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Physiol Rev</title>
+		<imprint>
+			<biblScope unit="volume">85</biblScope>
+			<biblScope unit="page" from="49" to="95" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,227.71,244.97,6.27;5,288.14,236.71,219.31,6.27" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Neural correlates of semantic priming for ambiguous words: an event-related fMRI study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Copland</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">I</forename><surname>De Zubicaray</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mcmahon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Eastburn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Res</title>
+		<imprint>
+			<biblScope unit="volume">1131</biblScope>
+			<biblScope unit="page" from="163" to="72" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,245.71,230.07,6.27;5,288.14,254.71,222.88,6.27;5,288.14,263.71,104.07,6.27" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The role of the right hemisphere in processing nonsalient metaphorical meanings: application of principal components analysis to fMRI data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Mashal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Faust</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Hendler</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neuropsychologia</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="page" from="2084" to="100" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,272.71,241.69,6.27;5,288.14,281.71,55.44,6.27" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Phonology, semantics, and the role of the left inferior prefrontal cortex</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Fiez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Hum Brain Map</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="79" to="83" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,290.71,245.05,6.27;5,288.14,299.71,52.20,6.27" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Bilateral brain processes for comprehending natural language</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Jung-Beeman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Trends Cogn Sci</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="512" to="520" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.14,308.71,237.50,6.27;5,288.14,316.88,228.73,7.10;5,288.15,326.71,94.74,6.27" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">FMRI functional connectivity of the phonological and semantic processing of words. The Organization for Human Brain Mapping</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Walter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Jbabdi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Marrelec</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">11 th Annual Meeting</title>
+		<meeting><address><addrLine>Toronto</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,288.15,335.71,221.59,6.27;5,288.15,344.71,248.27,6.27" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Hemispheric specialization for the semantic processing of words: a near-infrared spectroscopy (NIRS) study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Kahlaoui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lesage</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Senhadji</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Brain Lang</title>
+		<imprint>
+			<biblScope unit="volume">99</biblScope>
+			<biblScope unit="page" from="193" to="197" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,440.37,420.32,47.64,8.78;5,440.37,432.92,42.20,8.78;5,196.14,538.29,196.62,8.86;5,196.14,547.17,222.38,8.86;5,196.14,558.18,321.73,8.84" xml:id="b33">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Tirés À Part K. Kahlaoui À Retourner À Edk</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">fr NOM : .......................................................................................................................... Prénom : ...................................................................................................................</orgName>
+			</affiliation>
+		</author>
+		<idno>rue Troyon -92316 Sèvres Cedex Tél. : 01 55 64 13 93 -Fax : 01 55 64 13 94 -E-mail : edk@edk</idno>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,196.14,569.18,321.71,8.84" xml:id="b34">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">:</forename><forename type="middle">. .</forename><surname>Adresse</surname></persName>
+			<affiliation>
+				<orgName type="collaboration">................................................................................................................. ................................................................................................................................................</orgName>
+			</affiliation>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" coords="5,196.14,611.51,276.00,11.55;5,196.14,626.36,176.49,9.45" xml:id="b35">
+	<monogr>
+				<title level="m">Je souhaite recevoir l&apos;ouvrage Alcool et familles : 15 € + 3 € de port = 18 € TTC</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</back>
+		</text>
+	</standOff>
+</TEI>

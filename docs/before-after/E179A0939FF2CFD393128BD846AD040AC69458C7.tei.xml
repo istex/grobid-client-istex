@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Version 1.2 générée le 27-11-2017--><TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:lang="en" type="research-article"><teiHeader><fileDesc><titleStmt><title level="a" type="main" xml:lang="en">Ps.-Albert the Great on the Physiognomy of Jesus and Mary</title><respStmt><resp>Références bibliographiques récupérées via GROBID</resp><name resp="ISTEX-API">ISTEX-API (INIST-CNRS)</name></respStmt></titleStmt><publicationStmt><authority>ISTEX</authority><publisher scheme="https://publisher-list.data.istex.fr">Pontifical Institute of Mediaeval Studies</publisher><availability><licence><p>Brepols</p></licence></availability><p scheme="https://loaded-corpus.data.istex.fr/ark:/67375/XBH-G49QVQ7L-X"/><date>2002</date></publicationStmt><notesStmt><note type="research-article" scheme="https://content-type.data.istex.fr/ark:/67375/XTP-1JC4F85T-7">research-article</note><note type="journal" scheme="https://publication-type.data.istex.fr/ark:/67375/JMC-0GLKJH51-B">journal</note></notesStmt><sourceDesc><biblStruct type="inbook"><analytic><title level="a" type="main" xml:lang="en">Ps.-Albert the Great on the Physiognomy of Jesus and Mary</title><author xml:id="author-0000"><persName><forename type="first">Irven M.</forename><surname>Resnick</surname></persName></author><idno type="istex">E179A0939FF2CFD393128BD846AD040AC69458C7</idno><idno type="ark">ark:/67375/NDQ-4FXC42J6-G</idno><idno type="DOI">10.1484/J.MS.2.306494</idno><idno type="href">J.MS.2.306494.pdf</idno></analytic><monogr><title level="j">Mediaeval Studies</title><idno type="pISSN">0076-5872</idno><idno type="publisher-id">ms</idno><imprint><publisher>Pontifical Institute of Mediaeval Studies</publisher><date type="published" when="2002-01"/><biblScope unit="volume">64</biblScope><biblScope unit="page" from="217">217</biblScope><biblScope unit="page" to="240">240</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc><profileDesc><creation><date>2002</date></creation><langUsage><language ident="en">en</language></langUsage></profileDesc><revisionDesc><change when="2002-01">Published</change><change xml:id="refBibs-istex" who="#ISTEX-API" when="2017-11-27">References added</change></revisionDesc></teiHeader><text><body><div><p>PS.-ALBERT T H E G R E A T ON T H E
+PHYSIOGNOMY OF JESUS AND MARY*
+
+Irv e n M . R e sn ic k
+
+ARLY Christianity produced several literary accounts to support specific
+iconographic depictions o f Jesus, Mary, and the saints, which seek ulti­
+m ately to establish that one can state authoritatively what each one actually
+looked like. For exam ple, the legendary veil o f Veronica pretends to offer a
+true im age o f Jesus’s visage that had been transferred to her cloth as Jesus
+wiped his face on the road to Calvary.1 Sim ilarly, the legend o f Abgar o f
+Edessa provides both a literary and iconographic basis for a description o f
+Jesus’ physical appearance. According to one version o f the probably thirdcentury legend o f Abgar, Hanan, Abgar’s archivist and painter, had been
+charged to paint a portrait o f Jesus. W hen he com pleted his task he brought
+the holy im age back with him to Edessa, where it becam e an object o f ven­
+eration.2 In an alternative account, Jesus provided Abgar w ith a self-portrait.3
+Sim ilarly, the apostle Luke is said to have painted an authoritative im age o f
+the Virgin M ary, which w as then left to the Church. Later Byzantine theo­
+logians commonly affirmed the authenticity o f both the portrait o f Jesus sent
+to Abgar o f Edessa and Luke’s portrait o f M ary.4 A picture o f the Virgin in
+Rom e’s S. M aria M aggiore is ascribed to Luke.
+
+* I would like to express my gratitude to the National Endowment for the Humanities for
+financial support that enabled me to begin work on this paper, and, to the Oxford Centre for
+Hebrew and Jewish Studies, which kindly opened its facilities to me as a visiting scholar during
+the summer months o f 2000.
+1 One version o f the legend o f Veronica’s veil can be found, for example, in the apocryphal
+D ea th o f P ila te (M ors P ila ti). In this work, as in the legend o f Abgar o f Edessa, the image o f
+Jesus has a miraculous healing power. For the history o f the image, see Ewa Kuryluk, Veronica
+a n d H e r C loth : H istory, S ym bolism , a n d Stru ctu re o f a “True" Im age (Cambridge, M ass.,
+1991).
+1 The T eaching o f A d d a i, trans. George Howard, Early Christian Literature Series 4 , Texts
+and Translations 16 (Chico, Ca., 1981), 9. For this Syriac text and tradition, see also the H is­
+to ire du ro i A b g a r e t d e Jésus, ed. Alain Desreumaux, Apocryphes 3 (Tumhout, 1993).
+3 Another version o f the legendary correspondance between Abgar and Jesus, although
+without reference to the portrait, is found in Eusebius o f Caesarea’s H isto ria e c clesia stica 1.13.
+4 See, for example, chap. 69 o f Theodore the Studite’s v ita (PG 99:178D).
+M ediaeval Studies 64 (2002): 217-40. © Pontifical Institute of Mediaeval Studies.
+
+218
+
+I. M. RESNICK
+
+Regardless o f their authenticity, these legends would establish an authorita­
+tive basis for venerated depictions o f Jesus and M ary by arguing for their
+apostolic origin. In the absence o f traditions for apostolicity, claim s o f
+m iraculously produced im ages (acheiropoietai) o f the saints serve the same
+purpose.5 W hereas legends such as these provided to churchmen from late an­
+tiquity and the early M iddle A ges a foundation from which to fashion im ages
+o f Jesus, M ary, and the saints, their role w as, in at least one scholastic text
+from the thirteenth century, usurped by a discussion rooted in physiognomy.
+Physiognom y w ill provide an opportunity to fashion depictions o f Jesus and
+M ary on an allegedly scientific basis. In the follow ing, I intend to exam ine a
+portion o f one scholastic text, Ps.-A lbert the Great’s M ariale or CCXXX
+quaestiones super Evangelium “M issus e s t” {quaestiones 17-20), as a sort o f
+case study o f the impact o f physiognom y on theology.
+
+I. P h y s io g n o m y a s S c ie n c e in t h e T h ir t e e n t h C e n t u r y
+
+A s indicated above, although these iconographic legends and others re­
+mained popular in m edieval Latin Christendom,6 it fell to thirteenth-century
+scholastics to attempt a scientific account o f the physical appearance o f Jesus
+and Mary. The possibility o f such an account depended first on the introduc­
+tion o f ancient Greek m edical texts and treatises on physiognom y. Although a
+few pre-scholastic authors reveal some acquaintance with physiognom y, a
+genuine interest in and system atic account o f physiognom y is entirely absent
+among them .7 For the scholastics, the m ost influential treatises on physiog­
+nomy were those attributed erroneously to Plato (or other ancient w orthies),8
+5 For a discussion o f ach eiropoietai, see Ernst Kitzinger, “H ie Cult o f Images in the A ge
+before Iconoclasm,” D u m barton O aks P a p e rs 8 (1954): 112-15.
+6 For example, Albert the Great mentions (following Eusebius o f Caesarea) that the woman
+who was healed by Jesus o f a bloody flux (cf. Luke 8:43 f.) “had an image made in the likeness
+o f the Saviour” (“ad similitudinem Salvatoris fecit fieri imaginem”), dressed it in garments like
+those he wore, and placed it in her garden. Any herb that grew under the image also enjoyed the
+power to cure this bloody flux. See In E vangelium L u cae 8:43, ed. A. Borgnet, O pera omnia,
+38 vols. (Paris, 1890-99), 22:580.
+7 Boethius briefly discusses physiognomy. See his In terp reta tio p rio ru m an alyticoru m
+A ris to te lis 2.28 (PL 64:712A-B). John o f Salisbury also mentions the teaching o f the physiog­
+nomists (which John knew from Pliny the Elder’s N a tu ra lis H isto ria ) but only in passing. See
+P o lic ra tic u s 5.15, ed. C. C. J. Webb, 2 vols. (Oxford, 1909), 1:345. Nevertheless, physiognomy
+w as popular among Roman authors and its principles were certainly known to some early
+Christian writers. For discussion, see Elizabeth C. Evans, “The Study o f Physiognomy in the
+Second Century A .D .,” T ran saction s a n d P ro ceed in g s o f the A m erican P h ilo lo g ic a l A sso c ia ­
+tion 72 (1941): 96-108.
+8 For a collection o f such treatises, see especially S c rip to re s ph ysio g n o m o n ici G ra eci e t
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+219
+
+and to A ristotle. The Aristotelian, or rather pseudo-Aristotelian m aterials, in­
+clude the Secretum secretorum— introduced to the court o f Frederick II in the
+long form translated by Philip o f Tripoli9— and P s.-A ristotle’s Physiognomy,
+translated by Bartholomew o f M essina sometime before 1262, although a
+draft or outline o f the work seem s to have been available earlier.10 These
+works, as w ell as Arabic sources that transmitted their doctrines, presented to
+the Latin world the physiognom y o f the ancients.
+M ost important, it w as in the thirteenth century that physiognom y as a sci­
+ence w as seen as a proper instrument for discerning in the outward appear­
+ance o f a human (or animal) the accidental properties o f the soul. In other
+words, the external appearance, when properly interpreted, becam e a mirror o f
+the inner being and could reveal its nature.11 It is not coincidental, then, that
+M ichael Scot, translator o f A ristotle’s H istoria animalium, left us also a L iber
+phisionom iae— better known in the Renaissance under the title D e secretis
+nature. This L iber phisionom iae constitutes the third book o f his tripartite
+L iber introductorius, and follow s after the L iber quattuor distinctionum and
+L iber particularis. It has been described as the first true work on physiog­
+nomy com posed in the m edieval W est.12 Dedicated to Frederick II, M ichael
+
+L atin i, ed. R. Foerster, 2 vols. (Leipzig, 1893; rpt. Stuttgart and Leipzig, 1994). For the very
+popular anonymous treatise D e p h ysiogn om on ia lib e r with a French translation, see A nonym e
+L a tin T raité d e ph ysiogn om ie, trans. Jacques André (Paris, 1981).
+9 For a brief summary, see W illiam Eamon’s S cience a n d the S ecrets o f N atu re: B o o k s o f
+S ecrets in M e d ie v a l a n d E a rly M o d e m C ulture (Princeton, 1994), 4 5 -4 9 . For the claim that
+
+Michael Scot used Philip o f Tripoli’s translation at Frederick IPs court, see Steven J. Williams,
+“The Early Circulation o f the Pseudo-Aristotelian S e c re t o f S ecrets in the West: The Papal and
+Imperial Courts,” M icro lo g u s: N atura, scien ze e so c ie tà m edievali, vol. 2: L e scien ze a lia co rte
+d i F ed erico I I (Tumhout, 1994), 127-44, andesp. 136.
+10 Danielle Jacquart suggests that, based on similarities found between Michael Scot’s
+L ib e r p h isio n o m ia e and Ps.-Aristotle’s P hysiognom y, perhaps an outline o f the latter was intro­
+duced at the court o f Frederick H. See D anielle Jacquart, “La physiognomonie à l ’époque de
+Frédéric II: Le traité de M ichel Scot,” M ic ro lo g u s 2: L e scien ze a lla co rte d i F ed erico II, 25.
+Ps.-Aristotle’s text on physiognomy was frequently commented on. For a discussion o f John
+Buridan’s fourteenth-century commentary, see Lynn Thorndike, “Buridan’s Questions on the
+Physiognomy Ascribed to Aristotle,” Speculum 18 (1943): 99-103. For a translation o f Ps.Aristotle’s P h ysiogn om on ies, see The C om plete W orks o f A risto tle : The R e v ise d O xford
+T ranslation, ed. Jonathan Barnes, 2 vols. (Princeton, N.J., 1984), 1:1237-50. For some discus­
+sion o f Ps.-Aristotelian texts on physiognomy in the Latin medieval world, see Charles Schmitt,
+“Pseudo-Aristotle in the Latin Middle A ges,” in P seu d o -A risto tle in th e M id d le A ges, ed. Jill
+Kraye, W. F. Ryan, and C. B. Schmitt (London, 1986), 6 -7 .
+11 For this theme, see especially Jole Agrimi, “Fisiognomica: nature alio specchio ow ero
+luce e ombre,” M ic ro lo g u s 4: II teatro d e lla natura (Tumhout, 1996), 129-78.
+12 See D anielle Jacquart, “La Physiognomonie à l ’époque de Frédéric K: Le traité de
+M ichel Scot,” 20. M ichael’s authorship o f the L ib e r ph isio n o m ia e or, in general, o f the L ib e r
+in trodu ctoriu s, seems w ell established but Charles Burnett, noting the extensive use Bartholo-
+
+220
+
+I. M. RESNICK
+
+Scot com posed the work to enable the emperor to distinguish, from outward
+appearances, trustworthy and w ise counselors from their opposite numbers.
+Such a science is so useful to a ruler that M ichael Scot does not hesitate to de­
+scribe it as a “doctrine o f salvation.”13 N or is it coincidental that Albert the
+Great devoted tw o questions to a defense o f physiognom y in his Quaestiones
+super de anim alibus,14 or that a large section o f the first book o f his D e animalibus is given over to the study o f physiognom y, sometimes circulating
+independently under the title D e physiognomic*.15 About the tim e o f the com ­
+position o f D e animalibus— ca. 1263— physiognom y w as becom ing w ell inte­
+grated into the study o f science and natural philosophy in m edieval Europe.16
+Albert, in particular, devotes the second chapter o f the first book o f his D e
+animalibus to the “science o f physiognom y.” There he proposes to reveal how
+“physiognom y . . . teaches one to make predictions about human dispositions
+using the physical shapes o f their members.” 17 Among human beings, then,
+
+m ew o f Parma made o f M ichael’s work, has suggested that Bartholomew edited M ichael’s
+L ib e r p a rtic u la ris and L ib e r q u a ttu o r distinctionum . Therefore, he warns, “great caution must
+be exercised in accrediting anything in the L ib e r in trodu ctoriu s to M ichael.” See Charles Bur­
+
+nett, “Michael Scot and the Transmission o f Scientific Culture from Toledo to Bologna via the
+Court ofFrederick II Hohenstaufen,” M ic ro lo g u s 2: L e scien ze a lia corte d i F ed erico II, 117.
+13 “Phisionomia est doctrina salutis: electio boni et vitatio mali, comprehensio virtutis et
+praetermissio vitiorum. Hoc autem inducit verus amor d e i. . . ” (Michael Scot, L ib e r p h isio n o m iae, proemium). I have used the Venice edition (1477). A t least eighteen editions appeared
+subsequently, indicating the popularity o f the work.
+14 Albert the Great, Q u aestion es su p er d e anim alibus 1.21-22, ed. Ephrem Filthaut, O pera
+om nia 12 (Munster, 1955), 94-96.
+15 See P. G. Meersseman, In trodu ctio in op era om nia B . A lb e rti M a g n i O.P. (Bruges,
+1931), 139. N ote too that in D e an im alibu s 23.1.46 Albert alludes to a work o f his own with the
+title P h yson om ya; see Albertus Magnus, On A n im als: A M e d ie v a l Sum m a Z oologica, frans.
+Kenneth F. Kitchell, Jr., and Irven Michael Resnick, 2 vols. (Baltimore and London, 1999),
+1573. In all references to D e an im alibu s the Latin text and the book, chapter, and paragraph
+numbers (or book, treatise, chapter, and paragraph numbers) are from Hermann Stadler’s edi­
+tion, D e an im alibu s lib ri XXVI, Beiträge zur Geschichte der Philosophie des Mittelalters 15 and
+16 (Münster, 1916-21 ); the English translation is cited by page number.
+16 For a review o f the route by which physiognomy entered into medieval science and phi­
+losophy, see Jole Agrimi, “Fisiognomica e ‘Scolastica,’ ” M ic ro lo g u s 1 : 1 d is c o rsi d e i c o rp i
+(Tumhout, 1993), 23 5 -7 1 .
+17 “. . . physonomia . . . divinare docet de affectibus hominum per physicas formas membrorum” (Albert the Great, D e an im alibu s 1.2.2.126; On A nim als, 93). No good studies o f A l­
+bert’s treatment o f physiognomy exist, although two treatments appeared before WWII
+comparing some o f Albert’s views with the racial science o f pre-war Germany. See Hans
+Scharold’s “D ie Physiognomie des Albertus Magnus und die moderne Wissenschaft,”
+B a yerisch e B lä tte r f u r d a s G ym nasial-Schulw esen 68/5 (1932): 289-301; and F. M. Barbado,
+“La physionomie, le tempérament et le caractère, d’après Albert le Grand et la science
+moderne,” Revue T hom iste 36 (1931): 314-51.
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+221
+
+certain predictable forms o f behavior arise from our physical constitutions:
+from the humoral com plexion and the form or arrangement o f our members.
+This is not to say that w e are pre-determined to act in a certain w ay at birth
+but only that since the soul is united to the body, the body can affect the soul,
+ju st as the rational soul, when properly developed, can (and ought to) govern
+the desires and inclinations o f the body. To the extent that our behavior can be
+traced back to a rational w ill, Albert w ill discuss it in his commentary on
+A ristotle’s Nicomachean Ethics; to the extent that it is affected and revealed
+by the body, he w ill discuss it under the science o f physiognom y. Albert’s
+named authorities in the discussion o f this science are A ristotle (or P s.A ristotle), Avicenna, Constantine the A frican,18 L exus, and Palem on.19 These,
+as w ell as a few authors on judicial astrology— since the stars m ay also affect
+the disposition o f the matter when the body is formed— provide Albert with
+the principles o f a science o f physiognomy.
+Although physiognom y may examine all o f the members o f the body to de­
+termine the inclinations or passions o f the soul— i.e., the character o f the indi­
+vidual— it is the face and those organs nearest the brain that have an
+especially exalted place for the physiognom ist.20 H ighest among them w ill be
+the eyes. Albert remarks that “The entire perfection o f physiognom y exists in
+the eyes. For Palemon says they are like the ‘flowers o f the sou l,’ that the soul
+shines forth through the eyes and that their sole disposition is to be an en­
+trance through which the character can be viewed. . . . For this reason all the
+physiognom ists are as one in claiming that the eye is the true m essenger o f the
+heart.”21
+A fter the eyes, the appearance o f the forehead, nose, lips, mouth, hair, ears,
+neck, groin and genitals, the hue o f the skin, and the body’s posture and
+movements seem to present the clearest indications o f character. The indica­
+tions provided by any one o f these alone w ill be insufficient for a secure
+18 For a brief discussion o f Constantine’s life and sources for his biography, see MarieThérèse d’Alvem y, “Translations and Translators,” in R en aissan ce a n d R en ew al in the Twelfth
+Century, ed. Robert L. Benson and Giles Constable, with Carol D. Lariham (Cambridge, M ass.,
+1982; rpt. Toronto, 1991), 422-26.
+19 For the identity o f Loxus and Palemon, see Albertus Magnus, On A nim als, 94 n. 206,
+and Foerster’s S crip to res p h ysiogn om on ici G ra eci e t L atin i l:x v iii-x ix ., lxxv-lxxvi, and
+clxxvii-clxxviii.
+20 Albert the Great, Q uaestiones su p e r d e a n im alibu s 1.22, ed. Filthaut, 96.6-7: “Maxime
+enim accipitur physiognomia respecta faciei et partium anteriorum, quae vicinantar cerebro.”
+21 “In occulis autem principaliter consistit omnis perfectio physonomiae. D ixit enim
+Palemon occulos esse tamquam flores animae, et animant emicare per occulos, et solam occulorum dispositionem esse aditam, per quern animus introspici possit. . . . Propter quod etiam
+occulum verum cordis esse nuntium affirmaverunt omnes simul physyonomi” (Albert the
+Great, D e an im alibu s 1.2.3.142; On A nim als, 99).
+
+222
+
+I. M. RESNICK
+
+judgment. M ichael Scot cautions that the physiognom ist should gather to­
+gether the indications o f the entire body, and consider also a number o f other
+variables (the person’s age, period o f residence in a particular area, medical
+history, and other accidental conditions).22 But when the indicators are in gen­
+eral agreement w ith one another the physiognom ist can arrive at a seem ingly
+scientific conclusion.
+W hen the principles o f this science are applied, they can produce alledgely
+reliable evaluations o f character. For exam ple, Albert the Great avers, “Red­
+dish eyes that bulge for a long tim e signify a lecherous, voracious person.
+Very sm all, bulging eyes are a strong indication o f one who is very greedy for
+gain.”23 One can deduce other character traits from the appearance o f the nose
+or nostrils:
+When the nostrils are sharp at the tip, they indicate a person quick to anger.
+When they are inordinately thick, they announce that the person is to be
+thought o f as foul. When the bottoms of the nostrils are solid and round, blunt
+as it were, they declare him strong and great-hearted. Plato felt that such nos­
+trils were given to leonine and well-born “canine” men. This is because he saw
+such nostrils on lions and well-born dogs and he said that a certain likeness
+exists between various animals and men and that people imitate the habits of
+such animals.24
+Plato’s (more probably, Palem on’s) observation that this type o f nostril
+typically appeared in only well-born or noble anim als, and that a certain
+analogy exists between humans and anim als, leads to the conclusion that in
+humans too “the nostrils [that] are solid and round” indicate one who is
+“strong and great-hearted.” In like manner, bodily proportions are held to be
+instructive. Thus, follow ing a discussion o f the anatomy, function, and shape
+o f the genitals, Albert adds,
+Philemon says that the space which extends from below the navel [umbilicus]
+to the bottom of the pecten [the groin area] must be measured, as must that
+which extends from the umbilicus to the beginning o f the neck at the clavicles.
+22 Michael Scot, L ib e r p h isio n o m ia e 102.
+23 “Stantes [occuli] autem diu et subrubentes libidinosum significant et voracem. Stantes
+autem et breves valde significant multum avarum lucrorum” (Albert the Great, D e a n im alibu s
+1..2.3.144; O n A nim als, 100-101).
+24 “Nares autem cum in extremo acutae sunt, facilem ad iracundiam hominem ostendunt.
+Crassae autem extra modum nares immundum hominem dant intelligi. Cum ima narium solida
+sunt rotunda, tamquam sint obtusa, fortem dicunt et magnanimum. Tales enim nares Plato censuit dari leoninis hominibus et caninis generosis, eo quod in leonibus et caxiibus generosis tales
+nares videbat. Dicebat enim, quod quaecumque similitudo animalium aliquorum in hominibus
+est, quod et homines talium imitantur mores anim alium. . .” (ibid. 1.2.8.223; On A nim als, 12930, slightly modified).
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+223
+
+For these distances are naturally equal in a fully extended man. If it is equal,
+then this signifies praiseworthy mental power and bodily disposition. If, how­
+ever, the chest is longer, the power of the mind w ill overcome the condition of
+the body.. . . But if the span of the belly is longer than that above, the man
+w ill be voluptuous and a fornicator.. . . Loxus says that a softer, fairly con­
+cave belly is a sign of power and magnificence of the mind. Aristotle, how­
+ever, says that one who has a large belly is indiscrete, dull, haughty, and loves
+the act of intercourse. A moderate sized belly, along with a corresponding nar­
+rowing of the chest, indicates loftiness of intellect and good counsel.25
+Finally, not only do the members o f the body reveal the accidental attributes
+o f the soul (i.e., character), but so too do the body’s movements:
+A person’s gait, proceeding as it does from the inclination o f his nature, an­
+nounces what his mind is like and what his habits are. Thus, those who go
+forward with long steps are shown to be great-hearted and effective, while
+those who go forward with shortened steps are ineffective, pusillanimous, nig­
+gardly, and afflicted by grief.26
+Once again, in isolation these physical indicators might not provide useful
+information to the physiognom ist, but the accum ulated weight o f evidence—
+based on the formation o f many o f the members o f the body— w as accepted as
+having probative value. Consequently, the modem reader must bear patiently
+w ith a scholastic inclination to enumerate and catalogue evidence drawn from
+physiognom y. This patience w ill be rewarded, since this evidence w as utilized
+in the M iddle A ges not only as a guide to the character and habits o f individu­
+als, but also as an ethnological indicator o f the character o f peoples or races.
+The Polem onis de physiognom onia liber devotes a good deal o f attention to
+the characteristics o f the inhabitants o f various regions, identifying the Greeks
+
+25 “D icit enim Phylemon metiendum esse spatium, quod est ab umbilico inferius usque ad
+iirnun pectinis, et spatium quod est ab umbilico usque ad colli iuitium in furculis: hoc enim in
+bene extenso homine secundum naturam aequale est: et siquidem aequale est, laudabilem significat et animi virtutem et corporis dispositionem. Si autem pectus longius sit, vincet animi
+virtus corporis habitudinem. . . . Si autem spatium ventris vincit spatium superius, erit fornica­
+tor et voluptuosus.. . . Ventrem autem molliorem atque impressiorem virtutem animi et magnificentiam dicit Loxus significare. Aristoteles autem dicit, quod qui magnum ventrem habet,
+est indiscretus, stolidus, superbus et coitum amans. Mediocritas autem ventris cum competenti
+strictura pectoris significat altitudinem intellectus et boni consilii” (ibid. 1.2.24.469; On A n i­
+m als, 225, modified). For a discussion o f some o f these indicators, see Sebastian Killermann,
+‘D ie somatische Anthropologie bei Albertus Magnus,” A ngelicum 21 (1944): 224-69.
+26 “Incessus quoque hominis ex inclinatione naturae procedens annuntiat de eo qualis sit
+animi et qualium morum: qui enim longis passibus incedunt, magnanimi esse significantur et
+efficaces. Qui vero angustis passibus incedunt, inefficaces sunt parvae mentis et parci atque
+dolore astricti. . .” (Albert the Great, D e an im alibu s 1.2.26.510; On A nim als, 241).
+
+224
+
+I. M. RESNICK
+
+in particular as having a pure and well-balanced com plexion.27 In a sim ilar
+w ay M ichael Scot distinguishes the physical features o f peoples in different
+geographical regions:
+In warm regions the native peoples (gentes) have brown skin, as is evident
+among the Ethiopians.. . . They have dry curly hair and they have hair that is
+coarse and rough. But in cold regions tall people are bom and they have a very
+pale or white skin. They are denuded of hair or almost so, especially those
+who are very pale or white. Note too that a region varies by province and, with
+respect to a woman’s womb, if both are warm, then the creature generated will
+be warm and the one generated w ill be black or brown, etc. But if both are
+cold, then [the creature] w ill be more or less white according to the com­
+plexion o f the region.28
+From this it is clear that the body and its appearance is affected by
+conditions o f the womb and, later, by clim ate and geography. Albert the Great
+provides another w itness and notes that “Hair also differs according to the di­
+versity o f regions, for diversity o f dwelling place also causes diversity o f
+com plexion, even among those living in them. For the hair o f men who are in
+warm places is hard and curly, as is the hair o f the Ethiopians. But the hair o f
+those in cold places is soft.”29 Albert’s remarks, like those o f M ichael Scot,
+are not m erely intended to reflect observable differences among races or
+peoples in different parts o f the world, but also to suggest an accompanying
+character appropriate to each. Thus,
+
+27 P o lem o n is d e ph ysio g n o m o n ia lib e r 35, ed. G. Hoffmann in Foerster, S crip to res
+p h ysiogn om on ici, 2 4 2 ^ 4 .
+28 “In calida regione sunt gentes native brunae in pelle: ut patet de aethyopibus. . . . Et in
+crine [reading crin e for cane ] sunt siccae: crispae: capillos habent et grossos et asperos. Et in
+frigida regione nascuntur gentes longae: in pelle multum albae aut blundae: nudae a p ilis vel
+quasi qui in suo esse sunt extensi albi vel blundi. Nota quia regio est multiplex in provincia et
+matrice mulieris: quae si utraque fuerit calida creatura generatur: et generata manet nigra vel
+bruna et caetera. Et si fuerit frigida efficitur alba plus et minus secundum regionis complexionem” (Michael Scot, L ib e rp h isio n o m ia e 43).
+29 “Diversantur etiam pili secundum diversitatem regionum, ideo quod diversitas habitationis diversitatem facit complexionum etiam in habitantibus in eis: quoniam pili hominum qui
+sunt in locis calidis, sunt duri et crispi sicut sunt pili Ethiopum: et habitantibus in locis frigidis
+suntm olles . . .” (Albert the Great, D e an im alibu s 3.2.2.82; On A nim als, 385). See also 19.6.28
+{On A nim als, 1346), where Albert explains that curly hair results from the dryness and earthi­
+ness in the vapor in the hair’s matter, and “Ethiopians . . . who dwell in hot and dry places,
+have curly hair, rather like grains o f pepper. They have this due both to the dryness o f the vapor
+and to the dryness o f the exterior, surrounding air” (“Ethyopes autem in siccis et calidis locis
+habitantes pilos crispos ad modum granorum piperis habent turn propter siccitatem vaporis turn
+propter siccitatem exterioris aerem continentis”). Cf. Albert’s Q u aestion es su p e r d e an im alibu s
+19.7-9, ed. Filthaut, 305-7.
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+225
+
+Erect hair, either black or the color of water, and which is dirty and coarse, be­
+speaks a violent character. Such people are like the boar or pig which has this
+sort of hair and the boar is violent, as is the pig. Soft hair, however, that is
+sparse and ultra-fine, indicates a lack of red blood and bespeaks a dull, slow
+character. If the hair is too curly, it is giving notice o f a crafty, harsh, timid
+person who is greedy. If the hair is pressed down too much and hangs over the
+forehead, it announces a wild character and in this it resembles the hair on a
+bear’s head, which is the reason Plato called such men “ursine.” . . . Blond
+hair and thick white hair say the people are ignorant and fierce. Such is the
+hair of those who live very far to the North.30
+Sim ilarly, ju st as hair color can say a great deal about a people so too for
+skin color:
+The physiognomy of the skin is assigned by the wise man Phylemon, who says
+that a soft, dark color indicates a clever, timid person and refers to those who
+live in the first four climata. A fair, pink color, however, indicates brave, spir­
+ited people, and this is especially a trait o f those living in Germany and in­
+habitants o f the sixth and seventh climata.31
+In a very real sense, then, physiognom y was linked to several disciplines: to
+zoology, for its discussion o f animals and their characteristics and tempera­
+ments; to medicine and anatomy, for its discussion o f the human body and its
+organs and operations; and to ethnology or anthropology for a discussion o f
+
+30 “. . . capilli stabiles vel nigri vel aquatici colons sordidi et crassi animum indicant
+violentum: et apro sunt sim iles tales vel sui quae talem habet capillaturam, et violentus est aper
+et etiam sus. Capilli autem molles et ran et ultra modum tenues rubei penuriam indicant san­
+guinis, et ebes ingenium et pigrum praeloquuntur. Si autem sint capilli minium crispi, pronuntiant subdolum, asperum, timidum et lucri cupidum. Capilli vero depressi nimium et fronti
+imminentes ferum declarant animum: et hiis concordat capitis ursini capillatura: propter quod et
+tales ursinos homines Plato esse pronuntiavit. . . . Capilli autem flavi et crassi albidi, indociles
+dicunt esse et feros, sicut est capillatura eorum qui multum sunt ad Aquilonem” (Albert the
+Great, D e a n im alibu s 1.2.2.132-33; On A nim als, 9 5 -6)
+31 “Physonomia autem huius assignatur a Phylemone sapiente, qui dicit, quod color niger
+lenis versutum indicat et imbecillem et refertur ad habitatores qui habitant quatuor prima cli­
+mata. Color autem albus rubeus, fortes et animosos ostendit: et hie est habitantium in Germania
+praecipue et habitatorum sexti et septimi climatum” (ibid. 1.3.7.623; On A nim als, 284, slightly
+modified).
+The clim ata are the longitudinal bands into which medieval geographers divided the world.
+For Albert, there are seven clim ata, divided according to differences in longitude and latitude.
+For each clim a there w ill be a balanced complexion appropriate to it, so much so that “a Dacian
+who nears balance o f complexion for his habitation would quickly die in India or Ethiopia, and
+it is the same for other differences in clim a ” (“Dacus autem attingens aequale complexionis
+suae habitationis cito moreretur in India vel Ethiopia, et sic est de aliis climatum differentiis,”
+ibid. 12.1.4.59; On A nim als, 915).
+
+226
+
+I. M. RESNICK
+
+the generally recognized characteristics and temperaments o f groups. A s a
+practical science, it could provide useful information both about individuals
+and races. From external appearances, the physiognom ist might infer a great
+deal about moral character, mental abilities, and the passional nature. M ichael
+Scot certainly believed that this science would prove especially useful at
+court, as rulers sought to identify trustworthy and w ise counselors.
+B y the fourteenth century the claim s o f physiognom ists m ust also have
+achieved a wide popular acceptance, as evidenced by Chaucer’s use in
+sketching the pilgrim s in the Canterbury Tales.3,2 From the physical descrip­
+tions o f the Pardoner or the Reeve, Chaucer’s readers would certainly have
+deduced the m ost important features o f their character. Y et, popular fam iliar­
+ity with the conventions o f physiognom y likely did not stem from widespread
+acquaintance with scholastic works o f natural science but from their applica­
+tion in pastoral or ordinary religious contexts. For physiognom y to acquire a
+foothold in religious discourse, it had first to prove its value to theologians.
+II. P h y s io g n o m y a n d S c h o l a s t ic T h e o l o g y
+B y the thirteenth-century, theologians had put to good use information
+shared between medicine and physiognomy: in particular, the doctrine o f
+com plexion. According to Avicenna’s definition in his influential Canon o f
+M edicine, “com plexion is that quality which results from the mutual interac­
+tion . . . o f the four primary qualities residing within the elem ents.”3233 The four
+elements— air, fire, earth, and water— combine in material bodies and are as­
+sociated with the four primary qualities— the hot, cold, m oist, and dry. Com­
+plexion, then, results from the interaction o f these qualities, to produce
+com posite bodies that are hot and dry (choleric), hot and m oist (sanguineous),
+cold and m oist (phlegm atic), cold and dry (m elancholic), or, when the four
+qualities are equal, temperate or balanced. Although som e would relegate the
+doctrine o f com plexion— so central to physiognom y— to the study o f m edi­
+cine,34 nevertheless an understanding o f its principles had a bearing on both
+speculative and practical theology.
+
+32 See especially Walter Clyde Curry, C h au cer a n d the M e d ie v a l S ciences (N ew York,
+1960), chaps. 3—4.
+33 Avicenna, C anon 1 .1 .3 .1 .1 have used the translation found in A S ou rce B o o k in M e d ie ­
+v a l Science, ed. Edward Grant (Cambridge, M ass., 1974), 717. This selection reprints portions
+from A T reatise on the C anon o f M ed icin e o f A vicenna, frans. O. Cameron Grüner (London,
+1930), although the translation has been modified for Grant’s volume by M ichael McVaugh.
+34 Helinand o f Froidment, D e cogn ition e su i 8 (PL 212:729B): “Corporis humani cognitio
+in duobus est, in materia scilicet et forma. Complexionem autem medicis relinquo”
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+227
+
+For practical theology, Alan o f L ille ( f 1202/3) suggests that individuals may
+be more inclined to specific sins because o f their humoral com plexion. Thus,
+“the sinner’s com plexion must be considered, insofar as it can be examined
+from external signs, because a person is more inclined to one sin than another
+according to various com plexions. I f he is a choleric he is more inclined to
+wrath, but i f a m elancholic he is more inclined to enm ity.”35 For this reason, it
+seem s, Robert G rosseteste recommends that clerics should im pose penance
+only after having given due consideration to com plexion, since com plexion
+has a bearing on an individual’s ability to withstand the inclination to sin.36
+Speculative theology turned to physiognom y and the doctrine o f com ­
+plexion in an altogether different way. Rather than arguing from outer to
+inner, from the appearance o f the body to the condition o f the soul, one may
+argue from the sou l’s condition to the appearance o f the body. W illiam o f
+Conches, for exam ple, gives expression to a tradition that held that when still
+in Paradise, Adam ’s com plexion “w as perfectly temperate, as he had equal
+shares o f the four qualities.” A s a result o f his sin and disobedience, however,
+Adam’s descendants have departed from a perfectly balanced temperate com ­
+plexion and the human body subsequently suffered corruption. A fter Adam
+w as driven out o f Eden, “his body began to dry out . . . [and] his natural heat
+to fade away. . . . H is descendants, therefore, bom as they were from a corrupt
+ancestor, have all been corrupted, and never afterward has perfect health been
+found in hum ans.”37 Sim ilarly, had Eve not sinned and remained in Paradise
+she would have remained hale, Hildegard o f Bingen affirm s, and avoided the
+wom an’s “curse” or punishment— the monthly flux o f blood, menstruation—
+which now is necessary to purge a woman’s body o f impurities stemming
+from its corruption.38
+35 “Complexio etiam peccatoris consideranda est, secundum quod ex signis exterioribus
+perpendi potest; quia secundum diversas complexiones, unus magis impellitur ad unum peccatum, quam alius. Quia si cholericus magis impellitur ad iram, sed melancholicus magis ad
+odium” (Alain de Lille, L ib e r p o e n ite n tia lis 1.17, ed. Jean Longere, Analecta mediaevalia Namurcensia 18, 2 vols. [Louvain, 1965], 2:31). N ote that the edition in PL 210:287D adds, fol­
+lowing this passage, “si sanguineus, vel phlegmaticus, ad luxuriam.”
+36 Robert Grosseteste, Templum D e i 19.9, ed. Joseph Goering and F. A. C. Mantello,
+Toronto M edieval Latin Texts (Toronto, 1984), 64: “Hec sunt diligenter consideranda in penitencia iniungenda. . . . Complexio: si colericus, uel sanguineus, uel melancolicus.”
+37 “Primus enim homo inter quatuor qualitates fuit temperatus. Sed postquam amoenitate
+paradisi exp u lsu s. . . cepit desiccari atque naturalis calor extingui. . . . Omnes igitur ex eo nati,
+utpote ex coirupto, sunt corrupti, neque postea perfecta sanitas in homine fuit inuenta” (W il­
+liam o f Conches, D ragm aticon P h ilosoph iae 6.1 3 .2 -3 , ed. Italo Ronca, CCCM 152 [Tumhout,
+1997], 227). A translation appeared as A D ia lo g u e on N a tu ra l P h ilo so p h y (D ragm aticon P h i­
+losophiae), trans. Italo Ronca and Matthew Curr (Notre Dame, 1997), 147. See also Honorius
+o f Autun, D e p h ilo s o p h ia m undi 23 (PL 172:55D).
+38 Hildegard o f Bingen, C au sae e t C urae 3, ed. Paul Kaiser (Leipzig, 1903), 103.
+
+228
+
+I. M. RESNICK
+
+God gave to humans the m ost noble, balanced com plexion3940and, in general
+terms, the ideal human com plexion— given our seminal position between an­
+gelic and animal natures— should approach that o f celestial bodies. Conse­
+quently, remarks Albert the Great, “man, among all creatures, more closely
+resem bles a heavenly body owing to a balanced com plexion participating less
+in contrary qualities— from which celestial bodies are altogether free. . . .,,4°
+Y et since Adam’s fall is responsible for bodily corruption among his descen­
+dants, it follow s too that an ideal human com plexion w ill be rediscovered only
+in those unburdened by original sin: namely, M ary and Jesus, for they alone,
+in this life, were “absolutely perfect.”41 The logic o f this position rooted in
+physiognom y m ust have been reasonably com pelling. Thomas Aquinas was
+acquainted w ith the argument that Jesus had to have displayed the best and
+m ost balanced human com plexion both because his soul was m ost perfect and
+because his body w as fashioned not in the normal way, but m iraculously by
+the H oly Spirit.42 Sim ilarly Albert the Great, follow ing Plato, affirm s that “the
+m ost noble soul is owed to the m ost balanced com plexion” because each
+com plexion receives a form proper to it,43 and St. Bonaventure confirms that
+Jesus’s body displayed the best possible com plexion.44
+
+39 See Albert the Great, Q uaestion es su p er d e an im alibu s 6.24—26, ed. Filthaut, 168.25,
+where Albert attributes this view to Avicenna (see the C anon 1.1.6.3).
+40 “. . . homo inter omnia plus accedit ad similitudinem corporis caelestis, propter aequalitatem complexionis minus participans qualitates contrarias, a quibus corpora caelestia sunt
+omnino libera . . .” {S u per D ion ysiu m d e ecclesia stica h ierarch ia 5, ed. Maria Burger, O pera
+om nia 36/2 [Munster, 1999], 123.2-7; see also D e a n im alibu s 12.1.4.55; On A nim als, 914).
+41 So, notes Albert, “nullus in hac vita perfectus fuit simpliciter nisi lesus Christus et mater
+eius . . .” {S u p erD io n ysiu m d e e c clesia stica h ierarch ia 1, ed. Burger, 13.10-11).
+42 “Christ had the best complexion, which clearly is owing to the fact that he had the most
+noble soul, to which a balanced complexion corresponds in the body” (“Christus fuit optime
+complexionatus: quod patet ex eo quod habuit nobilissimam animam, cui respondet aequalitas
+complexionis in corpore,” Thomas Aquinas, In III Sent. 15.2.3, ed. P. Mandoimet and M. F.
+M oos, S criptu m su p er lib ro s Sententiarum , 4 vols. [Paris, 1929—47], 3:495). See also Sum m a
+th eo lo g ia e 3.46.6c.: “with respect to the body he had the best complexion because his body was
+fashioned miraculously by the operation o f the Holy Spirit” (“nam et secundum corpus erat op­
+time complexionatus, cum corpus ejus fuerit formatum miraculose operatione Spiritus Sancti”).
+Albert the Great also indicates that because o f Adam’s sin, his semen was corrupted and there­
+fore among those who descend materially from his seed the operative or formative power o f the
+semen fails to fashion a human in the condition Adam had known previously. See his S u per
+argum entum H ieronym i, in S u per M atthaeum , ed. B. Schmidt, O pera om nia 21/1 (Mllnster,
+1987), 8.43—47. Jesus’ miraculous birth places him outside this material chain o f descent.
+43 “Et quia secundum merita materiae dantur formae, sicut Plato dixit, et unicuique complexioni propria respondet forma, ideo aequaliori complexioni debetur anima nobilissima . . . ”
+(Albert the Great, D e an im a 2.3.23, ed. Clemens Stroick, O pera om nia 7/1 [Munster, 1968],
+133.22).
+44 “E x parte enim camis erat teneritudo naturae optime complexionatae; et quanto natura
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+229
+
+Still, none o f the exam ples cited above provide anything like an investiga­
+tion into the physiognom y o f Mary or Jesus. There is, however, such an in­
+vestigation in a work improperly attributed to Albert the Great, entitled the
+M ariale or the CCXXX quaestiones super Evangelium “M issus est. ”45 The
+authorship o f this text remains much in doubt. M eersseman and initially
+Pelster were inclined to treat it as authentic— indeed, perhaps as A lbert’s
+earliest writing.46 M ore recent studies by Fries, Korosak, Pelster and Kolping,
+however, have rejected Albert’s authorship.47 A long with the question o f
+authorship, the date o f the work remains in dispute, with suggesions ranging
+from 1240 to 1300. Nevertheless, studies o f its literary influence48 and manu­
+script transm ission49 indicate that it circulated and w as copied fairly often.
+The significance o f this text for a discussion o f physiognom y, it seems to
+me, is twofold: 1) perhaps for the first tim e it attempts to articulate fully the
+im plications o f the notion that the body o f Mary (and Jesus as w ell) w ill re­
+veal the best human com plexion; 2) in doing so, it puts real flesh, so to speak,
+on M arian bones and refuses to treat M ary merely as a theological symbol and
+a counterweight to Eve. M ary becom es a historical person, for whom the sci­
+ence o f physignom y can provide a suitable visage.50
+
+tenerior, tanto eins poena dolorosior” (Bonaventure, Serm ones dom in icales 14.12, ed. J. G.
+Bougerai [Grottaferrata, 1977], 231).
+45 The text is found in Albert’s O pera omnia, ed. Borgnet, 37:1-362.
+46 See Franz Pelster, K ritisch e Studien zum L eben und zu den Schriften A lb e rts des
+G rossen (Freiburg im Breisgau, 1920), 109-12; and Meersseman, In trodu ctio in op era om nia
+B . A lb e rti M a g n i O .P., 119-20.
+47 See Albert Fries, D ie unter dem N am en d e s A lb ertu s M agn u s überlieferten M a rio lo ­
+gisch en Schriften. L itera rk ritisch e U ntersuchung, Beiträge zur Geschichte der Philosophie und
+Theologie des Mittelalters 37/4 (Münster, 1954), 5-80; Bruno Korosak, M a rio lo g ia S. A lb e rti
+M a g n i eiusque coaequalium . Bibliotheca Mariana M edii Aevi, Textus et Disquisitiones 8
+(Rome, 1954), 3-18; and Franz Pelster, “Z wei Untersuchungen über die literarischen Grundla­
+gen für die Darstellung einer Mariologie des hl. Alberts des Großen,” S ch o la stik 30 (1955):
+388-402. Their arguments are reviewed by A. Kolping, “Zur Frage des Textgeschichte,
+Herkunft und Entstehungszeit der anonymen L au s Virginis (bisher M a ria le Alberts des
+Großen),” R ech erch es d e th éologie ancienne e t m é diévale 25 (1958): 285-328. N o one has as
+yet identified a probable author, and these scholars also disagree on the likely date for the work,
+situating it between about 1240 and 1300.
+48 Johannes Beumer, “D ie literarischen Beziehungen zwischen dem Senno VI D e Assumtione B M V (Pseudo-Bonaventura) und dem Mariale oder Laus Virginis (Pseudo-Albertus),”
+F ranziskanischen Studien 44 (1962): 455—60.
+49 See Kolping, “Zur Frage des Textgeschichte, Herkunft und Entstehungszeit,” 2 88-305.
+50 Despite the opinion o f Augustine, that w e simply do not know what Mary looked like:
+“Neque enim nouimus faciem uirginis Mariae, ex qua ille a uiro intacta neque in ipso partu corrapta mirabiliter natus est” (D e trin ita te 8.5.7, ed. W. J. Mountain and Fr. Glorie, CCL 50
+[Tumhout, 1968], 277).
+
+230
+
+I. M. RESNICK
+
+In quaestiones 1 7 -2 0 in particular the author puts on display his knowledge
+o f physiognom y and attempts to reconcile discordant m edical authorities—
+especially Galen and Constantine the African— w hose conflicting testim ony
+would lead to quite different portraits o f the Virgin and her Son. Following
+Galen, the physiognom ist w ill conclude that Mary (and, by inference, Jesus)
+had red hair, since red hair is appropriate to a body whose humoral com ­
+plexion is w ell balanced;51 follow ing Constantine the African, one m ust con­
+clude that it w as black.52 Follow ing Aristotle, one would conclude that the
+V irgin’s skin had to be white, since among colors the sim ple extremes— white
+and black— are m ost perfect and, since whiteness reflects the causal efficacy
+o f light better than blackness, a white body w ill be more perfect than black.53
+Som e conclude that her skin should be ruddy in color, since this reflects a
+sanguine com plexion,54 w hile others im ply that her skin should be black to
+reflect her nature— w hich ought to be warm,55 since it is a warm nature that
+w ill best highlight, by contrast, her chastity56 and the fullness o f grace in her.
+
+51 Galen remarks, “Si eucraton cerebrum existit secundum quattuor qualitates . . . talibus
+infantibus quidem existentibus hunt capilli subruffi; pueris vero subrubei: perfectis vero sunt
+rubei medii quodammmodo existentes crisporum et simplicium, neque calvi fiunt facilius”
+(M ic ro te g n i II, fol. 12ra, in O pera G aleni, ed. Diomedes Bonardus [Venice: P. Pincius, 1490]).
+The Latin translation is by Constantine the African. M y thanks to Luke Demaitre for locating
+this and other passages attributed to Galen.
+52 “Ergo ad eucraticum corpus pertinet nigredo in capillis secundum Constantinum. Et sic
+etiam videtur controversia inter Constantinum et Galenum: cum hie nigrum capillorum colorem
+ponat in aequali corpore, ille autemrubeum” (Ps.-Albert, M a ria le 19.2.2, ed. Borgnet, 43^14).
+Constantine does suggest that the human body having the best complexion (warm and moist)
+w ill produce straight, black hair and a ruddy or pinkish skin color: “S i corpus est humidum erit
+pingue et cam eu m .. . . Si calidum et humidum fuerit, nim ie est camis parve pinguedinis. Pili
+nigri atque plani. tactus calidus et humidus. color albi et rufi medius” (L ’A rte u n iversale d ella
+m edicin a (Pantegni). P a rte 1 -L ib ro 1, trans. Marco T. Malato and Umberto de Martini [Rome,
+1 9 6 1 ],chap. 1 7 ,p. 65). For the importance and influence o f the Pantegni, se e n . 62 below.
+53 “. . . sed dicit Philosophus, quod extrema sunt magis sensitiva et motiva: ergo albedo et
+nigredo quae sunt extremi colores, magis perfecti sunt in ratione colorum: ergo alter eorum erit
+in corpore perfectissimo . . . in perfecto corpore potius erit effectus lucis quam tenebrarum: hie
+autem est albedo: ergo corpus perfectissimum potius erit album quam nigrum” (Ps.-Albert,
+M a ria le 18.3, ed. Borgnet, 41).
+54 “Videtur potius, quod debuit fuisse rubeum: corpus enim eucraticum est maxime sanguineae complexionis: ergo corpus optime complexionatum debuit esse rubeum” (ibid. 18.5[a],
+ed. Borgnet, 41).
+55 “Quaeritur de colore cutis et venustate.. . . Et videtur, quod debuit esse nigra in cute. . ..
+Quod non albedo, patet: quia albedo est color corporis in quo est abundantia frigiditatis . . . ”
+(ibid. 18 and 18.2, ed. Borgnet, 41).
+56 “Item Philosophus [dicit] . . . medium virtutis est pati nec deduci: ergo virtuosior est
+castitas, ubi major passio a contrario: hoc autem est in calidis: ergo, etc.” (ibid. 18.11, ed.
+Borgnet, 43).
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+23 1
+
+For a determination regarding her eyes, our author notes that som e have ar­
+gued that when the hair is black, typically the eye and hair color agree. Others
+indicate that the m ost beautiful eyes w ill have color (i.e., blue, or grey, etc.)
+while black eyes, as Johannitius says, follow from a defect in the visible spirit
+or a paucity o f the crystalline humor in the eye.57
+Ultim ately, however, for Ps.-A lbert it is the brain’s com plexion that must
+determine the V irgin’s eye and hair color, since “w e say that the hair color in­
+dicates the immediate disposition o f the brain [cerebrum]. For this reason, the
+best hair color should be determined by the best com plexion o f the brain.”58
+The brain’s “best” com plexion, however, can be determined in tw o ways:
+either as it is ordered to the natural power or faculty [yirtus], that is to the
+power intrinsic to the principal members— heart, liver, and stom ach, etc.— to
+perform their specific operations; or, as it is ordered to the animal virtue or
+faculty. In the first instance, when ordered to the natural faculty, the bestcom plexioned brain w ill be warm and m oist and w ill, therefore, be indicated
+by the appropriate hair color (reddish yellow for infants; light blond for ado­
+lescents; and gold or flaxen for adults).59 In the second, when ordered to the
+animal faculty which, in conjunction with the animal spirit, is essential to the
+process o f cognition, the brain w ill be hot and dry because this is the com ­
+plexion best suited to cognition.60
+57 Ibid. 20.1, ed. Borgnet, 4 4 -4 5 . Johannitius is the Latin name given to Hunayn ibn Ishaq
+al-’Ibadl (8097-873), a Nestorian Christian physician to the caliph al-Mutawakkil and trans­
+lator o f numerous Greek medical works into Arabic. A n abridged version o f his Q uaestion es
+m edicinae w as translated by Constantine the African and circulated under the title Isagoge, be­
+coming a part o f the A rticella , or medical curriculum, in the twelfth and thirteenth centuries.
+The B o o k o f the Ten T reatises on the E ye (K ita b a l- ‘a s h r M a k a la tfi' l- ‘a in ) is also attributed to
+him. On the Isa g o g e and its manuscript tradition, see Francis Newton, “Constantine the African
+and Monte Cassino: N ew Elements and the Text o f the I s a g o g e in C onstantine the A frican
+a n d ‘A ll ibn a l - ‘A b b a s a l M agiisi. The P an tegn i a n d R e la te d Texts, ed. Charles Burnett and
+Danielle Jacquart (Leiden, 1994), 16-43. For an English translation, drawn from John Gaddesderis R o sa M edicin ae, se e S ou rce B o o k in M e d ie v a l Science, ed. Grant, 705-15.
+58 “Dicimus quod color in capillis immediatam signat dispositionem cerebri. Unde optimus
+color in capillis, debet determinari secundum optimam cerebri complexionem” (Ps.-Albert,
+M a ria le 20.3, ed. Borgnet, 46).
+59 “Optima autem cerebri complexio determinatur secundum duos modos. Uno modo est
+cerebrum optime complexionatum, quando est optime ordinatum ad actionem naturalis virtutis,
+ita quod operationes cerebri maxime ordinantur secundum qualitates ad operationes cordis, et
+hepatis, et stomachi, et aliorum membrorum principalium. Et secundum hoc cerebrum debet
+esse calidum et humidum. Et hoc modo capilli talis cerebri in infantibus sunt subfulvi, in pueris
+vero subflavi, in perfectis vero flavi . ...” (ibid. 20.3, ed. Borgnet, 46). Albert identifies four
+functions specific to the natural virtu s: attraction, digestion, retention, and expulsion (ibid.
+12.5, ed. Borgnet, 227). Note, however, that Albert recognizes only three principal members:
+the brain, heart, and liver; see D e a n im alibu s 1.1.5.73 (O n A nim als, 72).
+60 “Alio modo dicitur eucraticum cerebrum, secundum quod est optime dispositum et ordi-
+
+232
+
+I. M. RESNICK
+
+This allusion to the natural and animal faculties draws upon the w ell estab­
+lished m edical tradition o f the three spirits and their corresponding faculties or
+virtutes: the natural, the vital or spiritual, and the anim al.61 For Constantine
+the African, the natural spirit arises in the liver and travels through the veins
+to administer the natural faculty, regulating the functions o f the principal
+members o f the body; a vital spirit arises in the heart and travels through the
+arteries to administer the vital faculty; the animal spirit arises in the ventricles
+o f the brain, travels through the nerves, and administers the animal faculty,
+regulating various functions o f the soul. Charles Burnett has noted that for
+both Constantine the A frican’s Pantegni and his principal Arabic source, the
+animal spirit is a decocted product o f the heart’s vital spirit, purified in the
+arteries that form a m esh at the base o f the brain.
+This newly-formed animal spirit then proceeds up two further arteries into the
+forepart of the brain where it is purified once again and the waste products are
+ejected through the palate and the nostrils. From here the spirit may pass to the
+middle and back part of the brain.. . . In the back part of the brain the spirit
+causes memory, in the front part sense and “fantasia,” in the middle part in­
+tellect or reason.62
+
+natum ad actiones virtutis animalis, quae proprie hunt in cerebro mediante spiritu animali qui
+nascitur in cerebro. Et secundum hoc calidum et siccum debet esse cerebrum, quia illae duae
+qualitates maxime subserviunt cognitioni. . . ” (M a ria le 20, 3, ed. Borgnet, 46). A s Albert indi­
+cates elsewhere, the animal powers and spirit are so called because they pertain to the activities
+o f the mind or soul [anima]. Thus, one finds the animal powers located in the brain; see D e
+an im alibu s 1.2.26.486 and 499 (O n A nim als, 232 and 237), and S u p er D ion ysiu m d e e cclesia stic a h ierarch ia 2 (ed. Burger, 35.42). See also W illiam o f Conches, for whom the anterior cell
+o f the brain, to which vision communicates images or phantasms o f sensible objects, is best
+complexioned when it is hot and dry “so that by means o f dry heat, whose property is to attract,
+it may draw to itse lf the shapes and colors o f the external objects.” By contrast, the rear cell o f
+the brain— in which memory operates to retain images o f past experience— should be cold and
+dry “for it is the property o f something cold and dry to constrict and retain” (D ragm aticon
+6 .1 8.4-5, trans. Ronca and Curr, 155).
+61 W illiam o f Conches identifies the three virtu tes as n aturalis, spiritu alis, and anim alis.
+See his D ra g m a tico n 6.12.1.
+62 Charles Burnett, “The Chapter on the Spirits in the P an tegn i o f Constantine the Afri­
+can.” in C on stan tin e the A frican a n d ‘A lt ibn a l - ‘A b b a s alM agiisT . The P an tegn i a n d R e la te d
+Texts, ed. Burnett and Jacquart, 105. The P an tegn i is Constantine’s translation o f the L ib e r
+reg iu s ofH aly Abbas ( ‘A ll ibn al-‘Abbas al MagusT f 994), which became an important medical
+reference work in the Middle Ages. For its influence, distribution, and complicated manuscript
+history, see in the same volume Mark Jordan, “The Fortune o f Constantine’s P a n t e g n i 2 8 7 302 (and especially p. 302 for his appeal to establish an edition), and also Italo Ronca, “The
+Influence o f the P a n teg n i on W illiam o f Conches’s D ra g m a tico n , ” 266—85. For a further
+discussion o f doctrines o f the spirits, see James J. Bono, “M edical Spirits and the Medieval
+Language o f Life,” T ra d itio 40 (1984): 91-130.
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+233
+
+Similarly, Albert the Great affirms that “the vital spirits are generated in the
+heart and flow through the arteries to the brain and there, owing to the cold­
+ness o f the brain . . . these becom e animal spirits. And then these [animal
+spirits] are dispatched to the particular senses. . . .”63 It is then the animal
+spirit’s corresponding virtus, the animal faculty, that is linked to the act o f
+cognition and the operations o f the intellect.64
+For the author o f the M ariale, like W illiam o f Conches and M ichael Scot
+(for whom a warm and dry com plexion in the brain indicates a person o f
+quick w it and intelligence),65 the brain’s com plexion that best accommodates
+the animal faculty and therefore is best suited to the process o f cognition and
+apprehension w ill be warm and dry. H e declares,
+Since the well-balanced brain is best ordered in one respect to the actions of
+the animal virtue and in another respect to the operation of the natural virtue,
+and the operation of the animal virtue w ill be more noble than the operation of
+the natural virtue, that brain which is properly well-balanced toward the ani­
+mal operations w ill be more noble than that oriented toward the natural opera­
+tions. Therefore a brain of the most perfect and noble body ought to be warm
+and dry. Since then the body of our Lady w ill have been the most perfect with
+respect to all her members, she had a warm and dry brain.. . ,66
+The com plexion o f M ary’s brain m ay distinguish her from m ost other women,
+since for Albert the Great,
+a woman is less suited to good customs than is a male. For a female’s com­
+plexion is more moist than a male’s, but it belongs to a moist complexion to
+
+63 “Spiritus enim vitales generantur in corde et fluunt per arterias usque ad cerebrum et ibi
+per frigiditatem cerebri. . . hunt illi spiritus animales. Et deinde mittuntur usque ad sensus particulares . . .” (Albert the Great, Q uaestion es su p er d e an im alibu s 12.17, ed. Filthaut, 235). For
+Albert, the brain must be cold relative to the heart to temper the heart’s dynamic heat: “Quod
+probatur, quia cerebrum hominis est magis frigidum et humidum, et hoc, ut obtemperet calorem
+cordis . . .” (ibid. 1.34-37, ed. Filthaut, 101.33-34). When its coldness causes the condensation
+o f the moist vapors rising to the brain, this condensation blocks the operation o f the animal
+virtues and brings on sleep (ibid. 4.11, ed. Filthaut, 146.23-28).
+64 N ote too a similar tripartite division o f the spirits in Albert’s D e an im alibu s 20.1.7.41
+(O n A nim als, 1381). The description Burnett provides o f the ascent o f the animal spirit to the
+brain is repeated by William o f Conches, D ragm aticon 6.16.1.
+65 Michael Scot, L ib e rp h isio n o m ia e 32.
+66 “Cum igitur cerebrum eucraticum optime sit ordinatum, uno modo ad actiones virtutis
+animalis, alio modo respectu operationum virtutis naturalis, et nobilior sit operatic virtutis
+animalis, quam naturalis virtutis, nobilius erit cerebrum quod est eucraticum ad operationes
+animales quam ad operationes naturales; ergo perfectissimi et nobilissim i corporis cerebrum
+debet esse calidum et siccum. Cum igitur corpus Dominae nostrae fuerit perfectissimum secun­
+dum omnia membra, ipsa habuit cerebrum calidum et siccum . . .” (Ps.-Albert, M a ria le 20.3,
+ed. Borgnet, 47).
+
+234
+
+I. M. RESNICK
+
+receive [impressions] easily but to retain them poorly. For moisture is easily
+changeable {mobile) and this is why women are inconstant and always seeking
+after something new. . . . Therefore there is no faithfulness in a woman.67
+The conclusion that “there is no faithfulness in a woman” is particularly
+inappropriate for M ary’s character and one should not be surprised, then, that
+M ary’s com plexion w ill depart in many w ays from the norm among women.
+Therefore, for Ps.-A lbert the Virgin’s com plexion tends toward warmth, al­
+though (as w ill becom e evident below) not for the reason som e avow , namely
+that chastity exists naturally in a cold com plexion and therefore m anifests it­
+se lf m ost clearly— by w ay o f contrast— in a warm com plexion.68 Rather, it
+seem s, it is because our author hopes to disassociate Mary from som e, but not
+all, o f the consequences stemming from a woman’s typical com plexion,
+which generally w as understood to be phlegm atic and therefore “colder” and
+“m oister” in nature than a man’s.69 From the standpoint o f physiology, this
+com plexional coldness acts to diminish the brain’s cognitive abilities. The
+coldness governing their post-lapsarian nature also makes women unable to
+com plete the digestion o f blood, resulting in the necessity to purge the body
+o f its coarse and undigested blood via menstruation. M en, naturally “hotter,”70
+fully perfect the digestive process, thereby obviating the need for menstrua­
+67 “. . . femina minus est habilis ad mores quam mas. Complexio enim feminae magis est
+humida quam m ans, sed humidi est de facili recipere et male retinere. Humidum est enim de
+facili mobile, et ideo mulieres sunt inconstantes et nova semper p eten tes.. . . Unde nulla tides
+est in muliere” (Albert the Great, Q u aestion es su p e r d e an im alibu s 15.11, ed. Filthaut, 2 6 5 .6 9 74).
+68 For the claim that chastity naturally demands a cold complexion, suggesting therefore
+that the Virgin must have had a very cold complexion, see M a ria le 18.6-8; for the arguments to
+the contrary, see q. 18.9-11. However, at q. 20.3 (p. 45), Ps.-Albert responds that since the Vir­
+gin’s chastity is a product o f grace and not nature, her complexion must be understood to be
+warm, and not cold (see n. 75 below). The argument that chastity is more natural in a cold
+complexion, whereas sexual desire arises from a warmer nature, w ill be found too in Michael
+Scot’s L ib e r p h isio n o m ia e 4 -5 (27). Ps.-Albert’s response suggests an important caveat for the
+theological application o f the science o f physiognomy: such a science leads to certainty only
+with respect to nature, and not nature ennobled by grace. Earlier in the thirteenth century Roger
+Bacon had made the same point: “multum debet esse prudens et expertus qui de his debet judicare, nec de Christianis debet aliquis judicare nisi aptitudinem naturalem ad mores, non quod
+talis erit, quia gracia D ei gratum faciens potest vincere malam disposicionem animi ad quam
+excitatur ex complexione et composicione corporis . . . ” (Secretum secretorum , pars 4, c. 2, ed.
+Robert Steele, O p era h actenus in edita R o g eri B aconi, fasc. 5 [Oxford, 1920], 166 n.3, 125b).
+69 W illiam o f Conches, D ragm aticon 6.8.3; Albert the Great, D e an im alibu s 10.1.1.11,
+10.1.2.20, and 18.2.5.78 {O n A nim als, 831, 835, and 1319).
+70 See Albert the Great, Q u aestion es su p er d e an im alibu s 5.10, ed. Filthaut, 159.75-77:
+“universaliter vir calidioris complexionis est quam mulier. . . .” See also Constantine the Afri­
+can: “In omnibus animalibus calidiores et sicciores sunt masculi quam femme, femine
+frigidiores et humidiores” {L ’A rte universale d e lla m edicina (Pantegni), chap. 22, p. 69).
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+235
+
+tion, which w as perceived to be a special “curse” or punishment visited upon
+the daughters o f Eve.71 Physiology cannot be separated from a consideration
+o f the passions, however. W hen in a woman these bodily superfluities are not
+adequately purged by menstruation, or when they are retained during preg­
+nancy, this often results in a ‘warming’ accompanied by inordinate sexual de­
+sire.72 T ypically, Danielle Jacquart notes, this relatively warmer fem ale
+com plexion w as associated with the courtesan or prostitute (suggesting again
+a relationship between chastity and a cold com plexion).73
+D espite numerous arguments, then, to suggest that by nature alone or from
+a com bination o f nature and grace the Virgin’s com plexion should be cold,
+our text concludes that this is not so. But, this conclusion does not follow
+from the principle articulated at M ariale 18.10, that the glory o f victory is
+greater in proportion to victory’s difficulty (“ubi autem est difficilior victoria,
+major gloria”), suggesting, then, that her victory over the passions w ill be
+made more evident if she possesses by nature a temperately warm com plexion
+(slightly “hot-blooded,” i f you w ill, relative to other wom en).74 Our author
+does not accept the premise that M ary’s chastity stems from a colder com ­
+plexion; rather, in her chastity is w holly a product o f grace. According to P s.Albert, despite the warmth o f her nature M ary, full o f grace, never experi­
+enced concupiscence or desire; in her even the traces o f sin \fomes\ had been
+extinguished.75 In Mary there w as no real conflict between her passions and
+her com plexional nature; she w as m iraculously without the inclination to
+sin—to sexual intercourse— often associated with women having a warmer
+com plexion. The exam ple o f her chastity even banished concupiscence from
+the hearts o f others— perhaps recalling a claim found in Jacobus de
+Voragine’s Golden Legend that “despite M ary’s exceeding beauty no man
+71 Charles T. Wood has shown that thirteenth-century theologians— especially defenders o f
+the Immaculate Conception— were sometimes led to a dilemma, brought on by a desire to free
+Mary o f the “curse” o f menstruation, w hile acknowledging that she m u st have menstruated if
+she were to provide the appropriate material for the birth o f the God-Man; see his “The D oc­
+tor’s Dilemma: Sin, Salvation, and the Menstrual Cycle in M edieval Thought,” Speculum 56
+(1981): 710-27.
+72 W illiam o f Conches, D ragm aticon 6.9.2; Albert the Great, D e an im alibu s 18.2.4.72 (O n
+A n im als, 1316).
+73 See D anielle Jacquart, “La morphologie du corps féminin selon les médicins de la fin du
+moyen âge,” M ic ro lo g u s 1:7 d isc o rsi d e i corpi, 83.
+74 Ps.-Albert, M a ria le 18.7-9.
+75 “Quod autem objicitur, quod debuit esse frigidae complexionis et habere colorem illi
+attestantem. Dicimus, quod non: cum enim gratia nobilior sit quam natura, castitas quae est
+totaliter a gratia, nobilior est quam ea quae est partim a gratia et partim a natura. Et tanto est
+major gratia et majorem potentiam demonstrat, quanto fortiorem vincit naturam, quamvis in
+beata Virgine nulla fuit pugna, quia etiam fomes extinctus fuit in ea” (ibid. 20.3, ed. Borgnet,
+45).
+
+236
+
+I. M. RESNICK
+
+could ever desire her, for the reason that the power o f her chastity penetrated
+all who looked upon her, and all lustful desires were quenched in them .”767
+Instead, it seem s that M ary’s com plexion must be somewhat warmer, rela­
+tive to other women, not in order better to display a victory over the passions
+but rather to return her com plexion to the balance appropriate to the species.
+W ere she to display the phlegm atic com plexion shared generally by other
+women, she would depart from the overall ideal o f a hot and m oist com ­
+plexion, best illustrated in m ales, and remain, as a consequent, a defective or
+flaw ed m ale (mas occasionatus).7T I em phasize “relative to other wom en,”
+since com plexion can be examined according to various measures. In his
+Q uaestiones super de animalibus, Albert the Great notes,
+Complexion can be considered three ways: either according to genus (and thus
+every living thing is said to be hot and moist, because on account of these life
+endures); or, in a second way, according to species, and thus a human is said
+to be hot and moist but the ass is hot and dry, and likewise so is the lion. In a
+third way, according to the individual, and this can be considered in two ways:
+either comparatively or absolutely. Comparatively, just as one woman is said
+to be choleric in comparison with another, although nevertheless all women
+are naturally phlegmatic. If absolutely, then this person is said to be choleric
+and that one sanguine.78
+Consequently, although in general women are phlegm atic (that is, cold and
+m oist), M ary’s com plexion seem s to tend toward balance and therefore w ill
+be com paratively warmer than that o f other women. A s already discussed, in
+order to perform its more noble operations, her brain must be warm and dry.
+Balance reveals itself in the qualitas o f her body as w ell. Generally, P s.Albert notes, bodies may be divided into five types: the exceedingly fat, the
+76 Jacobus de Voragine, The G olden Legend, trans. W illiam Ryan, 2 vols. (Princeton,
+1993), 1:149.
+77 For woman as a m a s occasion atu s, see Albert the Great, D e an im alibu s 3.2.8.158 and
+16.1.14.73 (O n A nim als, 422 and 1195), and Q uaestion es su p e r d e an im alibu s 15.11 (ed.
+Filthaut, 265.81-8 2 ). For discussion o f this notion in Albert’s work, see Paul Hossfeld, A lb e r­
+tu s M a g n u s ü b er d ie F rau (Bad Honnef, 1982), reprinted in T rierer th eologisch e Z eitsch rift 91
+(1982): 221^10; and Madeleine Jeay, “Albert le Grand entre Aristote et Freud: La Femme estelle un acte manqué?” in L e R acism e: M yth es e t scien ces: P o u r L eon P oliakov, ed. Maurice
+Ölender (Brussels, 1981), 129-39.
+78 “Complexio tripliciter potest se habere: aut secundum genus, et sic omne vivens dicitur
+calidum et humidum, quia per ista stat vita. Alio modo secundum speciem, et sic dicitur homo
+calidus et humidus et asinus calidus et siccus et leo similiter. Tertio modo secundum individuum, et hoc dupliciter: aut respective aut absolute. Respective, sicut una mulier dicitur cholerica respecta alterius, cum tarnen omnes nataraliter phlegmaticae. Si absolute, sic dicitur iste
+homo cholericus et ille sanguineus” (Albert the Great, Q u aestion es su p e r d e an im alibu s 4 .1 -2 ,
+ed. Filthaut, 138.52-61).
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+237
+
+fleshy, the thin, a mixture o f these {synthesis), or the balanced. In the Virgin
+Mary, however, one finds the last type, resulting from a com plexional balance
+o f the hum ors.79 Her skin color provides additional evidence o f a balanced or
+temperate com plexion. O f six possible skin colors (a white-red com posite,
+black, citrine, grey, white, and red),
+only that one that is a mixture of white and red, as Johannitius says, procedes
+from balance.80 All of the others occur from inequality. The first [the whitered composite] is that which is most noble and best determined to the wellbalanced body, and thus is placed by Galen81 in a temperate complexion and is
+treated in a similar way by Constantine in the P a n te c h n e .82 For this reason, we
+concede that it existed in the body of the blessed Virgin.83
+This leads to certain conclusions, as w ell, regarding hair and eye color. A c­
+cording to Constantine the African84 and M ichael Scot,85 black, curly hair is
+another sign o f a drier and warmer com plexion in the brain. Our author con­
+cludes: “thus it is clear . . . that the best com plexion o f the brain, as far as
+concerns the animal virtues, is one that is warm and dry. And black hair
+seem s to belong to such a brain. And this is what Constantine says in the
+Pantechne, mentioned above.”86 Since M ary had a warm and dry brain and in
+79 “Quod concedimus et credimus esse verum, idem de qualitate dicentes: modi enim
+qualitatis corporis sunt quinque, crassities nimia, camositas, extenuata macies, synthesis, et
+aequalitas. Pinguedo causatur ex frigiditate et humiditate, camositas ex caliditate et humiditate,
+extenuata macies ex caliditate et siccitate, synthesis ex frigiditate et siccitate, aequalitas ex om­
+nium humorum aequali complexione, cujus aequalitas credimus corpus beatissimae Virginis
+exstitsse” (Ps.-Albert, M a ria le 17.2, ed. Borgnet, 40).
+80 See Johannitius’s comments in the Isagoge, translated in S ou rce B o o k in M e d ie v a l S ci­
+ence, ed. Grant, 707. Michael Scot agrees. See h is L ib e r p h isio n o m ia e 24.
+81 “Signa competentis craseos secundum totam habitudinem animalis [virtutis]: color
+quidem ex rubeo et albo commixtus, capilli vero et rubei et medicriter crispi” (Galen, M ic ro tegni, II, fol. 13ra).
+82 Constantine remarks, “Si totum corpus fuerit temperatum inter album et rufum, inter humidum et calidum, tempera[men]tum significat. Si ruffum et croceum. calorem nimium. Si
+tantum album frigiditatem” (L 'Arte u niversale d e lla m edicina (Pantegni), chap. 13, p. 60).
+83 “Et solus file qui est ex rubore et albedine compositus, ut dicit Johannicius, est ab
+aequalitate procedens; alii vero omnes ab inaequalitate. Primus est nobilissimus et corpori
+eucratico determinatus, et sic a Galeno in temperata complexione positus est, et simfii modo a
+Constantino in Pantechne. Hunc igitur concedimus in corpore beatissimae Virginis existisse”
+(Ps.-Albert, M a ria le 20.2, ed. Borgnet, 45).
+84 “P ili cito nascentes. et se in altum surgentes. ostendunt cerebri siccitatem. Si nimis
+crispi. nigri et multi, et cito decalvandi. calorem significant, et siccitatem” (L 'Arte universale
+d e lla m edicin a (Pantegni), chap. 10, p. 56).
+85 M ichael Scot, L ib e r p h ision om iae 32.
+86 “Et sic patet . . . quod optima complexio cerebri quantum ad virtutes animales est
+calidum et siccum. Et cerebro sic se habenti debentur capilli nigri. Et hoc est quod dicit Constantinus in P antech n e in superioribus” (Ps.-Albert, M a ria le 20.3, ed. Borgnet, 47). Cf. Michael
+
+238
+
+I. M. RESNICK
+
+every respect the m ost balanced or perfect com plexion, Ps.-A lbert insists she
+m ust have had black hair.87 Red (or blonde) hair, which Galen identifies as a
+sign o f a sanguineous and therefore noble com plexion, our author dism isses.
+Indeed, by the later M iddle Ages red hair had becom e identified w ith a num­
+ber o f vices. For M ichael Scot, red hair signifies a person who is envious,
+venal, duplicitous, proud, and ill-speaking.88 Increasingly, red hair was em­
+ployed in Christian iconography to depict the enemies o f Christ— Jews in
+general, and Judas in particular.89 Black hair, Ps.-A lbert affirm s, is a sign o f a
+healthy body that has successfully purged itself o f the m ost noxious humors
+which, in any event, were absent from Virgin M ary’s body. In this instance,
+the Song o f Songs, which describes the beloved as having a “head o f finest
+gold” but “hairs . . . black as a raven” (Song o f Songs 5:11) is understood not
+allegorically— as w as so common— but quite literally, and therefore lends
+support to the conclusions o f physiognom y. Further evidence is drawn from
+the testim ony o f the veil o f Veronica,90 which identifies Jesus as having had
+black hair and beard. The author o f our text assum es a sim ilarity between
+mother and Son, such that from the Son’s hair color one can infer the color o f
+the m other’s hair.
+Sim ilarly, w ith respect to the color o f the Virgin’s eyes, our text concludes
+that “the color in the eyes should immediately indicate the com plexion o f
+their own subject, and the [Virgin’s] brain having already been determined
+without any doubt to be warm and dry, the color o f the eyes w ill be deter­
+mined to be black.”91 Although Johannitius insisted that black eyes stemmed
+Scot’s characterization o f a warm and dry complexion in the brain: “If the brain is o f a warm
+and dry complexion, the hairs grow out to be very blond and short or black or curly; this person
+is especially wanton; for this reason his hair w ill quickly grey and grow bald; he sleeps but
+little at night; he is o f great wit, quick to understand and apprehend” (“Si cerebrum fuerit calidae et siccae complexionis capilli nascuntur flavi fortes et curti vel nigri vel crispi; homo est
+multum luxuriosus, et ideo cito canescit et calvescit; parum dormit in nocte et est magnum ingenii et repentini intellectus et apprehensionis,” L ib e r ph isio n o m ia e 32).
+87 “Cum igitur corpus Dominae nostrae fuerit perfectissimum secundum omnia membra,
+ipsa habuit cerebrum calidum et siccum et capillos nigros” (Ps.-Albert, M a ria le 20.3, ed.
+Borgnet, 46).
+88 Ps.-Albert, L ib e r p h isio n o m ia e 59.
+89 See Ruth M ellinkoff, O utcasts: S ig n s o f O therness in N orthern E uropean A r t o fth e L a te
+M id d le A ges, 2 vols. (Berkeley, 1993), 1:150-59; and Claudine Fabre-Vassas, The S in gu lar
+B ea st: Jew s, C hristians, a n d th e P ig, trans. Carol Volk (N ew York, 1997), 107-11.
+90 Albert acknowledges that Jesus left a facial impression on Veronica’s veil also at In
+E vangelium L u cae 8:44 (ed. Borgnet, 583).
+91 “Dicimus, quod color in oculis cum immediate significet complexionemproprii subjecti,
+procul dubio cerebro et calido et sicco determinato, determinabitur color oculorum niger” (Ps.Albert, M a ria le 20.3, ed. Borgnet, 47). Compare what immediately follows with Albert’s con­
+tention, expressed in D e an im alibu s 19.3.12 {On A nim als, 1338), that black eyes result from an
+
+PS.-ALBERT THE GREAT ON THE PHYSIOGNOMY OF JESUS AND MARY
+
+23 9
+
+from a deficiency in the crystalline humor, our author remarks that though the
+paucity o f the humor is the cause o f the black color in the eye, it is not a defi­
+ciency. Rather, it reflects the fact that a noble brain— warm and dry— requires
+only a purer and more subtle nutriment, and therefore does not need more o f
+the crystalline humor to sustain the eyes’ vision. In conclusion, then, “the
+blessed Virgin had a mixture o f white and red in the color o f her skin; her hair
+and eyes, however, were moderately [temperate] black ju st as w e believe that
+her beloved Son w as more handsomely colored with respect to [his] form than
+all the sons o f m en.”92
+W hat is perhaps m ost surprising in the text by Ps.-A lbert, however, is one
+last argument, viz. that “with respect to their innate com plexion, offspring are
+accustom ed to be like their parents, and vice versa. But w e see that in many
+cases the race o f Jews has black hair. Therefore, also our Lady, since she was
+the progeny o f Jew s.”93 Although Ps.-A lbert accepts the prem ise that o ff­
+spring and their parents generally resemble one another,94 he does not clearly
+endorse this argument. Nevertheless, the argument remains a little surprising
+for tw o reasons: first, because it clearly acknowledges the presence o f a
+stereotypical Jewish physiognomy;95 and, second, because so often Christian
+art o f the later M iddle A ges attempts to dejudaize Mary and Jesus, sharply
+distinguishing their appearance from the darker, more ominous (even Satanic)
+appearance o f Jew s,96 despite a recognition that M ary’s Jewishness— indeed
+that she too, and not only Joseph, was o f D avidic descent!97— w as necessary
+abundance o f the watery or aqueous humor in the eye, and as a result they suffer from a sort o f
+night blindness.
+92 “Et sic beata Virgo in colore cutis fu.it alba et rubea mixtim; in capillis autem et in oculis
+nigra temperate fuit, sicut et ejus Filium dilectum speciosissimum forma prae filiis hominum
+credimus fuisse coloratum” (Ps.-Albert, M a ria le 20.3, ed. Borgnet, 47).
+93 “Secundum complexionem innatam soboles solent assimilari parentibus, et e contra; sed
+videmus, quod genus Judaeorum ut in pluribus habet nigros capillos; ergo et Domina nostra
+cum fuit de progenie Judaeorum” (ibid. 19.2.5, ed. Borgnet, 44).
+94 Ibid., q. 17.
+95 This is something which Sara Lipton claims is still absent from the B ib le m oralisee,
+made for the king o f France between 1220 and 1229. See. Im ages o f Intoleran ce: The R epresen ta­
+tion o f J ew s a n d Ju daism in the “B ib le m o ra lisee" (Berkeley and Los Angeles, 1999), 20-21.
+96 In addition to Ruth MellinkofF, O u tcasts: S ig n s o f O th ern ess in N orthern E u ropean A r t
+o f the L a te M id d le A ges, see also Heinz Schreckenberg’s The Jew in C hristian A r t (N ew York,
+1996). Schreckenberg remarks that “the anti-Jewish thought-patterns behind Christian pictorial
+art [of the Middle Ages] . . . could no longer see the Jews as ‘older brothers’ and even sup­
+pressed the Jewishness o f Jesus o f Nazareth and his mother” (14). The dark-complexioned antiJewish stereotype w as certainly known to Jews themselves in the thirteenth century, and is
+found in a thirteenth-century text o f anti-Christian polemics compiled by Franco-German Jews;
+see David Berger, The Jew ish -C h ristian D e b a te in the H igh M id d le A ges. A C ritic a l E dition o f
+the N izzah on Vetus (Philadelphia, 1979), 224 and 340.
+97 So, as Ramon Llull stated, “our Lady [Mary] was o f the house o f David, who w as the
+
+240
+
+I. M. RESNICK
+
+in order to provide a foundation for Christian m essianic claim s. Even i f P s.Albert the Great agrees that Jesus and Mary share a Jewish physiognom y he
+m ay have understood his Jewish contem poraries to have departed from this
+physiognom ic ideal, ju st as they presented an image o f gradual spiritual de­
+cline from the days o f the patriarchs and prophets, through the Pharisees, to
+the thirteenth century.
+III. C o n c l u s io n
+It is clear that the growing attention given to physiognom y in scholastic
+scientific or philosophical texts had some interesting consequences for theolo­
+gians. Practical theology required some consideration o f an individual’s com ­
+plexion in assigning an appropriate penance, inasmuch as one’s com plexion
+m ight predispose an individual to specific sins. Speculative theology, how­
+ever, like Ps.-A lbert the Great’s M ariale, reasoned from a “scientific” account
+o f the m ost perfectly com plexioned human body to reach seem ingly legiti­
+mate inferences regarding the appearance o f Jesus and his mother, Mary. In
+one sense, these inferences were not em pirically grounded98 but were based
+on the doctrines o f medical and philosophical authorities, viz. Aristotle,
+Galen, and Constantine the African. Although Ps.-A lbert the Great’s text did
+appeal in passing to an monographic tradition based on accounts o f Veron­
+ica’s veil, this seem s alm ost an afterthought. More important w as the attempt
+to reconcile discordant authorities to deduce M ary’s color o f hair, eyes, and
+skin, and to bring this depiction into agreement with some elementary ethno­
+graphic claim s. In the process, Mary (and, by inference, Jesus) are clothed
+w ith physical characteristics meant to withstand the scrutiny o f the medieval
+scientific community.
+University o f Tennessee a t Chattanooga.
+
+noblest and most honored king the Jews ever had . . .” (B ook o f the G en tiles 3.9.6, ed. and
+trans. Anthony Bonner in D o c to r Illum inatus: A R am on L lu ll R e a d e r Princeton, 1985], 137).
+98
+For example, our author does not ask the color o f Mary’s hair which several religious
+houses or churches allege to have been deposited in holy relics or phylacteries in their posses­
+sion. Cf. Herman o f Tournai, D e m ira cu lis B. M a ria e L audunensis lib r i trè s 2.4 (PL
+156:976C); and S c rip to re s o rd in is G randim ontensis: E p istu la G uigon is deB Iau on e d e reliq u iis
+te rra e sanctae, ed. J. Becquet, CCCM 8 (Tumhout, 1968), 215.24-28.</p></div></body><back><div><listBibl>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Quod concedimus et credimus esse verum, idem de qualitate dicentes: modi enim qualitatis corporis sunt quinque, crassities nimia, camositas, extenuata macies, synthesis, et aequalitas. Pinguedo causatur ex frigiditate et humiditate, camositas ex caliditate et humiditate, extenuata macies ex caliditate et siccitate, synthesis ex frigiditate et siccitate, aequalitas ex om­ nium humorum aequali complexione, cujus aequalitas credimus corpus beatissimae Virginis exstitsse</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Signa competentis craseos secundum totam habitudinem animalis [virtutis]: color quidem ex rubeo et albo commixtus, capilli vero et rubei et medicriter crispi</title>
+	</analytic>
+	<monogr>
+		<title level="m">Grant, 707. Michael Scot agrees. See h is L ib e r p h isio n o m ia e 24</title>
+		<meeting><address><addrLine>Galen, M</addrLine></address></meeting>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+		</imprint>
+	</monogr>
+	<note>S ou rce B o o k in M e d ie v a l S ci­ ence. ic rotegni, II, fol. 13ra)</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Et solus file qui est ex rubore et albedine compositus, ut dicit Johannicius, est ab aequalitate procedens; alii vero omnes ab inaequalitate. Primus est nobilissimus et corpori eucratico determinatus, et sic a Galeno in temperata complexione positus est, et simfii modo a Constantino in Pantechne</title>
+	</analytic>
+	<monogr>
+		<title level="m">Si totum corpus fuerit temperatum inter album et rufum, inter humidum et calidum, tempera[men]tum significat. Si ruffum et croceum. calorem nimium. Si tantum album frigiditatem&quot; (L &apos;Arte u niversale d e lla m edicina (Pantegni), chap. 13</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page">60</biblScope>
+		</imprint>
+	</monogr>
+	<note>Constantine remarks. Hunc igitur concedimus in corpore beatissimae Virginis existisse&quot; (Ps.-Albert, M a ria le 20.2, ed. Borgnet, 45</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">P ili cito nascentes. et se in altum surgentes. ostendunt cerebri siccitatem. Si nimis crispi. nigri et multi, et cito decalvandi. calorem significant</title>
+		<idno>chap. 10</idno>
+		<imprint>
+			<biblScope unit="page">56</biblScope>
+		</imprint>
+	</monogr>
+	<note>et siccitatem&quot; (L &apos;Arte universale d e lla m edicin a (Pantegni</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Borgnet, 47). Cf. Michael abundance o f the watery or aqueous humor in the eye, and as a result they suffer from a sort o f night blindness. 92 &quot;Et sic beata Virgo in colore cutis fu.it alba et rubea mixtim; in capillis autem et in oculis nigra temperate fuit, sicut et ejus Filium dilectum speciosissimum forma prae filiis hominum credimus fuisse coloratum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Scot</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Et hoc est quod dicit Constantinus in P antech n e in superioribus&quot; (Ps.-Albert, M a ria le 20.3</title>
+		<editor>Ps.-Albert, M a ria le 20.3</editor>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+		</imprint>
+	</monogr>
+	<note>Borgnet, 47). 93 &quot;Secundum complexionem innatam soboles solent assimilari parentibus, et e contra; sed videmus, quod genus Judaeorum ut in pluribus habet nigros capillos. ergo et Domina nostra cum fuit de progenie Judaeorum&quot; (ibid. 19.2.5, ed. Borgnet, 44</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">could no longer see the Jews as &apos;older brothers&apos; and even sup­ pressed the Jewishness o f Jesus o f Nazareth and his mother&quot; (14). The dark-complexioned antiJewish stereotype w as certainly known to Jews themselves in the thirteenth century</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Ibid</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Los</forename><surname>Berkeley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Angeles</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">95 This is something which Sara Lipton claims is still absent from the B ib le m oralisee, made for the king o f France between 1220 and 1229. See</title>
+		<editor>Franco-German Jews</editor>
+		<imprint>
+			<date type="published" when="1996" />
+			<biblScope unit="page" from="20" to="21" />
+		</imprint>
+	</monogr>
+	<note>96 In addition to Ruth MellinkofF, O u tcasts: S ig n s o f O th ern ess in N orthern E u ropean A r t o f the L a te M id d le A ges, see also Heinz Schreckenberg&apos;s The Jew in C hristian A r t</note>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b6">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">David</forename><surname>Berger</surname></persName>
+		</author>
+		<title level="m">The Jew ish -C h ristian D e b a te in the H igh M id d le A ges. A C ritic a l E dition o f the N izzah on Vetus</title>
+		<meeting><address><addrLine>Philadelphia</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1979" />
+			<biblScope unit="page">340</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct resp="#ISTEX-API" change="#refBibs-istex" xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Ramon Llull stated</title>
+		<imprint/>
+	</monogr>
+	<note>our Lady [Mary] was o f the house o f David, who w as the</note>
+</biblStruct>
+
+				</listBibl>></div></back></text></TEI>
