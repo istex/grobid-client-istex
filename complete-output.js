@@ -57,6 +57,10 @@ function generateRefBibsFile(options, istexId, callback) {
 		    if ( (ind1 != -1) && (ind2 != -1)) {
 		        var refbibsSegment = body.substring(ind1, ind2+11);
 
+		        // add @resp and @change for each bibliographical reference (element <biblStruct>)
+		        refbibsSegment = refbibsSegment.replace(/<biblStruct /g, 
+		        		"<biblStruct resp=\"#ISTEX-API\" change=\"#refBibs-istex\" ");
+
 		        // write ref bibs enrichment
 		        mkdirp(teiRefBibsFilePath, function(err, made) {            
 		            if (err) {

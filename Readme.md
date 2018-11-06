@@ -59,7 +59,7 @@ If the collection of documents is very large (several millions), better to incre
 
 - complete the output for ISTEX:
 
-> > node complete-output -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out
+> node complete-output -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out
 
 This will update the TEI header of the full text enrichment, generate the bibrefs enrichment file and update the fulltext file with the newly generated bibliographical references. Be sure to use the same output (`~/tmp/out`) for having all the resources under the same hierarchy.
 
