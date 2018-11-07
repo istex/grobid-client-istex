@@ -54,6 +54,15 @@ const timer = ms => new Promise(res => setTimeout(res, ms));
 function callGROBID(options, istexId, callback) {
     console.log("---\nProcessing: " + istexId);
     var file = options.temp_path + "/" + istexId + ".pdf";
+
+    // check that the file exists (conservative but necessary check)
+    if (!fs.existsSync(file)) {
+        console.log('temporary PDF file does not exist: ', file);
+        if (callback)
+            callback();
+        return false;
+    }
+
     var form = new FormData();
     form.append("input", fs.createReadStream(file));
     form.append("consolidateHeader", "0");
