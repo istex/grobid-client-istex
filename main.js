@@ -69,13 +69,15 @@ function callGROBID(options, istexId, callback) {
     form.submit(grobid_url+options.action, function(err, res, body) {
         if (err) {
             console.log(err);
-            //if (callback) 
-            //    callback(err.message);
+            if (callback) 
+                return callback(err.message);
             //return false;
         }
 
         if (!res) {
             console.log("GROBID service appears unavailable");
+            if (callback) 
+                return callback(err.message);
         } else {
             res.setEncoding('utf8');
         }
