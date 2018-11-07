@@ -58,8 +58,6 @@ function callGROBID(options, istexId, callback) {
     // check that the file exists (conservative but necessary check)
     if (!fs.existsSync(file)) {
         console.log('temporary PDF file does not exist: ', file);
-        if (callback)
-            callback();
         return false;
     }
 
@@ -85,8 +83,9 @@ function callGROBID(options, istexId, callback) {
 
         if (!res) {
             console.log("GROBID service appears unavailable");
-            if (callback) 
-                return callback(err.message);
+            //if (callback) 
+            //    return callback(err.message);
+            return false;
         } else {
             res.setEncoding('utf8');
         }
