@@ -69,9 +69,9 @@ function callGROBID(options, istexId, callback) {
     form.submit(grobid_url+options.action, function(err, res, body) {
         if (err) {
             console.log(err);
-            if (callback) 
-                return callback(err.message);
-            //return false;
+            //if (callback) 
+            //    return callback(err.message);
+            return false;
         }
 
         if (!res) {
