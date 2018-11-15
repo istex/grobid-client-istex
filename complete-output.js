@@ -279,7 +279,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	});
 }
 
-function processCompletion(options, output) {
+function processCompletion(options) {
 	var q = async.queue(function (istexId, callback) {
 	  	generateRefBibsFile(options, istexId, callback);
     }, options.concurrency);
@@ -315,8 +315,6 @@ function init() {
     const config = require('./config.json');
     options.temp_path = config.temp_path;
 
-    // default service is full text processing
-    //options.action = "processFulltextDocument";
     options.concurrency = 10; // number of concurrent call to the ISTEX API
     var attribute; // name of the passed parameter
     // get the path to the PDF to be processed
