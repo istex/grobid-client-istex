@@ -24,6 +24,7 @@ const reset = '\x1b[0m';
 
 var nb_full = 0;
 var nb_ref = 0;
+var nb_tei = 0;
 
 function countFile(options, istexId, callback) {
 
@@ -33,8 +34,14 @@ function countFile(options, istexId, callback) {
                                 istexId[2]+"/"+
                                 istexId+"/";
 
+    // enrichment fulltext
     var teiFullTextFilePath = resourcePath + 'enrichment/istex-grobid-fulltext/' + istexId + ".tei.xml.gz";
+    
+    // bib ref
     var teiBibRefFilePath = resourcePath + 'enrichment/refbibs/' + istexId + ".refBibs.tei.xml.gz";
+    
+    // istex fulltext tei
+    var istexFullTextFilePath = resourcePath + 'fulltext/tei/' + istexId + ".xml.gz";
 
     if (fs.existsSync(teiFullTextFilePath)) {
 		nb_full++;
@@ -42,6 +49,10 @@ function countFile(options, istexId, callback) {
 
  	if (fs.existsSync(teiBibRefFilePath)) {
 		nb_ref++;
+ 	}
+
+ 	if (fs.existsSync(istexFullTextFilePath)) {
+		nb_tei++;
  	}
 
  	if (callback)
@@ -128,8 +139,9 @@ function end() {
     var this_is_the_end = new Date() - start
     console.info('Execution time: %dms', this_is_the_end)
 
-    console.log("Number of found fulltext TEI files: " + nb_full);
+    console.log("Number of found enrichment fulltext TEI files: " + nb_full);
     console.log("Number of found bibref TEI files: " + nb_ref);
+    console.log("Number of found fulltext/tei TEI files: " + nb_ref);
 }
 
 var start;
