@@ -10,7 +10,7 @@ const request = require('request'),
     striptags = require('striptags'),
     zlib = require('zlib'),
     parseXml = require('@rgrove/parse-xml'),
-    jsonpath = require('jsonpath');;
+    jsonpath = require('jsonpath');
 
 // for making console output less boring
 const green = '\x1b[32m';
@@ -135,7 +135,7 @@ function matchDOI(options, istexId, callback) {
 			    		// send the usable queries to the disambiguation service with async
 			    		async.waterfall([
 			    			function matchRawCitationString(callback) {
-			    				
+
                 			},
                 			function matchTitleAuthor(callback) {
 
