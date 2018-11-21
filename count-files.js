@@ -9,8 +9,7 @@ const request = require('request'),
     fs = require('fs'),
     http = require ('http'),
     readline = require('readline'),
-    zlib = require('zlib'),
-    jsonpath = require('jsonpath');
+    zlib = require('zlib');
 
 // for making console output less boring
 const green = '\x1b[32m';
