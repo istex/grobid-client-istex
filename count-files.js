@@ -143,7 +143,7 @@ function init() {
 
 function end() {
     var this_is_the_end = new Date() - start
-    console.info('Execution time: %dms', this_is_the_end);
+    console.info('Execution time: %ds', this_is_the_end/1000);
 
     //console.log("Number of found enrichment fulltext TEI files:", orange, nb_full, reset);
     //console.log("Number of found bibref TEI files:", orange, nb_ref, reset);
