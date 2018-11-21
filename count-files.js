@@ -45,11 +45,9 @@ function countFile(options, istexId, callback) {
     if (fs.existsSync(teiFullTextFilePath)) {
 		nb_full++;
  	}
-
  	if (fs.existsSync(teiBibRefFilePath)) {
 		nb_ref++;
  	}
-
  	if (fs.existsSync(istexFullTextFilePath)) {
 		nb_tei++;
  	}
@@ -85,8 +83,6 @@ function countFiles(options) {
 		 		var total = nb_full + nb_ref + nb_ref; 
 		 		process.stdout.write("Total counted TEI files: " + orange + total + reset);
 		 	}
-            //console.log(orange, 'task is completed', reset);  
-            //n++;
         });
     });
 }
@@ -144,10 +140,6 @@ function init() {
 function end() {
     var this_is_the_end = new Date() - start
     console.info('Execution time: %ds', this_is_the_end/1000);
-
-    //console.log("Number of found enrichment fulltext TEI files:", orange, nb_full, reset);
-    //console.log("Number of found bibref TEI files:", orange, nb_ref, reset);
-    //console.log("Number of found fulltext/tei TEI files:", orange, nb_ref, reset);
 
     process.stdout.write("Number of found enrichment fulltext TEI files: " + orange + nb_full + reset + "\n");
     process.stdout.write("Number of found bibref TEI files: " + orange + nb_ref + reset + "\n");
