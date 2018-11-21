@@ -54,15 +54,6 @@ function countFile(options, istexId, callback) {
 		nb_tei++;
  	}
 
- 	if (nb_full % 1000 == 0) {
- 		// update file count
- 		process.stdout.cursorTo(0); 
- 		process.stdout.clearLine();
-
- 		var total = nb_full + nb_ref + nb_ref; 
- 		process.stdout.write("Total counted TEI files: " + orange + total + reset);
- 	}
-
  	if (callback)
  		callback();
 }
@@ -87,6 +78,13 @@ function countFiles(options) {
             if (err) { 
                 return console.log('error in adding tasks to queue'); 
             }  
+            if (nb_full % 1000 == 0) {
+		 		// update file count
+		 		process.stdout.cursorTo(0); 
+		 		process.stdout.clearLine();
+		 		var total = nb_full + nb_ref + nb_ref; 
+		 		process.stdout.write("Total counted TEI files: " + orange + total + reset);
+		 	}
             //console.log(orange, 'task is completed', reset);  
             //n++;
         });
