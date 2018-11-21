@@ -1,3 +1,4 @@
 node_modules
 *.old
 resources/list.txt
+nohup.out
