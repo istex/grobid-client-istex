@@ -18,7 +18,7 @@
     "form-data": "^2.2.0",
     "requestretry": "3.0.1",
     "striptags": "^3.1.1",
-    "@rgrove/parse-xml": "^1.1.1",
-    "jsonpath": "^1.0.0"
+    "xpath": "^0.0.27",
+    "xmldom": "^0.1.27"
   }
 }

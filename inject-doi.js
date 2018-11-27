@@ -9,8 +9,10 @@ const request = require('request'),
     readline = require('readline'),
     striptags = require('striptags'),
     zlib = require('zlib'),
-    parseXml = require('@rgrove/parse-xml'),
-    jsonpath = require('jsonpath');
+    xpath = require('xpath'),
+	dom = require('xmldom').DOMParser;
+//    parseXml = require('@rgrove/parse-xml'),
+//    jsonpath = require('jsonpath');
 
 // for making console output less boring
 const green = '\x1b[32m';
@@ -109,51 +111,47 @@ function matchDOI(options, istexId, callback) {
 
 			    		console.log('raw: ' + raw);
 
-			    		// parse the xml segment 
-			    		var json = parseXml(citationSegment);
-			    		console.log(json);
+			    		console.log(citationSegment);
+			    		const doc = new dom().parseFromString(citationSegment);
+			    		//console.log(doc);
+    					const select = xpath.useNamespaces({});
 
-			    		// try to get the title and first author last name
-			    		var title = jsonpath.query(json, '$..title');
-			    		console.log(title);
-			    		title = jsonpath.query(json, '$..title[?(@.level=="a")]');
-			    		console.log(title);
-			    		title = jsonpath.query(json, '$..title[?(@.level=="m")]');
-			    		console.log(title);
+    					// try to get the title and first author last name
+    					var title = select('//title[@level="a"]/text()', doc)[0];
+    					if (!title)
+	    					title = select('//title[@level="m"]/text()', doc)[0];
+    					console.log(title);
 
-			    		var firstAuthor = jsonpath.query(json, '$..surname[0]');
-			    		console.log(firstAuthor);
+    					var firstAuthor = select('//surname[0]', doc);
 
-			    		// try to get journal, volume, first page
-			    		var jtitle = jsonpath.query(json, '$..title[?(@.level=="j")]');
-						console.log(jtitle);    		
-			    		var volume = jsonpath.query(json, '$..biblScope[?(@.unit=="volume")]');
-			    		console.log(volume);
-			    		var firstPage = jsonpath.query(json, '$..biblScope[?(@.unit=="page")].from');
-			    		console.lof(firstPage);
+    					// try to get journal, volume, first page
+    					var jtitle = select('//title[@level="j"]', doc);
+    					var volume = select('//biblScope[@unit="volume"]', doc);
+    					var firstPage = select('//biblScope[@unit="page"][@from]', doc);
+    					console.log(jtitle);
+    					console.log(volume);
+    					console.log(firstPage);
 
-			    		// send the usable queries to the disambiguation service with async
-			    		async.waterfall([
-			    			function matchRawCitationString(callback) {
+						var service_host = options.glutton_host ; 
+						if (options.glutton_port) {
+							service_host += options.glutton_port;
+						}
+						var endpoints = [
+							{ host: service_host, path: "service/lookup?biblio="+encodeURIComponent(raw) },
+							{ host: service_host, path: "service/lookup?atitle="+encodeURIComponent(title)+
+								"&firstAuthor="+encodeURIComponent(firstAuthor) },
+							{ host: service_host, path: "service/lookup?jtitle="+encodeURIComponent(jtitle)+
+								"&volume="+encodeURIComponent(volume) + "&firstPage="+encodeURIComponent(firstPage) }
+						];
 
-                			},
-                			function matchTitleAuthor(callback) {
+			    		// parallel calls
+			    		async.parallel(endpoints, http.get, function(results) {
+    						for (var response in results) {
+    							if (response.status == 200) {
 
-                			},
-                			function matchJournalVolumePage() {
-
-                			}
-                		], (err, results) => {
-				            if (err) {
-				                console.log('DOI matching error: ' + err);
-				            }
-
-				            // do something with the DOI + ark found, if any
-
-
-				        });
-
-
+    							}
+    						}
+						});
 			    	}
 			    }
 			}
@@ -162,6 +160,29 @@ function matchDOI(options, istexId, callback) {
 	}
 
 }
+
+/*function matchRawCitationString(raw) {
+	var service_url = config.glutton_host ; 
+	if (config.glutton_port) {
+		service_url += config.glutton_port;
+	}
+	service_url += "/lookup?";
+    var request = http.get(service_url, function(response) {
+        console.log(response)
+    }).on('error', function(err) { // Handle errors
+        // delete the file async
+        if (callback) 
+            callback(err.message);
+    });
+}
+
+function matchTitleAuthor(tite, firstAuthor) {
+
+}
+
+function matchJournalVolumePage(journal, volume, firstPage) {
+
+}*/
 
 function injectDOI(options) {
 	var q = async.queue(function (istexId, callback) {
