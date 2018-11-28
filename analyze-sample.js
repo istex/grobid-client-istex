@@ -255,7 +255,103 @@ function analyzeFile(options, istexId, callback) {
 	});
 
 
-}	
+}
+
+
+/**
+ * Aggregate results per year
+ */ 
+function createYearView() {
+	var view = {};
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.date) {
+			if (view[record.date]) {
+				view[record.date] = view[record.date] + 1;
+			} else {
+				view[record.date] = 1;
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v];
+		csv.push(line);
+	}
+
+	fs.writeFile("resources/sample-year.csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per year were saved in csv!");
+    }); 
+}
+
+/**
+ * Aggregate results per publisher
+ */ 
+function createPublisherView() {
+	var view = {};
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.publisher) {
+			var publisher = simplifyPublisher(record.publisher);
+			if (view[publisher]) {
+				view[publisher] = view[publisher] + 1;
+			} else {
+				view[publisher] = 1;
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v];
+		csv.push(line);
+	}
+
+	fs.writeFile("resources/sample-publisher.csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per publisher were saved in csv!");
+    }); 
+}
+
+/**
+ * Aggregate results per doc type
+ */ 
+function createDocTypeView() {
+	var view = {};
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.docTypes) {
+			var docType = record.docTypes[0];
+			if (view[docType]) {
+				view[docType] = view[docType] + 1;
+			} else {
+				view[docType] = 1;
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v];
+		csv.push(line);
+	}
+
+	fs.writeFile("resources/sample-docType.csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per doc type were saved in csv!");
+    }); 
+}
 
 
 function analyze(options) {
@@ -301,6 +397,10 @@ function analyze(options) {
 	    	console.log("The records were saved in json!");
 	    }); 
 
+        createYearView();
+        createPublisherView();
+        createDocTypeView();
+
         end();
     }
 
@@ -344,10 +444,12 @@ function simplifyPublisher(publisher) {
 		publisher = "SAGE";
 	} else if (publisher.match(/blackwell/gi)) {
 		publisher = "Blackwell";
-	} else if (publisher.match(/bmj/gi)) {
+	} else if (publisher.match(/bmj/gi) || publisher.startsWith("British Medical Journal")) {
 		publisher = "BMJ";
 	} else if (publisher.match(/emerald/gi)) {
 		publisher = "Emerald";
+	} else if (publisher === "RSC" || publisher.indexOf("Royal Society of Chemistry") != -1) {
+		publisher = "RSC";
 	}
 
 	return publisher;
