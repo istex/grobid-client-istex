@@ -199,7 +199,7 @@ function analyzeFile(options, istexId, callback) {
 		    			abstract = "";
 		    		
 		    		if (abstract === "") {
-			    		var ind1 = body.indexOf("<abstract>");
+			    		var ind1 = body.indexOf("<abstract");
 			    		if (ind1 != -1) {
 			    			var ind2 = body.indexOf("</abstract>");
 			    			if (ind2 != -1) {
@@ -218,7 +218,7 @@ function analyzeFile(options, istexId, callback) {
 		    			keywords = "";
 			    	
 			    	if (keywords === "") {
-			    		ind1 = body.indexOf("<keywords>");
+			    		ind1 = body.indexOf("<keywords");
 			    		if (ind1 != -1) {
 			    			var ind2 = body.indexOf("</keywords>");
 			    			if (ind2 != -1) {
@@ -234,7 +234,6 @@ function analyzeFile(options, istexId, callback) {
 		    				records[record].keywords_size = keywords.length;
 		    			}
 		    		}
-
 
 				    callb(null, records);
 				});
@@ -257,7 +256,6 @@ function analyzeFile(options, istexId, callback) {
 
 }
 
-
 /**
  * Aggregate results per year
  */ 
@@ -267,10 +265,11 @@ function createYearView() {
 		var record = records[r];
 
 		if (record.date) {
-			if (view[record.date]) {
-				view[record.date] = view[record.date] + 1;
+			var date = record.date;
+			if (view[date]) {
+				view[date] = view[date] + 1;
 			} else {
-				view[record.date] = 1;
+				view[date] = 1;
 			}
 		}
 	}
@@ -285,7 +284,51 @@ function createYearView() {
         	return console.log(err);
     	}
 
-    	console.log("The records per year were saved in csv!");
+    	console.log("The records per publisher were saved in csv!");
+    }); 
+}
+
+
+/**
+ * Aggregate results per year for a given structure
+ */ 
+function createYearViewPerField(field) {
+	var view = {}; // sum per year for the field
+	var nb = {}; // total per year of observations
+	var total = 0; // total observations 
+	var sum = 0.0; // total sum of all observations
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.date && (field in record)) {
+			var date = record.date;
+			if (view[date]) {
+				view[date] += record[field];
+				nb[date] += 1;
+				total += 1;
+				sum += record[field];
+			} else {
+				view[date] = record[field];
+				nb[date] = 1;
+				total += 1;
+				sum += record[field];
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v]/nb[v];
+		csv.push(line);
+	}
+
+	console.log("average year precision for " + field + ": " + sum/total);
+
+	fs.writeFile("resources/sample-year-"+field+".csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per publisher were saved in csv!");
     }); 
 }
 
@@ -313,6 +356,49 @@ function createPublisherView() {
 	}
 
 	fs.writeFile("resources/sample-publisher.csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per publisher were saved in csv!");
+    }); 
+}
+
+/**
+ * Aggregate results per publisher for a given structure
+ */ 
+function createPublisherViewPerField(field) {
+	var view = {}; // sum per publisher for the field
+	var nb = {}; // total per publisher of observations
+	var total = 0; // total observations 
+	var sum = 0.0; // total sum of all observations
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.publisher && (field in record)) {
+			var publisher = simplifyPublisher(record.publisher);
+			if (view[publisher]) {
+				view[publisher] += record[field];
+				nb[publisher] += 1;
+				total += 1;
+				sum += record[field];
+			} else {
+				view[publisher] = record[field];
+				nb[publisher] = 1;
+				total += 1;
+				sum += record[field];
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v]/nb[v];
+		csv.push(line);
+	}
+
+	console.log("average publisher precision for " + field + ": " + sum/total);
+
+	fs.writeFile("resources/sample-publisher-"+field+".csv", csv.join("\n"), function(err) {
     	if(err) {
         	return console.log(err);
     	}
@@ -353,6 +439,48 @@ function createDocTypeView() {
     }); 
 }
 
+/**
+ * Aggregate results per doc type for a given structure
+ */ 
+function createDocTypeViewPerField(field) {
+	var view = {}; // sum per doc type for the field
+	var nb = {}; // total per doc type of observations
+	var total = 0; // total observations 
+	var sum = 0.0; // total sum of all observations
+	for(var r in records) {
+		var record = records[r];
+
+		if (record.docTypes && (field in record)) {
+			var docType = record.docTypes[0];
+			if (view[docType]) {
+				view[docType] += record[field];
+				nb[docType] += 1;
+				total += 1;
+				sum += record[field];
+			} else {
+				view[docType] = record[field];
+				nb[docType] = 1;
+				total += 1;
+				sum += record[field];
+			}
+		}
+	}
+	var csv = [];
+	for(var v in view) {
+		var line = v + "\t" + view[v]/nb[v];
+		csv.push(line);
+	}
+
+	console.log("average docType precision for " + field + ": " + sum/total);
+
+	fs.writeFile("resources/sample-docType-"+field+".csv", csv.join("\n"), function(err) {
+    	if(err) {
+        	return console.log(err);
+    	}
+
+    	console.log("The records per docType were saved in csv!");
+    }); 
+}
 
 function analyze(options) {
 	var q = async.queue(function (istexId, callback) {
@@ -372,12 +500,37 @@ function analyze(options) {
 	        	if (records[r].docTypes.length == 2)
 	        		line += records[r].docTypes[1];
 	        	line += "\t";
+	        	
 	        	if (records[r].abstract_size)
 		        	line += records[r].abstract_size;
 		        line += "\t";
-		        if (records[r].keywords_size)
+		        
+        		if (records[r].abstract_size) {
+        			if (records[r].abstract_size > 10 && records[r].abstract_size < 2000) {
+        				records[r].abstract = 1.0;
+        				line += 1;
+        			} else {
+        				records[r].abstract = 0.0;
+        				line += 0;
+        			}
+        		}
+        		line += "\t";
+
+        		if (records[r].keywords_size)
 		        	line += records[r].keywords_size;
         		line += "\t";
+
+        		if (records[r].keywords_size) {
+        			if (records[r].keywords_size > 10 && records[r].keywords_size < 500) {
+        				line += 1;
+        				records[r].keywords = 1.0;
+        			} else {
+        				line += 0;
+        				records[r].keywords = 0.0;
+        			}
+        		}
+        		line += "\t";
+
         		csv.push(line);
         	}
         }
@@ -400,6 +553,14 @@ function analyze(options) {
         createYearView();
         createPublisherView();
         createDocTypeView();
+
+		createYearViewPerField("abstract");
+        createPublisherViewPerField("abstract");
+        createDocTypeViewPerField("abstract");               
+
+		createYearViewPerField("keywords");
+        createPublisherViewPerField("keywords");
+        createDocTypeViewPerField("keywords"); 
 
         end();
     }
