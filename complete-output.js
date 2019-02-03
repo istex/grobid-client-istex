@@ -103,7 +103,7 @@ function generateRefBibsFile(options, istexId, callback) {
 }
 
 /**
- * Download the full text associated to an Istex 
+ * Download the full text associated to an Istex ID
  */
 function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
 	// download the current full text file via the API:
@@ -145,12 +145,22 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	// get the dowloaded full text
 	var tempTeiFullTextFilePath = options.temp_path + "/" + istexId + '.tei.xml';
 	if (!fs.existsSync(tempTeiFullTextFilePath)) {
-		console.log("file does not exist: " + tempTeiFullTextFilePath);
+        console.log(orange, "file does not exist: " + tempTeiFullTextFilePath, reset);
 		if (callback) 
 	    	callback();
         return false;
 	}
 	//console.log('file has been entirely downloaded:', tempTeiFullTextFilePath)
+
+    // check if the file is empty
+    var contents = fs.readFileSync(tempTeiFullTextFilePath).toString();
+    if (contents.trim().length == 0) {
+        console.log(orange, "file exist but is empty: " + tempTeiFullTextFilePath, reset);
+        if (callback) 
+            callback();
+        return false;
+    }
+
     var rstream = fs.createReadStream(tempTeiFullTextFilePath);
     var tei = ""
 
@@ -174,7 +184,7 @@ function updateFullTextFile(options, istexId, refbibsSegment, callback) {
 	        return false;
 	    } 
 
-	    // check in the TEI full text if the bib refs hae been produced by grobid
+	    // check in the TEI full text if the bib refs have been produced by grobid
 	    var ind = tei.indexOf("via GROBID");
 	    var toUpdate = false;
 	    var respStmtToUpdate = false;
