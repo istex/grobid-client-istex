@@ -53,7 +53,7 @@ function downloadIstexFullText(options, istexId, callback) {
 
     var dest = options.temp_path + "/" + istexId + '.tei.xml';
     var file = fs.createWriteStream(dest);
-    var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
+    var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei?sid=grobid';
     console.log('downloading', tei_url, '...')
     
     var request = https.get(tei_url, function(response) {

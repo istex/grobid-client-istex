@@ -31,7 +31,7 @@ const reset = '\x1b[0m';
 function downloadIstexPDF(options, istexId, callback) {
     var dest = options.temp_path + "/" + istexId + '.pdf';
     var file = fs.createWriteStream(dest);
-    var pdf_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/pdf';
+    var pdf_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/pdf?sid=grobid';
     var request = https.get(pdf_url, function(response) {
         response.pipe(file);
         file.on('finish', function() {
