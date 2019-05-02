@@ -33,7 +33,12 @@ function generateRefBibsFile(options, istexId, callback) {
     var teiFullTextFilePath = resourcePath + 'enrichment/istex-grobid-fulltext/' + istexId + ".tei.xml.gz";
     var teiRefBibsFilePath = resourcePath + 'enrichment/refbibs/';
 
-    if (!fs.existsSync(teiFullTextFilePath)) {
+    // if teiRefBibsFilePath already exists, not need to process the fulltext enrichment
+	if (fs.existsSync(teiRefBibsFilePath)) {
+		console.log("file does already exist: " + teiRefBibsFilePath)
+    	if (callback)
+ 		   	callback();
+	} else if (!fs.existsSync(teiFullTextFilePath)) {
     	console.log("file does not exist: " + teiFullTextFilePath)
     	if (callback)
  		   	callback();
@@ -43,9 +48,13 @@ function generateRefBibsFile(options, istexId, callback) {
 	    rstream.on('data', function(chunk) {
 	    	body += chunk;
 	    });
+	    rstream.on('error', function(err) {
+	    	console.log('error reading grobid gzipped tei file ' + teiFullTextFilePath, err)
+ 		   	return false;
+	    });
 	    rstream.on('finish', function (err) {
 		    if (err) { 
-		    	console.log('error reading grobid tei file', err)
+		    	console.log('error reading grobid tei file ' + teiFullTextFilePath, err)
 		        if (callback)
 		        	callback();
 		        return false;
@@ -106,33 +115,166 @@ function generateRefBibsFile(options, istexId, callback) {
  * Download the full text associated to an Istex 
  */
 function downloadIstexFullText(options, istexId, refbibsSegment, callback) {
-	// download the current full text file via the API:
-	// url is https://api.istex.fr/document/*ISTEX_ID*/fulltext/tei
-    var dest = options.temp_path + "/" + istexId + '.tei.xml';
-    var file = fs.createWriteStream(dest);
-    var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
-    console.log('downloading', tei_url, '...')
-    
-    var request = https.get(tei_url, function(response) {
-        response.pipe(file);
-        file.on('finish', function() {
-            file.close(updateFullTextFile(options, istexId, refbibsSegment, callback));  
-            // close() is async, call method after close completes
-        });
-        file.on('error', function(err) { 
-	        console.log('io error for writing downloaded fulltext file', err);
-    	    if (callback) 
-        	    callback();
-        	return false;
-        });
-    })
+	// first try to access the ISTEX fulltext on the file system if thta option is
+	// available
+	if (options.fulltext_repo) {
 
-    request.on('error', function(err) {  
-        console.log('request to fulltext file failed', err);
-        if (callback) 
-            callback();
-        return false;
-    });
+		var resourcePath = options.fulltext_repo+"/"+
+                                istexId[0]+"/"+
+                                istexId[1]+"/"+
+                                istexId[2]+"/"+
+                                istexId+"/";
+
+		var teiFullTextIstexFilePath = resourcePath + '/fulltext/' + istexId + ".tei.xml.gz";;
+
+		var rstream = fs.createReadStream(teiFullTextIstexFilePath).pipe(zlib.createGunzip());
+
+		rstream.on('error', function(error) {
+    	console.log("cannot read file: " + teiFullTextIstexFilePath);
+	    	if (callback) 
+		        callback();
+	        return false;
+	    })
+
+		var tei = "";
+	    rstream.on('data', function(chunk) {
+	    	tei += chunk;
+	    });
+
+	    rstream.on('close', function (err) {
+	    	//console.log("tmp tei file read");
+		    if (err) { 
+		        console.log('failed to complete istex fulltext tei file reading', err);
+		        if (callback)
+			        callback();
+		        return false;
+		    } 
+		    updateFullTextTei(options, istexId, refbibsSegment, tei, callback);  
+		});
+
+	} else {
+
+		// download the current full text file via the API:
+		// url is https://api.istex.fr/document/*ISTEX_ID*/fulltext/tei
+	    var dest = options.temp_path + "/" + istexId + '.tei.xml';
+	    var file = fs.createWriteStream(dest);
+	    var tei_url = 'https://api.istex.fr/document/' + istexId + '/fulltext/tei';
+	    console.log('downloading', tei_url, '...')
+	    
+	    var request = https.get(tei_url, function(response) {
+	        response.pipe(file);
+	        file.on('finish', function() {
+	            file.close(updateFullTextFile(options, istexId, refbibsSegment, callback));  
+	            // close() is async, call method after close completes
+	        });
+	        file.on('error', function(err) { 
+		        console.log('io error for writing downloaded fulltext file', err);
+	    	    if (callback) 
+	        	    callback();
+	        	return false;
+	        });
+	    })
+
+	    request.on('error', function(err) {  
+	        console.log('request to fulltext file failed', err);
+	        if (callback) 
+	            callback();
+	        return false;
+	    });
+	}
+}
+
+function updateFullTextTei(options, istexId, refbibsSegment, tei, callback) {
+	
+	// update is possible 
+	// * if the following is present under respStmt:
+	// <resp>Références bibliographiques récupérées via GROBID</resp>
+	// * if no bib ref present at all
+
+    // check in the TEI full text if the bib refs hae been produced by grobid
+    var ind = tei.indexOf("via GROBID");
+    var toUpdate = false;
+    var respStmtToUpdate = false;
+    if (ind != -1) {
+    	// we can update the old GROBID ref bib with the new GROBID ones
+    	toUpdate = true;
+    	console.log('grobid refbibs TO update: ', istexId);
+    } else {
+    	// case we don't have ref. bib. at all, then we can update the file too
+    	var ind2 = tei.indexOf('<listBibl/>');
+    	if (ind2 != -1) {
+	    	// we can update the no-ref-bib with the new GROBID ones
+	    	toUpdate = true;
+	    	console.log('no existing ref,, so adding grobid refbibs')
+	    	// we will need to update the tei header/respStmt 
+	    	respStmtToUpdate = true;
+	    } else {
+	    	console.log('no grobid refbibs to update', istexId);
+    	}
+    }
+
+    if (toUpdate) {
+	    var resourcePath = options.outPath+"/"+
+                                istexId[0]+"/"+
+                                istexId[1]+"/"+
+                                istexId[2]+"/"+
+                                istexId+"/";
+
+    	var fullTextPath = resourcePath + 'fulltext/';
+
+    	// write ref bibs enrichment
+        mkdirp(fullTextPath, function(err, made) {
+            // I/O error
+            if (err) {
+		        if (callback)
+			       	callback();
+                return false;
+            }
+
+            var writeOptions = { encoding: 'utf8' };
+            var wstream = fs.createWriteStream(fullTextPath + istexId + ".tei.xml.gz", writeOptions);
+            wstream.on('finish', function (err) {
+                if (err) { 
+                    console.log(err);
+                } else
+                	console.log(white, "fulltext written under: " + fullTextPath, reset); 
+            });
+
+            var compressStream = zlib.createGzip();
+            compressStream.pipe(wstream);
+
+            // catching area to be replaced
+            var ind1 = tei.indexOf("<listBibl");
+			var ind2 = tei.indexOf("</listBibl>");
+			if ( (ind1 != -1) && (ind2 != -1)) {
+
+				// at this stage, we might want to remove the coordinates in the fulltext document
+				// and just leave them in the enrichment file
+				var regex = /coords="[0-9,;.]*" /gi;
+				refbibsSegment = refbibsSegment.replace(regex, "");
+
+				// update bib ref
+				tei = tei.substring(0, ind1) + refbibsSegment + tei.substring(ind2 + 10, tei.length);				
+
+				if (respStmtToUpdate) {
+					// we need to add in the header a statement about the ref bib produced via GROBID
+					// which goes under <titleStmt>
+					var viaGROBID = '<respStmt><resp>Références bibliographiques récupérées via GROBID</resp><name resp="ISTEX-API">ISTEX-API (INIST-CNRS)</name></respStmt>';
+					tei = tei.replace('</titleStmt>', viaGROBID+'</titleStmt>');
+				}
+			}
+            compressStream.write(tei);
+            compressStream.end();
+
+            if (callback)
+		       	callback();
+        });
+    } else {
+    	// we go on 
+    	if (callback)
+			callback();
+    }
+
 }
 
 function updateFullTextFile(options, istexId, refbibsSegment, callback) {
@@ -314,6 +456,7 @@ function init() {
     // start with the config file
     const config = require('./config.json');
     options.temp_path = config.temp_path;
+    options.fulltext_repo = config.fulltext_repo;
 
     options.concurrency = 10; // number of concurrent call to the ISTEX API
     var attribute; // name of the passed parameter
@@ -352,6 +495,25 @@ function init() {
                 console.log("Output path must be a directory, not a file");
             if (!stats.isDirectory())
                 console.log("Output path is not a valid directory");
+        });
+    }
+
+    // check if we have a local repository of ISTEX fulltext on the file system
+    // (avoid trying to donwload them with the ISTEX platform)
+    if (options.fulltext_repo) {
+    	fs.lstat(options.fulltext_repo, (err, stats) => {
+            if (err) {
+                console.log(err);
+                options.fulltext_repo = false;
+            }
+            if (stats.isFile()) {
+                console.log("fulltext_repo path must be a directory, not a file");
+                options.fulltext_repo = false;
+            }
+            if (!stats.isDirectory()) {
+                console.log("fulltext_repo path is not a valid directory");
+                options.fulltext_repo = false;
+            }
         });
     }
     return options;

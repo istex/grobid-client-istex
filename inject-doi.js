@@ -148,7 +148,19 @@ function matchDOI(options, istexId, callback) {
 			    		async.parallel(endpoints, http.get, function(results) {
     						for (var response in results) {
     							if (response.status == 200) {
-
+    								// get the DOI and ark
+    								if (response.body) {
+    									var resDOI = response.body.DOI;
+    									var resArk = response.body.ark;
+    									// inject in citationSegment
+    									if (resDOI) {
+    										var injection = '<idno type="DOI">'+resDOI+'</idno>';
+    										if (resArk) {
+    											injection += '\n<idno type="ark">'+resArk+'</idno>';
+    										}
+    										
+    									}
+    								}	
     							}
     						}
 						});
@@ -160,29 +172,6 @@ function matchDOI(options, istexId, callback) {
 	}
 
 }
-
-/*function matchRawCitationString(raw) {
-	var service_url = config.glutton_host ; 
-	if (config.glutton_port) {
-		service_url += config.glutton_port;
-	}
-	service_url += "/lookup?";
-    var request = http.get(service_url, function(response) {
-        console.log(response)
-    }).on('error', function(err) { // Handle errors
-        // delete the file async
-        if (callback) 
-            callback(err.message);
-    });
-}
-
-function matchTitleAuthor(tite, firstAuthor) {
-
-}
-
-function matchJournalVolumePage(journal, volume, firstPage) {
-
-}*/
 
 function injectDOI(options) {
 	var q = async.queue(function (istexId, callback) {

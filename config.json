@@ -3,6 +3,7 @@
   "grobid_port": "8070",
   "sleep_time": 2000,
   "temp_path": "tmp/",
+  "fulltext_repo": "/media/lopez/data2/all/",
   "glutton_host": "loalhost",
   "glutton_port": 8080
 }
