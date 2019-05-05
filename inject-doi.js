@@ -79,7 +79,9 @@ function matchDOI(options, istexId, callback) {
 				    ind2 = refbibsSegment.indexOf("</biblStruct>", base2);
 			    	if ( (ind1 != -1) && (ind2 != -1) ) {
 			    		// here is the XML segment corresponding to an extracted citation
-			    		var citationSegment = refbibsSegment.substring(ind1, ind2+13);
+			    		var citationSegmentOriginal = refbibsSegment.substring(ind1, ind2+13);
+                        var citationSegment = citationSegmentOriginal;
+                        //console.log(citationSegment);
 
 			    		// if DOI is already there, we simply use it to get the ark
 
@@ -108,11 +110,9 @@ function matchDOI(options, istexId, callback) {
 			    		raw = raw.replace(/\n/g, " ");
 			    		raw = raw.replace(/\s\s+/g, ' ');
 			    		raw = raw.replace(/\s, /g, ', ');
+                        raw = raw.trim();
 
-			    		console.log('raw: ' + raw);
-
-			    		console.log(citationSegment);
-			    		const doc = new dom().parseFromString(citationSegment);
+			    		const doc = new dom().parseFromString(citationSegmentOriginal);
 			    		//console.log(doc);
     					const select = xpath.useNamespaces({});
 
@@ -120,54 +120,101 @@ function matchDOI(options, istexId, callback) {
     					var title = select('//title[@level="a"]/text()', doc)[0];
     					if (!title)
 	    					title = select('//title[@level="m"]/text()', doc)[0];
-    					console.log(title);
+    					//console.log(title);
 
     					var firstAuthor = select('//surname[0]', doc);
 
     					// try to get journal, volume, first page
-    					var jtitle = select('//title[@level="j"]', doc);
-    					var volume = select('//biblScope[@unit="volume"]', doc);
-    					var firstPage = select('//biblScope[@unit="page"][@from]', doc);
-    					console.log(jtitle);
-    					console.log(volume);
-    					console.log(firstPage);
+    					var jtitle = select('//title[@level="j"]/text()', doc);
+    					var volume = select('//biblScope[@unit="volume"]/text()', doc);
+    					var firstPage = select('//biblScope[@unit="page"]/@from', doc);
 
-						var service_host = options.glutton_host ; 
+                        var date = select('string(//date/@when)', doc);
+                        if (date && date.length>3) {
+                            date = date.substring(0,4);
+                            raw += ", " + date;
+                        }
+
+                        //console.log('raw: ' + raw);
+
+    					//console.log(jtitle);
+    					//console.log(volume);
+    					//console.log(firstPage);
+
+						var service_host = options.glutton_host; 
 						if (options.glutton_port) {
-							service_host += options.glutton_port;
+							service_host += ":"+options.glutton_port;
 						}
-						var endpoints = [
-							{ host: service_host, path: "service/lookup?biblio="+encodeURIComponent(raw) },
-							{ host: service_host, path: "service/lookup?atitle="+encodeURIComponent(title)+
-								"&firstAuthor="+encodeURIComponent(firstAuthor) },
-							{ host: service_host, path: "service/lookup?jtitle="+encodeURIComponent(jtitle)+
-								"&volume="+encodeURIComponent(volume) + "&firstPage="+encodeURIComponent(firstPage) }
-						];
 
-			    		// parallel calls
-			    		async.parallel(endpoints, http.get, function(results) {
-    						for (var response in results) {
-    							if (response.status == 200) {
-    								// get the DOI and ark
-    								if (response.body) {
-    									var resDOI = response.body.DOI;
-    									var resArk = response.body.ark;
-    									// inject in citationSegment
-    									if (resDOI) {
-    										var injection = '<idno type="DOI">'+resDOI+'</idno>';
-    										if (resArk) {
-    											injection += '\n<idno type="ark">'+resArk+'</idno>';
-    										}
-    										
-    									}
-    								}	
-    							}
-    						}
-						});
+                        // create glutton query
+                        var queryPath =  "service/lookup?biblio="+encodeURIComponent(raw) ;
+                        /*if (title && title.length > 0)
+                            queryPath += "&atitle="+encodeURIComponent(title);
+                        if (firstAuthor && firstAuthor.length >0)
+                            queryPath += "&firstAuthor="+encodeURIComponent(firstAuthor);
+                        if (jtitle && jtitle.length > 0)
+                            queryPath += "&jtitle="+encodeURIComponent(jtitle);
+                        if (volume && volume.length > 0)
+                            queryPath += "&volume="+encodeURIComponent(volume);
+                        if (firstPage && firstPage.length >0)
+                            queryPath += "&firstPage="+encodeURIComponent(firstPage);
+                        */
+
+                        var query_options = {
+                            host: options.glutton_host,
+                            port: options.glutton_port,
+                            path: queryPath,
+                            method: 'GET'
+                        };
+
+                        console.log('http://' + service_host + "/" + queryPath);
+
+                        //var request = http.request(query_options, function(res) {
+                        http.get('http://' + service_host + "/" + queryPath, (res) => {
+                            //console.log('STATUS: ' + res.statusCode);
+                            //console.log('HEADERS: ' + JSON.stringify(res.headers));
+                            var gluttonBody = '';
+                            res.on('data', function(chunk) {
+                                gluttonBody += chunk;
+                            });
+                            res.on('end', function() {
+                                //console.log(gluttonBody);
+                                gluttonBody = JSON.parse(gluttonBody)
+                                if (res.statusCode == 200) {
+                                    // get the DOI and ark
+                                    if (gluttonBody) {
+                                        var resDOI = gluttonBody.DOI;
+                                        var resArk = gluttonBody.ark;
+                                        var istexId = gluttonBody.istexId;
+                                        // inject in citationSegment
+                                        var injection = '';
+                                        if (resDOI) {
+                                            injection += '\t<idno type="DOI">'+resDOI+'</idno>';
+                                        }
+                                        if (resArk) {
+                                            injection += '\n\t\t<idno type="ark">'+resArk+'</idno>';
+                                        }
+                                        if (istexId) {
+                                            injection += '\n\t\t<idno type="istexId">'+istexId+'</idno>';
+                                        }
+                                        //console.log(injection);
+                                        // inject additional identifiers in the TEI document
+                                        citationSegmentOriginal = 
+                                            citationSegmentOriginal.replace("</analytic>",
+                                                injection + "\n\t</analytic>");
+                                        console.log(citationSegmentOriginal);
+                                    }   
+                                }
+                                
+                            });
+                        }).on('error', function(e) {
+                            console.log("Got error: " + e.message);
+                        }); 
+                            
 			    	}
 			    }
 			}
-		    callback();
+		    
 		});
 	}
 

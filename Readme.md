@@ -65,6 +65,12 @@ This will update the TEI header of the full text enrichment, generate the bibref
 
 The ISTEX full text resources (all enrichment files and updated full text file) are available under `~/tmp/out`.
 
+- match the extracted bibliographical references against CrossRef metadata using biblio-glutton and inject the DOI, ISTEX ID, PMID, PMC ID and ISTEX ark into the successfully matched bibliographical references: 
+
+> node inject-doi -in ~/tmp/selectedIstexIds.txt -out ~/tmp/out
+
+This will update the TEI full text enrichment files and the bibref enrichment files. Be sure to use the same output (`~/tmp/out`) for having all the resources under the same hierarchy.
+
 
 ## Output
 
